@@ -134,9 +134,9 @@ func _speech(a: Dictionary) -> void:
 	if txt == "":
 		txt = Game.line_text(a.get("lineID", -1))
 	var speaker := _speaker_name(a)
-	var color := Color.WHITE
-	var pos: Vector2 = room.player_position() if int(a.get("isPlayer", 0)) == 1 else _ref_pos(a.get("speaker"))
-	await room.say(speaker, txt, pos, int(a.get("isBackground", 0)) == 1)
+	var is_player := int(a.get("isPlayer", 0)) == 1
+	var pos: Vector2 = room.player_position() if is_player else _ref_pos(a.get("speaker"))
+	await room.say(speaker, txt, pos, int(a.get("isBackground", 0)) == 1, is_player)
 
 func _speaker_name(a: Dictionary) -> String:
 	if int(a.get("isPlayer", 0)) == 1:
@@ -163,13 +163,11 @@ func _teleport(a: Dictionary) -> void:
 
 func _face(a: Dictionary) -> void:
 	var dir := int(a.get("direction", 0))
-	# AC direction enum -> horizontal flip only (2D). 3/right, 7/left commonly.
-	var facing_left := dir in [6, 7, 8]
 	if int(a.get("isPlayer", 0)) == 1:
-		room.face_player(facing_left)
+		room.face_player(dir)
 	else:
 		var c = room.character(a.get("charToMove"))
-		if c and c.has_method("set_facing"): c.set_facing(facing_left)
+		if c and c.has_method("set_facing"): c.set_facing(dir)
 
 # ---------- world ----------
 func _set_visible(a: Dictionary) -> void:

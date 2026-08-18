@@ -95,18 +95,22 @@ func _build_nav() -> void:
 	for p in polys[0]:
 		walkable.append(Vector2(p[0], p[1]))
 
+var player_sprite: AnimatedSprite2D
+var _facing := "down"
+var _talking := false
+
 func _build_player() -> void:
 	player = Node2D.new(); player.name = "Player"; player.z_index = -3
-	# Placeholder Teesa figure (real sprite sheet wiring is a follow-up).
-	var body := Polygon2D.new()
-	body.polygon = PackedVector2Array([
-		Vector2(-16, -70), Vector2(16, -70), Vector2(20, 0), Vector2(-20, 0)])
-	body.color = Color(0.75, 0.28, 0.30)
-	player.add_child(body)
-	var head := Polygon2D.new()
-	head.polygon = _circle(14, Vector2(0, -86))
-	head.color = Color(0.95, 0.82, 0.68)
-	player.add_child(head)
+	player_sprite = _build_teesa_sprite()
+	if player_sprite:
+		player.add_child(player_sprite)
+	else:
+		# fallback placeholder if the sheet data is unavailable
+		var body := Polygon2D.new()
+		body.polygon = PackedVector2Array([
+			Vector2(-16, -70), Vector2(16, -70), Vector2(20, 0), Vector2(-20, 0)])
+		body.color = Color(0.75, 0.28, 0.30)
+		player.add_child(body)
 	# spawn at first playerStart or first marker or origin
 	var start := Vector2.ZERO
 	var ps: Array = data.get("playerStarts", [])
@@ -122,6 +126,47 @@ func _build_player() -> void:
 	player.position = start
 	add_child(player)
 	characters["Teesa"] = player
+	_play_anim("idle")
+
+# Build Teesa's AnimatedSprite2D from the extracted sprite-sheet data (teesa.json).
+func _build_teesa_sprite() -> AnimatedSprite2D:
+	var td := Game.load_scene_data("teesa")
+	if td.is_empty() or not ResourceLoader.exists(td.get("texture", "")):
+		return null
+	var tex: Texture2D = load(td["texture"])
+	var fsz = td.get("frameSize", [40, 80])
+	var frames := SpriteFrames.new()
+	frames.remove_animation("default")
+	for anim_name in td.get("anims", {}).keys():
+		var rects: Array = td["anims"][anim_name]
+		if rects.is_empty():
+			continue
+		frames.add_animation(anim_name)
+		frames.set_animation_loop(anim_name, true)
+		var fps: float = float(td.get("fps", {}).get(anim_name, 8.0))
+		if anim_name.begins_with("idle"):
+			fps = min(fps, 2.5)   # idle should breathe, not flicker
+		frames.set_animation_speed(anim_name, fps)
+		for r in rects:
+			var at := AtlasTexture.new()
+			at.atlas = tex
+			at.region = Rect2(r[0], r[1], r[2], r[3])
+			frames.add_frame(anim_name, at)
+	var spr := AnimatedSprite2D.new()
+	spr.sprite_frames = frames
+	spr.centered = true
+	spr.offset = Vector2(0, -float(fsz[1]) / 2.0)  # feet at the node origin
+	return spr
+
+func _play_anim(state: String) -> void:
+	if player_sprite == null:
+		return
+	var key := state + "_" + _facing
+	if not player_sprite.sprite_frames.has_animation(key):
+		key = state + "_down"
+	if player_sprite.sprite_frames.has_animation(key):
+		if player_sprite.animation != key or not player_sprite.is_playing():
+			player_sprite.play(key)
 
 func _build_hotspots() -> void:
 	for h in data.get("hotspots", []):
@@ -261,11 +306,18 @@ func _physics_process(_delta: float) -> void:
 	var dist := dir.length()
 	if dist <= 4.0:
 		_moving = false
+		if not _talking:
+			_play_anim("idle")
 		emit_signal("_arrived")
 		return
 	player.global_position += dir.normalized() * PLAYER_SPEED * _delta
-	if abs(dir.x) > 1.0:
-		player.scale.x = -1 if dir.x < 0 else 1
+	_facing = _dir_to_facing(dir)
+	_play_anim("walk")
+
+func _dir_to_facing(v: Vector2) -> String:
+	if abs(v.x) >= abs(v.y):
+		return "left" if v.x < 0 else "right"
+	return "up" if v.y < 0 else "down"
 
 func walk_player_to(target: Vector2) -> void:
 	_move_target = _clamp_walk(target)
@@ -301,18 +353,34 @@ func set_player_position(p: Vector2) -> void:
 func player_position() -> Vector2:
 	return player.global_position
 
-func face_player(left: bool) -> void:
-	player.scale.x = -1 if left else 1
+func face_player(dir: int) -> void:
+	_facing = _ac_dir_to_facing(dir)
+	if not _moving and not _talking:
+		_play_anim("idle")
 
-func say(speaker: String, text: String, at: Vector2, background: bool) -> void:
+func _ac_dir_to_facing(dir: int) -> String:
+	# AC _Direction: 0 Down,1 Left,2 Right,3 Up,4 DownLeft,5 DownRight,6 UpLeft,7 UpRight
+	match dir:
+		1, 6: return "left"
+		2, 5: return "right"
+		3: return "up"
+		_: return "down"
+
+func say(speaker: String, text: String, at: Vector2, background: bool, is_player: bool = false) -> void:
 	if text.strip_edges() == "":
 		return
 	subtitle.text = (speaker + ": " + text) if speaker != "" else text
 	subtitle.visible = true
+	if is_player:
+		_talking = true
+		_play_anim("talk")
 	var dur: float = clamp(text.length() * 0.055, 1.2, 6.0)
 	if background:
 		get_tree().create_timer(dur).timeout.connect(func():
 			if subtitle.text.ends_with(text): subtitle.visible = false)
+		if is_player:
+			_talking = false
+			_play_anim("idle")
 		return
 	# advance on timer or click
 	var t := 0.0
@@ -323,6 +391,9 @@ func say(speaker: String, text: String, at: Vector2, background: bool) -> void:
 		await get_tree().process_frame
 		t += get_process_delta_time()
 	subtitle.visible = false
+	if is_player:
+		_talking = false
+		_play_anim("idle")
 
 func ref(r) -> Dictionary:
 	if r == null: return {}
