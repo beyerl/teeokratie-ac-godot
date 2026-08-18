@@ -38,14 +38,15 @@ jobs:
           mv templates/* "$HOME/.local/share/godot/export_templates/${GODOT_TEMPLATE_DIR}/"
 
       - name: Export Web build
+        working-directory: game
         run: |
           set -euo pipefail
-          mkdir -p game/build
+          mkdir -p build
           # First pass imports resources, second pass exports.
-          godot --headless --path game --import
-          godot --headless --path game --export-release "Web" game/build/index.html
-          test -f game/build/index.wasm
-          touch game/build/.nojekyll
+          godot --headless --path . --import
+          godot --headless --path . --export-release "Web" build/index.html
+          test -f build/index.wasm
+          touch build/.nojekyll
 
       - uses: actions/upload-pages-artifact@v3
         with:
