@@ -1,0 +1,12 @@
+# Godot
+game/.godot/
+game/build/
+*.import.log
+# Python
+extractor/__pycache__/
+# Playwright screenshots
+*.png.tmp
+shot_*.png
+v_*.png
+# OS
+.DS_Store

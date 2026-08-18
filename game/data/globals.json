@@ -1,0 +1,1722 @@
+{
+ "items": [
+  {
+   "id": 0,
+   "label": "BoringBook",
+   "carryOnStart": 0
+  },
+  {
+   "id": 1,
+   "label": "FidibusBurning",
+   "carryOnStart": 0
+  },
+  {
+   "id": 2,
+   "label": "TeeseusHead",
+   "carryOnStart": 0
+  },
+  {
+   "id": 3,
+   "label": "Fidibus",
+   "carryOnStart": 0
+  },
+  {
+   "id": 4,
+   "label": "Tea-Yak",
+   "carryOnStart": 0
+  },
+  {
+   "id": 5,
+   "label": "TeeseusHeadWater",
+   "carryOnStart": 0
+  },
+  {
+   "id": 6,
+   "label": "Teapot",
+   "carryOnStart": 0
+  }
+ ],
+ "variables": [
+  {
+   "id": 0,
+   "label": "isInventoryAlwaysOn",
+   "type": 0,
+   "val": 0,
+   "floatVal": 0,
+   "textVal": null,
+   "popUps": []
+  },
+  {
+   "id": 1,
+   "label": "noWaterFound",
+   "type": 0,
+   "val": 0,
+   "floatVal": 0,
+   "textVal": null,
+   "popUps": []
+  },
+  {
+   "id": 2,
+   "label": "noWoodFound",
+   "type": 0,
+   "val": 0,
+   "floatVal": 0,
+   "textVal": null,
+   "popUps": []
+  },
+  {
+   "id": 3,
+   "label": "isAnteroomFirstEnter",
+   "type": 0,
+   "val": 1,
+   "floatVal": 0,
+   "textVal": null,
+   "popUps": []
+  }
+ ],
+ "cursorIcons": [
+  {
+   "id": 0,
+   "label": "Benutze"
+  },
+  {
+   "id": 1,
+   "label": "Sprich mit"
+  },
+  {
+   "id": 2,
+   "label": "Betrachte"
+  }
+ ],
+ "speech": {
+  "163": {
+   "text": "Und es begab sich, dass der edle Hohepriester Don Kamille sich anschickte, eine Teeokratie zu errichten.",
+   "speaker": "Narrator",
+   "type": 0
+  },
+  "164": {
+   "text": "Bisher hatte ihn die gewählte Bürgermeisterin Ess-Mer-Alda davon abgehalten, die Macht im  beschaulichen Bergdorf Teegernseh zu übernehmen. ",
+   "speaker": "Narrator",
+   "type": 0
+  },
+  "165": {
+   "text": "Sie und die von ihr tolerierten Essenzialisten hatten die Bevölkerung sogar verleitet, zu Essen, statt nur Tee zu trinken.",
+   "speaker": "Narrator",
+   "type": 0
+  },
+  "166": {
+   "text": "Mit diesen Verfehlungen sollte nun endgültig Schluss sein. So wollte es der edle Hohepriester.\r",
+   "speaker": "Narrator",
+   "type": 0
+  },
+  "167": {
+   "text": "Tz... „Edler Hohepriester“... Wohl eher „Hohler Odelproster“.",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "168": {
+   "text": "Ruhe! ICH bin die Erzählstimme aus dem Off! ICH erzähle die Geschichte! ",
+   "speaker": "Narrator",
+   "type": 0
+  },
+  "169": {
+   "text": "Verehrtes Auditorium, diese vorlaute Stimme, die Sie gerade vernommen haben, gehört Teesa. ",
+   "speaker": "Narrator",
+   "type": 0
+  },
+  "170": {
+   "text": "Wenig anpassungsfähig, deswegen zu Disziplinierung von ihrem streng gläubigen Vater ins Kloster verbannt. ",
+   "speaker": "Narrator",
+   "type": 0
+  },
+  "171": {
+   "text": "Dort ist sie gerade im Begriff ihre Abschlussprüfung zu vollenden, die sogenannte Literertour. Erstaunlich eigentlich...",
+   "speaker": "Narrator",
+   "type": 0
+  },
+  "172": {
+   "text": "Narrator",
+   "speaker": null,
+   "type": 10
+  },
+  "173": {
+   "text": "Narrator",
+   "speaker": null,
+   "type": 1
+  },
+  "106": {
+   "text": "Ein Haufen pietistischer Plunder. Laaangweilig!",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "176": {
+   "text": "Die interessanten Bücher stehen alle im Vorzimmer.",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "174": {
+   "text": "Eine Durchgangsklappvorrichtung.",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "175": {
+   "text": "Es ist verboten, Tyr oder Thor dazu zu sagen, weil das beides heidnische Götter sind.",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "177": {
+   "text": "Der Tee ist fertig.",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "178": {
+   "text": "Hmpf.",
+   "speaker": "Don Kamille",
+   "type": 0
+  },
+  "179": {
+   "text": "Tee. ",
+   "speaker": "Don Kamille",
+   "type": 0
+  },
+  "180": {
+   "text": "Tatsächlich.",
+   "speaker": "Don Kamille",
+   "type": 0
+  },
+  "181": {
+   "text": "Dann sagen Sie mal die Zukunft voraus, bitte.",
+   "speaker": "Don Kamille",
+   "type": 0
+  },
+  "182": {
+   "text": "...Ich sehe Dich auf einer langen Reise. Du bist der Kapitän eines Schiffs… ",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "183": {
+   "text": "Ähm, nein. Da ist irgendwas durcheinander gekommen.",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "184": {
+   "text": "Und es wird kommen ein Wesen, das klingt wie ein Klebestreifen. ",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "185": {
+   "text": "Summen und Brummen werden untergehen, wenn das Wesen sich zum Tiefton wandelt.",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "186": {
+   "text": "Doch verzaget nicht, denn weil im Wurm der Wurm drin ist, wird das Wesen zum IQ mutieren.",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "187": {
+   "text": "Wenn Milch und Honig fließen und das Seegezücht an Land tanzt, dann werdet ihr feststellen, dass man Tee nicht essen kann.",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "188": {
+   "text": "Dann fällt die Entscheidung! ",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "189": {
+   "text": "Tee oder Leben, das ist hier die Frage!",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "110": {
+   "text": "Es regnet Katzen und Hunde.",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "190": {
+   "text": "Der Wasserhahn ist versiegt. Haben wir noch andere Wasservorräte? ",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "191": {
+   "text": "Das ist nicht mein Problem. Sie werden schon etwas auftreiben.",
+   "speaker": "Don Kamille",
+   "type": 0
+  },
+  "192": {
+   "text": "Es ist kein Holz mehr im Ofen und der Vorrat ist auch leer.",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "193": {
+   "text": "Mir drängt sich der Verdacht auf, dass Sie sich vor der Prüfung drücken wollen. ",
+   "speaker": "Don Kamille",
+   "type": 0
+  },
+  "194": {
+   "text": "Als ich das letzte Mal die Küche betreten habe, war noch welches da.",
+   "speaker": "Don Kamille",
+   "type": 0
+  },
+  "195": {
+   "text": "Wie funktioniert das nochmal mit der Abschlussprüfung?",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "196": {
+   "text": "Sie verschwenden meine Zeit. Schauen Sie auf die Prüfungsordnung, die neben der Türe hängt.",
+   "speaker": "Don Kamille",
+   "type": 0
+  },
+  "197": {
+   "text": "Besten Dank, Hochwohlgeboren!\r",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "198": {
+   "text": "Das ist mein Chef, Hohepriester Don Kamille.",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "199": {
+   "text": "Wenn es nach ihm geht, dann haben wir hier in Teegernseh bald eine Teeokratie mit ihm an der Spitze.",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "200": {
+   "text": "Ich bin mir nicht so sicher, ob ich das gut finde.",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "111": {
+   "text": "Da sind Sie ja, Schwester Teegießertochter. ",
+   "speaker": "Don Kamille",
+   "type": 0
+  },
+  "112": {
+   "text": "Dann wollen wir mal. Sie kennen Ihre Aufgabe?",
+   "speaker": "Don Kamille",
+   "type": 0
+  },
+  "113": {
+   "text": "Ich glaube schon, hohler... ähm... edler Hohepriester!",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "114": {
+   "text": "Vorschriftsgemäß verlese ich die Teeisten-Prüfungsordnung:",
+   "speaker": "Don Kamille",
+   "type": 0
+  },
+  "115": {
+   "text": "“Zum Abschluss seiner Literertour hat der Anwärter den Original Teebetanischen Yak-Tee(TM) aufzugießen.” ",
+   "speaker": "Don Kamille",
+   "type": 0
+  },
+  "116": {
+   "text": "\"Ausgenommen sind: Börsendaten, Wettervorhersagen und Quantenfluktiationen.\"",
+   "speaker": "Don Kamille",
+   "type": 0
+  },
+  "117": {
+   "text": "“Der Prüfling darf sich während der Prüfung nicht aus dem Kloster entfernen.\"",
+   "speaker": "Don Kamille",
+   "type": 0
+  },
+  "118": {
+   "text": "Wo finde ich denn...",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "119": {
+   "text": "Danke für mein Gespräch, verehrte Schwester.\r",
+   "speaker": "Don Kamille",
+   "type": 0
+  },
+  "120": {
+   "text": "Sehr wohl, Hohepriester!",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "121": {
+   "text": "52 Sekunden zu spät, wie ich sehe.",
+   "speaker": "Don Kamille",
+   "type": 0
+  },
+  "122": {
+   "text": "\"Aus dem Teesatz sagt er die Zukunft  vorraus.\"",
+   "speaker": "Don Kamille",
+   "type": 0
+  },
+  "124": {
+   "text": "\"Gelobt sei Teeseus in Ewigkeit, Teemen“. Noch Fragen?\r",
+   "speaker": "Don Kamille",
+   "type": 0
+  },
+  "201": {
+   "text": "\"Zur Zubereitung wird benötigt: 1. Original Teebetanische Yak-Tee(TM)-Blätter\"",
+   "speaker": "Don Kamille",
+   "type": 0
+  },
+  "202": {
+   "text": "\"2. Kristallklares, mineralstoffreiches Quellwasser\"",
+   "speaker": "Don Kamille",
+   "type": 0
+  },
+  "203": {
+   "text": "\"3. Ein Teekessel oder ein anderes Gefäß\"",
+   "speaker": "Don Kamille",
+   "type": 0
+  },
+  "204": {
+   "text": "\"4. Ein angeheizter Ofen\"",
+   "speaker": "Don Kamille",
+   "type": 0
+  },
+  "205": {
+   "text": "\"Der Prüfling schüttet das Wasser in den Kessel, erhitzt diesen auf dem Ofen und gibt dann die Blätter hinein.\"",
+   "speaker": "Don Kamille",
+   "type": 0
+  },
+  "125": {
+   "text": "Da steht: „Zum Abschluss seiner Literertour hat der Anwärter...“ Da fehlt das Anwärterin",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "126": {
+   "text": "“Der Prüfling darf sich während der Prüfung nicht aus dem Kloster entfernen.\"",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "127": {
+   "text": "\"Gelobt sei Teeseus in Ewigkeit, Teemen.“",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "154": {
+   "text": " “...den Original Teebetanischen Yak-Tee(TM) aufzugießen.\"",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "155": {
+   "text": "\"Aus dem Teesatz sagt er  - oder sie - die Zukunft vorraus.\"",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "156": {
+   "text": "\"bla.. bla...\"",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "206": {
+   "text": "\"Zur Zubereitung wird benötigt: 1. Original Teebetanische Yak-Tee(TM)-Blätter\"",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "207": {
+   "text": "\"2. Kristallklares, mineralstoffreiches Quellwasser\"",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "208": {
+   "text": "\"3. Ein Teekessel oder ein anderes Gefäß\"",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "209": {
+   "text": "\"4. Ein angeheizter Ofen\"",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "210": {
+   "text": "\"Der Prüfling schüttet das Wasser in den Kessel, erhitzt diesen auf dem Ofen und gibt dann die Blätter hinein.\"",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "211": {
+   "text": "Auf Wiedersehen, Hochwohlgeboren!",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "212": {
+   "text": "Don Kamille",
+   "speaker": null,
+   "type": 1
+  },
+  "213": {
+   "text": "TeesaPour",
+   "speaker": null,
+   "type": 10
+  },
+  "214": {
+   "text": "TeesaPour",
+   "speaker": null,
+   "type": 1
+  },
+  "215": {
+   "text": "Don Kamille",
+   "speaker": null,
+   "type": 10
+  },
+  "130": {
+   "text": "Prüfungsordnung",
+   "speaker": null,
+   "type": 1
+  },
+  "131": {
+   "text": "Durchgangsklappvorrichtung (DK)",
+   "speaker": null,
+   "type": 1
+  },
+  "216": {
+   "text": "Wie funktioniert das nochmal mit der Abschlussprüfung?",
+   "speaker": null,
+   "type": 2
+  },
+  "217": {
+   "text": "Der Wasserhahn ist versiegt.",
+   "speaker": null,
+   "type": 2
+  },
+  "218": {
+   "text": "Es ist kein Holz mehr da.",
+   "speaker": null,
+   "type": 2
+  },
+  "219": {
+   "text": "Auf Wiedersehen, Hochwohlgeboren!",
+   "speaker": null,
+   "type": 2
+  },
+  "132": {
+   "text": "Bücherregal",
+   "speaker": null,
+   "type": 1
+  },
+  "133": {
+   "text": "Fenster",
+   "speaker": null,
+   "type": 1
+  },
+  "220": {
+   "text": "Da geht's ins Kitchen... To the Kitchen.. In die Küche halt.",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "221": {
+   "text": "Da geht's tiefer ins Kloster... Uaah...",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "222": {
+   "text": "Weißt Du, wo ich Wasser herbekommen könnte?",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "223": {
+   "text": "Puh, schwierig. Du müsstest schon ins Dorf runter gehen. Und das darfst Du während der Prüfung nicht. ",
+   "speaker": "Tassilo",
+   "type": 0
+  },
+  "224": {
+   "text": "Wenn Du nicht kristallklares, mineralstoffreiches Quellwasser bräuchtest, könntest Du natürlich einfach Regenwasser mit irgendeinem Gefäß auffangen. ",
+   "speaker": "Tassilo",
+   "type": 0
+  },
+  "225": {
+   "text": "Es regnet eh grade, wenn mich meine Ohren nicht täuschen. ",
+   "speaker": "Tassilo",
+   "type": 0
+  },
+  "226": {
+   "text": "Oder das Rauschen kommt von einer eskalierten Duschparty im rituellen Waschungsraum...",
+   "speaker": "Tassilo",
+   "type": 0
+  },
+  "227": {
+   "text": "Da geht's nach Teegernseh. Aber ich geh da jetzt nicht hin.",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "228": {
+   "text": "Man kann den Kopf abschrauben, um ihn vom Ruß zu säubern. ",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "229": {
+   "text": "Ob man den wohl irgendwie zweckentfremden könnte?",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "230": {
+   "text": "Wenn ich da lang gehe, laufe ich Gefahr, den Klosterbrüdern und -Schwestern bei der rituellen Waschung im Whirlpool zu begegenen.",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "231": {
+   "text": "Ich will das nicht sehen!",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "232": {
+   "text": "Hm... Hier habe ich was Interessantes gefunden.",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "233": {
+   "text": "Tiker Phlegma: \"Das Langweilerbuch der Langeweile -  1200 Inhaltsleer bedruckte Seiten.\"",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "234": {
+   "text": "Lustig, hier steht auf einer ganze Seite immer wieder „Brennholz“. Ich nehme das mal mit. ",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "235": {
+   "text": "Da geht's zum Büro von Hohepriester Don Kamille.",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "236": {
+   "text": "Sieht aus als war Teeseus im Kopf recht helle...",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "237": {
+   "text": "Danke, Tassi! Bis später.",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "238": {
+   "text": "Flim, Flam. Brennt. Pyromantisch!",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "239": {
+   "text": "Don Kamille: „Gebt Bassismus keine Chance\"",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "240": {
+   "text": "Mit Zuwanderung und Andersgläubigen hat er es nicht so, unser hohler Odelproster.",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "241": {
+   "text": "\"So schließen wir die Grenzen und retten uns vor dem Ansturm aus dem Basskennland“",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "242": {
+   "text": "Malter Wörs: „Der Berg wurmt\"",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "243": {
+   "text": "\"42 Tipps um Bergwürmer los zu werden. Inklusive Vernichtungstipps für Finsterbergmaden.“ ",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "244": {
+   "text": "Meister Lotse: \"Tau, Tee, King - Morgengespräche mit Elvis\"",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "245": {
+   "text": "Johanna K. Reihenling: \"Fanatische Bierwesen und wo man sie findet - Reiseführer Oberbayern\"",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "246": {
+   "text": "H. P. Baxxter: \"Das Teekronomikon - 666 einfache Teerituale für den Alltag\"",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "247": {
+   "text": "G. Chiller, K. Kong et al.: \"Kampf der Teetanten - Fliegende Untertassen schlagen zurück\r\"",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "248": {
+   "text": "Bei manchen Büchern frage ich mich schon, warum die geschrieben wurden.",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "249": {
+   "text": "Das werde ich sicher nie brauchen.",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "250": {
+   "text": "Nein, die Tür bleibt zu. Ich hab keine Lust Don Kamille einen Vorwand zu liefern, um mich rauszuschmeißen.",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "251": {
+   "text": "Am Ende muss ich noch heim in Papis Villa und wieder seinen endlosen Ausführungen über die gemeine Teelaus lauschen.",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "252": {
+   "text": "Der Holzvorat ist leer. Weißt Du was dazu?",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "253": {
+   "text": " Ich hab vorhin zufällig ein Gespräch mitgehört, bei dem Don Kamille den Brüdern und Schwestern das Zeug für ihren Whirlpool angedreht hat.",
+   "speaker": "Tassilo",
+   "type": 0
+  },
+  "254": {
+   "text": "Wir haben sonst gerade kein Brennmaterial mehr im Haus.",
+   "speaker": "Tassilo",
+   "type": 0
+  },
+  "255": {
+   "text": "Du könntest mal in der Bibliothek nachsehen. Vielleicht findest Du da einen Tip, wie man Brennstoff improvisieren kann.",
+   "speaker": "Tassilo",
+   "type": 0
+  },
+  "256": {
+   "text": "Mir kommt da gerade eine Idee.",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "257": {
+   "text": "Sorry, Teeseus aber Du musst kurz den Kopf verlieren.",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "258": {
+   "text": "Hallo Tassi! Deine neue Brille steht Dir echt gut.",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "259": {
+   "text": "Hast Du die letzte Woche schon gehabt, als Du das Praktikum beim Weber gemacht hast?",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "260": {
+   "text": "Morgen Teesa! Nö, is neu. Danke, ich find sie auch recht ansehnlich.",
+   "speaker": "Tassilo",
+   "type": 0
+  },
+  "261": {
+   "text": "Wie läuft's mit der Literertour?",
+   "speaker": "Tassilo",
+   "type": 0
+  },
+  "262": {
+   "text": "Naja, geht so. Ich bin Hundemüde weil ich bis spät in die Nacht den Teepflanzen vorsingen musste.",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "263": {
+   "text": "Scheinbar wachsen die dann besser.",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "264": {
+   "text": "Ach, Du warst das! Und ich dachte schon, ein kleines Nagetier wäre qualvoll verendet... ",
+   "speaker": "Tassilo",
+   "type": 0
+  },
+  "265": {
+   "text": "Was war denn los gestern?",
+   "speaker": "Tassilo",
+   "type": 0
+  },
+  "266": {
+   "text": "Ach, ich habe es mal wieder gewagt, Don Kamille zu widersprechen.",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "267": {
+   "text": "Er war der Meinung, dass wir die Essenzialisten mit allen Mitteln konvertieren müssen, um ihre Seele zu retten.",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "268": {
+   "text": "Auch wenn das bedeutet, dass wir sie fesseln und ihnen so lange das Te Teeum vorsingen müssen, bis sie das Handtuch werfen. ",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "269": {
+   "text": "Ich hab halt gemeint, man sollte es immer zuerst mit Argumenten versuchen.",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "270": {
+   "text": "War nicht gerade seine Tasse Tee, mein Ansatz. Deswegen hat er mich zum Te Teeum üben geschickt.",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "271": {
+   "text": "Klassiker! Na dann trotzdem: Viel Erfolg für Deine Prüfung! Komm jederzeit vorbei, wenn du Fragen hast.",
+   "speaker": "Tassilo",
+   "type": 0
+  },
+  "272": {
+   "text": "Eine Statue unseres Gottes Teeseus Teeus. Seine Augen leuchten, weil im Inneren seines Kopfes eine Kerze brennt.",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "273": {
+   "text": "Man kann den Kopf abschrauben, um ihn vom Ruß zu säubern.",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "274": {
+   "text": "Teeseus  trägt außerdem dem Kopf des Teesaurus in der Hand, den er bezwungen hat.",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "275": {
+   "text": "Ziemlich kopflastig, das Ganze.",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "276": {
+   "text": "Weißt Du, warum der Wasserhahn versiegt ist?",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "277": {
+   "text": "Jetzt wo Du's sagst: Heute halten unsere Brüder und Schwestern ihre rituellen Waschungen im Whirlpool ab.",
+   "speaker": "Tassilo",
+   "type": 0
+  },
+  "278": {
+   "text": " Eigentlich seltsam, dass Du heute Prüfung hast. ",
+   "speaker": "Tassilo",
+   "type": 0
+  },
+  "279": {
+   "text": "Normalerweise findet die Literertour immer statt, wenn keine Waschungen anstehen, damit eben keine Wasserknappheit entsteht.",
+   "speaker": "Tassilo",
+   "type": 0
+  },
+  "280": {
+   "text": "Meister Lotse: Tau, Tee, King - Morgengespräche mit Elvis\"",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "281": {
+   "text": "Malter Wörs: „Der Berg wurmt\"",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "282": {
+   "text": "\"42 Tipps um Bergwürmer los zu werden. Inklusive Vernichtungstipps für Finsterbergmaden.“",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "283": {
+   "text": "DK zur Küche",
+   "speaker": null,
+   "type": 1
+  },
+  "284": {
+   "text": "Tassilo",
+   "speaker": null,
+   "type": 10
+  },
+  "285": {
+   "text": "Klosterpforte",
+   "speaker": null,
+   "type": 1
+  },
+  "286": {
+   "text": "Kerze",
+   "speaker": null,
+   "type": 1
+  },
+  "287": {
+   "text": "Verstörende Klosterräume",
+   "speaker": null,
+   "type": 1
+  },
+  "288": {
+   "text": "Tassilo",
+   "speaker": null,
+   "type": 1
+  },
+  "289": {
+   "text": "DK zum Büro",
+   "speaker": null,
+   "type": 1
+  },
+  "290": {
+   "text": "Bücherregal",
+   "speaker": null,
+   "type": 1
+  },
+  "291": {
+   "text": "0]1]2]3]4]5",
+   "speaker": null,
+   "type": 9
+  },
+  "292": {
+   "text": "Teeseus' Kopf",
+   "speaker": null,
+   "type": 1
+  },
+  "293": {
+   "text": "Teeseus Teeus",
+   "speaker": null,
+   "type": 1
+  },
+  "294": {
+   "text": "Hallo Tassi!",
+   "speaker": null,
+   "type": 2
+  },
+  "295": {
+   "text": "Weißt Du, warum der Wasserhahn versiegt ist?",
+   "speaker": null,
+   "type": 2
+  },
+  "296": {
+   "text": "Weißt Du, wo ich Wasser herbekommen könnte?",
+   "speaker": null,
+   "type": 2
+  },
+  "297": {
+   "text": "Der Holzvorat ist leer. Weißt Du was darüber?",
+   "speaker": null,
+   "type": 2
+  },
+  "298": {
+   "text": "Danke, Tassi! Bis später.",
+   "speaker": null,
+   "type": 2
+  },
+  "299": {
+   "text": "Die Herdplatten sind auf dem neusten Stand der Technik. ",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "300": {
+   "text": "Aber leider sind sie kalt, weil der Ofen aus ist.\r",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "301": {
+   "text": "Wir haben neulich erst ein Herdprämie vom Zentralordinariat dafür bekommen.",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "302": {
+   "text": "Ich mach mal auf. Schadet nicht, wenn hier ein bisschen frischer Wind reinkommt.",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "303": {
+   "text": "Gute Idee. Aber zuerst sollte ich den Ofen anheizen.",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "304": {
+   "text": "Ich könnte höchstens versuchen, dass Wasser dazu zu bringen, sich aus Wut über meine schlechten Witze zu erhitzen.\r\n",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "305": {
+   "text": "Nein, vielleicht nicht. Dann wird es cholerisch und wir kriegen vom Trinken Cholera.",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "306": {
+   "text": "Ein Fidibus. Ein Sammelsurium von harzreichen Holzspänen, um Flammen zu transportieren.",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "307": {
+   "text": "Ich stelle den Kopf aufs Fensterbrett.",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "308": {
+   "text": "Egali-Tee - Wenn sie sich mal nicht entscheiden können",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "309": {
+   "text": "Tee HC - Kleiner Brauner aus dem Ostreich mit benebelnder Wirkung",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "310": {
+   "text": "Gute Idee. Aber zuerst sollte ich Wasser rein tun.",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "311": {
+   "text": "Mamastee - Der Tee für Yoga Muttis",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "312": {
+   "text": "Der Ofen ist ofen... ähm... offen.",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "313": {
+   "text": "Fraterni-Tee - Brüderliche Teespezialität",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "314": {
+   "text": "Nö, ich lasse ihn offen. Wenn ich Tee machen will, muss ich ihn irgendwie anheizen.",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "315": {
+   "text": "Juhuu, ich hab eine Kanne voll Wasser!",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "316": {
+   "text": "Hokus Pokus Fidibus. Ich nehm das Ding mal mit, vielleicht finde ich ja irgendwo eine Flamme.",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "317": {
+   "text": "Das Holz für den Ofen ist alle. Da wird das Teekochen schwierig. Mal sehen, ob ich alternativ irgendwas auftreiben kann.",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "318": {
+   "text": "Heiß, heiß, Baby! Dum, dum dum dum, dududdum.",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "319": {
+   "text": "Das Wasser ist heiß. Jetzt muss ich nur noch den richtigen Tee rein werfen.\r",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "320": {
+   "text": "Dum di dum...",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "321": {
+   "text": "Gute Idee, aber zuerst sollte ich das Fenster öffnen.",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "322": {
+   "text": "Die Tassen haben leider nicht genug Fassungsvermögen um Tee darin zu kochen.",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "323": {
+   "text": "Der Ofen ist aus. Ofensichtlich. Irgendwo müsste hier doch Holz rumliegen, um das Ding anzuheizen...",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "324": {
+   "text": "Der Ofen ist ofen... ähm... offen.",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "325": {
+   "text": "Ich habe das Buch in den Ofen gelegt. Jetzt müsste ich es nur noch anzünden.",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "326": {
+   "text": "Der Ofen ist angeheizt. Mit Wasser, einem Behältnis und Tee-Blätter kann ich jetzt Tee zubereiten.",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "327": {
+   "text": "Es regnet, es regnet, die Erde wird nass.",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "328": {
+   "text": "Wasserblicke ich? Wasser is weg.",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "329": {
+   "text": "Da geht's zum Vorzimmer.",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "330": {
+   "text": "Gute Idee. Aber zuerst sollte ich Wasser in den Kopf tun und den Ofen anheizen.",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "331": {
+   "text": "Das Wasser ist heiß. Jetzt muss ich nur noch den richtigen Tee rein werfen.\r",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "332": {
+   "text": "Original Teebetanischer Yak-Tee(TM) – nur echt mit dem Mause Dung-Aroma",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "333": {
+   "text": "Das ist der Tee den ich für die Prüfung brauche. Ich nehme ihn mal mit.",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "334": {
+   "text": "Ich hab das Buch in den Ofen gelegt.",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "335": {
+   "text": "Zu erst sollte ich das Ding öffnen.",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "336": {
+   "text": "Liber-Tee - Aus alten Buchheimer Buchblättern",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "337": {
+   "text": "Tee ist fertig! Ich stelle den Tee zurück und dann nichts wie rüber zu Don Kamille zum Teesatz-Lesen.",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "338": {
+   "text": "Girl Ray - Verdrehter Schwarztee",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "339": {
+   "text": "Zuerst sollte ich den Ofen öffnen und Brennmaterial reinlegen.",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "340": {
+   "text": "Da gibt's nix anzuzünden, weil kein Brennmaterial drin ist.",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "341": {
+   "text": "So, Ofen zu.",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "342": {
+   "text": "Ich hab das Buch in den Ofen gelegt.",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "343": {
+   "text": "Zu erst sollte ich das Ding öffnen.",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "344": {
+   "text": "Durch den Regen hat sich der Kopf mit Wasser gefüllt. ",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "345": {
+   "text": "Ein bisschen Ruß schwimmt drin rum, aber ich glaube, das ist halb so schlimm.",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "346": {
+   "text": "Hm... Wo ist denn der Kessel hin, mit dem wir normalerweise den Tee kochen? ",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "347": {
+   "text": "Da muss ich wohl was improvisieren.",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "348": {
+   "text": "Lebstoff - Nahrungsersatzmittel auf Kautschuk-Basis",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "349": {
+   "text": "Als Teeisten dürfen wir keine Nahrung zu uns nehmen. Sonst gäbe es keinen Unterschied zu den Essenzialisten.",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "350": {
+   "text": "Deswegen hat Teeseus Teeus uns den Lebstoff geschickt, um und zu sättigen. ",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "351": {
+   "text": "Den kochen wir einfach in den Tee ein und schon sind wir satt. Gelobt sei Teeseus… oder so.",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "352": {
+   "text": "Darling Jee-Tee",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "353": {
+   "text": "Tee",
+   "speaker": null,
+   "type": 1
+  },
+  "354": {
+   "text": "Lebstoff",
+   "speaker": null,
+   "type": 1
+  },
+  "355": {
+   "text": "Weiterhin Tee",
+   "speaker": null,
+   "type": 1
+  },
+  "356": {
+   "text": "Mehr Tee",
+   "speaker": null,
+   "type": 1
+  },
+  "357": {
+   "text": "Tee halt",
+   "speaker": null,
+   "type": 1
+  },
+  "358": {
+   "text": "Ofen",
+   "speaker": null,
+   "type": 1
+  },
+  "359": {
+   "text": "isClosed]isOpen]hasBook]isBurning",
+   "speaker": null,
+   "type": 9
+  },
+  "360": {
+   "text": "Herdplatten",
+   "speaker": null,
+   "type": 1
+  },
+  "361": {
+   "text": "Auch Tee",
+   "speaker": null,
+   "type": 1
+  },
+  "362": {
+   "text": "Wasserhahn",
+   "speaker": null,
+   "type": 1
+  },
+  "363": {
+   "text": "Heiße Herdplatten",
+   "speaker": null,
+   "type": 1
+  },
+  "364": {
+   "text": "Nochmal Tee",
+   "speaker": null,
+   "type": 1
+  },
+  "365": {
+   "text": "Immernoch Tee",
+   "speaker": null,
+   "type": 1
+  },
+  "366": {
+   "text": "Offenes Fenster",
+   "speaker": null,
+   "type": 1
+  },
+  "367": {
+   "text": "Heißes Wasser",
+   "speaker": null,
+   "type": 1
+  },
+  "368": {
+   "text": "Fenster",
+   "speaker": null,
+   "type": 1
+  },
+  "369": {
+   "text": "Tassen",
+   "speaker": null,
+   "type": 1
+  },
+  "370": {
+   "text": "Holzstapler",
+   "speaker": null,
+   "type": 1
+  },
+  "371": {
+   "text": "Fidibus",
+   "speaker": null,
+   "type": 1
+  },
+  "372": {
+   "text": "Schon wieder Tee",
+   "speaker": null,
+   "type": 1
+  },
+  "373": {
+   "text": "DK zum Vorzimmer",
+   "speaker": null,
+   "type": 1
+  },
+  "374": {
+   "text": "Kopf voll Regenwasser",
+   "speaker": null,
+   "type": 1
+  },
+  "387": {
+   "text": "Sprecher:\nTeesa - Julia\nDon Kamille - Andi\nTassilo, Erzähler - Lorenz",
+   "speaker": "Narrator",
+   "type": 0
+  },
+  "388": {
+   "text": "Idee, Dialoge, Grafik, Skripting, Musik:\nLorenz ",
+   "speaker": "Narrator",
+   "type": 0
+  },
+  "389": {
+   "text": "Witzinspirationen:\nDaniel, Flo, Hias, Helena, Julia, Julika, Kili, Max, Philip, Stutz, Steffi, Tine ",
+   "speaker": "Narrator",
+   "type": 0
+  },
+  "390": {
+   "text": "Logo-Design:\nSteffi",
+   "speaker": "Narrator",
+   "type": 0
+  },
+  "391": {
+   "text": "Fortsetzung folgt... Eventuell.",
+   "speaker": "Narrator",
+   "type": 0
+  },
+  "392": {
+   "text": "Copyright: Lorenz @Gaudi Games 2021",
+   "speaker": "Narrator",
+   "type": 0
+  },
+  "393": {
+   "text": "Wenn Ihr einen zweiten Teil möchtet, stimmt ab auf www.teeokratie-adventure.de",
+   "speaker": "Narrator",
+   "type": 0
+  },
+  "385": {
+   "text": "Narrator",
+   "speaker": null,
+   "type": 1
+  },
+  "386": {
+   "text": "Narrator",
+   "speaker": null,
+   "type": 10
+  },
+  "375": {
+   "text": "Langweiliges Buch",
+   "speaker": null,
+   "type": 3
+  },
+  "376": {
+   "text": "Brennender Fidibus",
+   "speaker": null,
+   "type": 3
+  },
+  "377": {
+   "text": "Kopf des Teeseus",
+   "speaker": null,
+   "type": 3
+  },
+  "378": {
+   "text": "Fidibus",
+   "speaker": null,
+   "type": 3
+  },
+  "379": {
+   "text": "Teebetanischer Yak-Tee",
+   "speaker": null,
+   "type": 3
+  },
+  "380": {
+   "text": "Wasserkopf",
+   "speaker": null,
+   "type": 3
+  },
+  "381": {
+   "text": "Kanne mit Yak-Tee(TM)",
+   "speaker": null,
+   "type": 3
+  },
+  "134": {
+   "text": "Literertour",
+   "speaker": null,
+   "type": 13
+  },
+  "135": {
+   "text": "Teesa muss Tee kochen, um Ihre Abschlussprüfung zu bestehen.",
+   "speaker": null,
+   "type": 13
+  },
+  "136": {
+   "text": "Started",
+   "speaker": null,
+   "type": 13
+  },
+  "137": {
+   "text": "Completed",
+   "speaker": null,
+   "type": 13
+  },
+  "138": {
+   "text": "Benutze",
+   "speaker": null,
+   "type": 6
+  },
+  "139": {
+   "text": "mit",
+   "speaker": null,
+   "type": 6
+  },
+  "140": {
+   "text": "Gib",
+   "speaker": null,
+   "type": 6
+  },
+  "141": {
+   "text": "an",
+   "speaker": null,
+   "type": 6
+  },
+  "142": {
+   "text": "Walk to",
+   "speaker": null,
+   "type": 6
+  },
+  "143": {
+   "text": "Benutze",
+   "speaker": null,
+   "type": 4
+  },
+  "144": {
+   "text": "Sprich mit",
+   "speaker": null,
+   "type": 4
+  },
+  "145": {
+   "text": "Betrachte",
+   "speaker": null,
+   "type": 4
+  },
+  "66": {
+   "text": "Fortfahren",
+   "speaker": "ResumeButton",
+   "type": 5
+  },
+  "67": {
+   "text": "Steuerung",
+   "speaker": "ControlsButton",
+   "type": 5
+  },
+  "68": {
+   "text": "Speichern",
+   "speaker": "SaveButton",
+   "type": 5
+  },
+  "69": {
+   "text": "Laden",
+   "speaker": "LoadButton",
+   "type": 5
+  },
+  "146": {
+   "text": "Profiles",
+   "speaker": "ProfilesButton",
+   "type": 5
+  },
+  "70": {
+   "text": "Beenden",
+   "speaker": "QuitButton",
+   "type": 5
+  },
+  "71": {
+   "text": "Optionen",
+   "speaker": "TitleLabel",
+   "type": 5
+  },
+  "72": {
+   "text": "Lautstärke Sprache",
+   "speaker": "SpeechSlider",
+   "type": 5
+  },
+  "73": {
+   "text": "Lautstärke Musik",
+   "speaker": "MusicSlider",
+   "type": 5
+  },
+  "74": {
+   "text": "Lautstärke Soundeffekte",
+   "speaker": "SFXSlider",
+   "type": 5
+  },
+  "75": {
+   "text": "Sprache",
+   "speaker": "LanguageCycle",
+   "type": 5
+  },
+  "76": {
+   "text": "Untertitel",
+   "speaker": "SubtitlesToggle",
+   "type": 5
+  },
+  "147": {
+   "text": "An",
+   "speaker": "SubtitlesToggle",
+   "type": 5
+  },
+  "148": {
+   "text": "Aus",
+   "speaker": "SubtitlesToggle",
+   "type": 5
+  },
+  "77": {
+   "text": "Zurück",
+   "speaker": "BackButton",
+   "type": 5
+  },
+  "78": {
+   "text": "Spiel speichern",
+   "speaker": "TitleLabel",
+   "type": 5
+  },
+  "88": {
+   "text": "Neuer Speicherstand",
+   "speaker": "SavesList",
+   "type": 5
+  },
+  "79": {
+   "text": "Zurück",
+   "speaker": "BackButton",
+   "type": 5
+  },
+  "80": {
+   "text": "Spiel laden",
+   "speaker": "TitleLabel",
+   "type": 5
+  },
+  "81": {
+   "text": "Zurück",
+   "speaker": "BackButton",
+   "type": 5
+  },
+  "149": {
+   "text": "Profiles",
+   "speaker": "TitleLabel",
+   "type": 5
+  },
+  "150": {
+   "text": "Current:",
+   "speaker": "CurrentLabel",
+   "type": 5
+  },
+  "151": {
+   "text": "Create new profile",
+   "speaker": "NewButton",
+   "type": 5
+  },
+  "152": {
+   "text": "Back",
+   "speaker": "BackButton",
+   "type": 5
+  },
+  "89": {
+   "text": "Container",
+   "speaker": "ContainerLabel",
+   "type": 5
+  },
+  "90": {
+   "text": "Close",
+   "speaker": "CloseButton",
+   "type": 5
+  },
+  "91": {
+   "text": "Take all",
+   "speaker": "TakeAllButton",
+   "type": 5
+  },
+  "92": {
+   "text": "Inventory",
+   "speaker": "InventoryLabel",
+   "type": 5
+  },
+  "99": {
+   "text": "Create",
+   "speaker": "CreateButton",
+   "type": 5
+  },
+  "100": {
+   "text": "Close",
+   "speaker": "CloseButton",
+   "type": 5
+  },
+  "101": {
+   "text": "Ingredients",
+   "speaker": "IngredientsLabel",
+   "type": 5
+  },
+  "102": {
+   "text": "Inventory",
+   "speaker": "InventoryLabel",
+   "type": 5
+  },
+  "103": {
+   "text": "Output",
+   "speaker": "OutputLabel",
+   "type": 5
+  },
+  "153": {
+   "text": "Close",
+   "speaker": "CloseButton",
+   "type": 5
+  },
+  "104": {
+   "text": "Objectives",
+   "speaker": "Header",
+   "type": 5
+  },
+  "105": {
+   "text": "Back",
+   "speaker": "BackButton",
+   "type": 5
+  },
+  "158": {
+   "text": "Neues Spiel",
+   "speaker": "NewGameButton",
+   "type": 5
+  },
+  "159": {
+   "text": "Optionen",
+   "speaker": "OptionsButton",
+   "type": 5
+  },
+  "160": {
+   "text": "Laden",
+   "speaker": "LoadButton",
+   "type": 5
+  },
+  "161": {
+   "text": "Profiles",
+   "speaker": "ProfilesButton",
+   "type": 5
+  },
+  "162": {
+   "text": "Beenden",
+   "speaker": "QuitButton",
+   "type": 5
+  },
+  "394": {
+   "text": "Steuerung",
+   "speaker": "ControlsHeading",
+   "type": 5
+  },
+  "397": {
+   "text": "Links-Klick: Gehe zu angeklickter Stelle",
+   "speaker": "Left Click-Label",
+   "type": 5
+  },
+  "398": {
+   "text": "Links-Klick Gegenstand: Interaktionsmenü öffnen",
+   "speaker": "Left Click-Label (Copy)",
+   "type": 5
+  },
+  "399": {
+   "text": "Betrachet Gegenstand oder Persion",
+   "speaker": "View-Label",
+   "type": 5
+  },
+  "400": {
+   "text": "Sprich mit Person",
+   "speaker": "Talk-Label",
+   "type": 5
+  },
+  "401": {
+   "text": "Nimm Gegenstand/ Benutze Gegenstand",
+   "speaker": "Use-Label",
+   "type": 5
+  },
+  "402": {
+   "text": "Öffne Inventar",
+   "speaker": "Inventory-Label",
+   "type": 5
+  },
+  "403": {
+   "text": "Inventarobjekt mit Maus auf Gegenstand ziehen: Benutzen",
+   "speaker": "Drag Object-Label",
+   "type": 5
+  },
+  "404": {
+   "text": "Öffne Menü (Hotkey: F1)",
+   "speaker": "Menu-Label",
+   "type": 5
+  },
+  "405": {
+   "text": "ESC",
+   "speaker": "Esc-Caption",
+   "type": 5
+  },
+  "406": {
+   "text": "Cutscene überspringen",
+   "speaker": "Esc-Label",
+   "type": 5
+  },
+  "407": {
+   "text": "Space",
+   "speaker": "Space-Caption",
+   "type": 5
+  },
+  "408": {
+   "text": "Alle verwendbaren Gegenstände anzeigen",
+   "speaker": "Space-Label",
+   "type": 5
+  },
+  "395": {
+   "text": "Zurück",
+   "speaker": "MenuButton",
+   "type": 5
+  },
+  "396": {
+   "text": "Zum Spiel",
+   "speaker": "GameButton",
+   "type": 5
+  },
+  "382": {
+   "text": "Heureka! Ach nö, doch keine gute Kombi.",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "383": {
+   "text": "Sorry, das ist glaub ich keine gute Idee.",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  },
+  "384": {
+   "text": "Nö, das Ding will niemand.",
+   "speaker": "TeesaPlayer",
+   "type": 0
+  }
+ },
+ "settings": {
+  "movementMethod": 0,
+  "inputMethod": 0,
+  "interactionMethod": 2,
+  "cameraPerspective": 0,
+  "hotspotDetection": 0,
+  "inventoryDragDrop": 1,
+  "defaultShowSubtitles": 1
+ }
+}

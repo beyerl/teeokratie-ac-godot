@@ -1,0 +1,764 @@
+{
+ "name": "Title",
+ "sprites": [
+  {
+   "name": "TitleScreen",
+   "texture": "res://assets/IntroCutscene.png",
+   "region": [
+    0,
+    0,
+    320,
+    180
+   ],
+   "pos": [
+    0.0,
+    89.6
+   ],
+   "scale": [
+    1.0,
+    1.0
+   ],
+   "flipX": 0,
+   "order": -10,
+   "layer": 0,
+   "color": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "enabled": 1
+  }
+ ],
+ "hotspots": [],
+ "markers": [],
+ "playerStarts": [
+  {
+   "name": "PlayerStart2D",
+   "pos": [
+    240.0,
+    58.88
+   ],
+   "id": null
+  }
+ ],
+ "navPolys": [],
+ "npcs": [],
+ "camera": null,
+ "onStart": "5547783415364071961",
+ "actionLists": {
+  "5547783415364071961": {
+   "name": null,
+   "type": "Cutscene",
+   "actionListType": 0,
+   "actions": [
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 3,
+     "skipActionActual": {
+      "fileID": "1618774529"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "changeType": 4,
+     "removeJournalPageMethod": 0,
+     "menuToChange": "Pause",
+     "menuToChangeParameterID": -1,
+     "elementToChange": null,
+     "elementToChangeParameterID": -1,
+     "journalText": null,
+     "onlyAddNewJournal": 0,
+     "doFade": 0,
+     "lineID": -1,
+     "journalPageIndex": -1,
+     "journalPageIndexParameterID": -1,
+     "type": "ActionMenuState"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 1,
+     "endAction": 0,
+     "skipAction": 2,
+     "skipActionActual": {
+      "fileID": "730364291"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "changeType": 0,
+     "removeJournalPageMethod": 0,
+     "menuToChange": "TitleMenu",
+     "menuToChangeParameterID": -1,
+     "elementToChange": null,
+     "elementToChangeParameterID": -1,
+     "journalText": null,
+     "onlyAddNewJournal": 0,
+     "doFade": 1,
+     "lineID": -1,
+     "journalPageIndex": -1,
+     "journalPageIndexParameterID": -1,
+     "type": "ActionMenuState"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 1,
+     "endAction": 1,
+     "skipAction": 3,
+     "skipActionActual": {
+      "fileID": "1618774529"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "trackID": 0,
+     "trackIDParameterID": -1,
+     "fadeTime": 0,
+     "fadeTimeParameterID": -1,
+     "loop": 1,
+     "isQueued": 0,
+     "resumeFromStart": 1,
+     "resumeIfPlayedBefore": 0,
+     "willWaitComplete": 0,
+     "musicAction": 0,
+     "loopingOverlapTime": 0,
+     "type": "ActionMusic"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 1,
+     "skipActionActual": {
+      "fileID": "1066879188"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "obToMoveParameterID": -1,
+     "obToMoveID": 0,
+     "obToMove": {
+      "fileID": "0"
+     },
+     "markerParameterID": -1,
+     "markerID": 0,
+     "teleporter": {
+      "fileID": "517241004"
+     },
+     "relativeGameObject": {
+      "fileID": "0"
+     },
+     "relativeGameObjectID": 0,
+     "relativeGameObjectParameterID": -1,
+     "positionRelativeTo": 0,
+     "relativeVectorParameterID": -1,
+     "relativeVector": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+     },
+     "vectorVarParameterID": -1,
+     "vectorVarID": 0,
+     "variableLocation": 0,
+     "recalculateActivePathFind": 0,
+     "isPlayer": 1,
+     "snapCamera": 0,
+     "copyRotation": 0,
+     "variables": {
+      "fileID": "0"
+     },
+     "variablesConstantID": 0,
+     "type": "ActionTeleport"
+    }
+   ],
+   "hostName": "OnStart"
+  }
+ },
+ "refs": {
+  "77189176": {
+   "name": "_Sounds",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "77189177": {
+   "name": "_Sounds",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "156874121": {
+   "name": "_Cameras",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "156874122": {
+   "name": "_Cameras",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "219484915": {
+   "name": "_NavMesh",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "219484916": {
+   "name": "_NavMesh",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "235540661": {
+   "name": "_Lights",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "235540662": {
+   "name": "_Lights",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "269719889": {
+   "name": "_NPCs",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "269719890": {
+   "name": "_NPCs",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "279545884": {
+   "name": "_Conversations",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "279545885": {
+   "name": "_Conversations",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "296918730": {
+   "name": "_Moveables",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "296918731": {
+   "name": "_Moveables",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "341183857": {
+   "name": "_NavMeshSegments",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "341183858": {
+   "name": "_NavMeshSegments",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "462741648": {
+   "name": "_Interactions",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "462741649": {
+   "name": "_Interactions",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "517241002": {
+   "name": "PlayerStart2D",
+   "pos": [
+    240.0,
+    58.88
+   ]
+  },
+  "517241003": {
+   "name": "PlayerStart2D",
+   "pos": [
+    240.0,
+    58.88
+   ]
+  },
+  "517241005": {
+   "name": "PlayerStart2D",
+   "pos": [
+    240.0,
+    58.88
+   ]
+  },
+  "517241004": {
+   "name": "PlayerStart2D",
+   "pos": [
+    240.0,
+    58.88
+   ]
+  },
+  "803225245": {
+   "name": "_CollisionCylinders",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "803225246": {
+   "name": "_CollisionCylinders",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "851739872": {
+   "name": "_CollisionCubes",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "851739873": {
+   "name": "_CollisionCubes",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "960326509": {
+   "name": "_SetGeometry",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "960326510": {
+   "name": "_SetGeometry",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1043449391": {
+   "name": "_ArrowPrompts",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1043449392": {
+   "name": "_ArrowPrompts",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1092120202": {
+   "name": "_UI",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1092120203": {
+   "name": "_UI",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1093884362": {
+   "name": "_SortingMaps",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1093884363": {
+   "name": "_SortingMaps",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1148423379": {
+   "name": "_Hotspots",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1148423380": {
+   "name": "_Hotspots",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1271999362": {
+   "name": "_Tracks",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1271999363": {
+   "name": "_Tracks",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1292368852": {
+   "name": "_Triggers",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1292368853": {
+   "name": "_Triggers",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1380674276": {
+   "name": "_GameCameras",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1380674277": {
+   "name": "_GameCameras",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1534601338": {
+   "name": "_PlayerStarts",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1534601339": {
+   "name": "_PlayerStarts",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1582462769": {
+   "name": "_Cutscenes",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1582462770": {
+   "name": "_Cutscenes",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1606314611": {
+   "name": "TitleScreen",
+   "pos": [
+    0.0,
+    89.6
+   ]
+  },
+  "1606314613": {
+   "name": "TitleScreen",
+   "pos": [
+    0.0,
+    89.6
+   ]
+  },
+  "1606314612": {
+   "name": "TitleScreen",
+   "pos": [
+    0.0,
+    89.6
+   ]
+  },
+  "1612640738": {
+   "name": "_Navigation",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1612640739": {
+   "name": "_Navigation",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1721092048": {
+   "name": "_Paths",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1721092049": {
+   "name": "_Paths",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1777929784": {
+   "name": "_Logic",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1777929785": {
+   "name": "_Logic",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1804110585": {
+   "name": "_DialogueOptions",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1804110586": {
+   "name": "_DialogueOptions",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "2028770305": {
+   "name": "_Markers",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "2028770306": {
+   "name": "_Markers",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "2075772680": {
+   "name": "_Containers",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "2075772681": {
+   "name": "_Containers",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "5547783415358048249": {
+   "name": "OnStart",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "5547783415358544857": {
+   "name": "OnStart",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "5547783415364071961": {
+   "name": "OnStart",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "6378408418885093621": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "6378408418885391573": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "6378408418896362773": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "6378408418896362769": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "6378408418896362771": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "6378408418896362781": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "6378408418896362783": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "6378408418896417559": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "6378408418896362779": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "6378408418896362757": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "6378408418896362759": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "6378408418896362753": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "6378408418896362755": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "6378408418896362765": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "6378408418896362775": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "6378408418896392781": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "6378408418896406447": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  }
+ }
+}

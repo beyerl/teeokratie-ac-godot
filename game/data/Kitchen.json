@@ -1,0 +1,9291 @@
+{
+ "name": "Kitchen",
+ "sprites": [
+  {
+   "name": "WindowOutside",
+   "texture": "res://assets/WindowOutside.png",
+   "region": [
+    0,
+    0,
+    17,
+    20
+   ],
+   "pos": [
+    14.02,
+    -0.99
+   ],
+   "scale": [
+    1.0,
+    1.0
+   ],
+   "flipX": 0,
+   "order": -15,
+   "layer": 0,
+   "color": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "enabled": 1
+  },
+  {
+   "name": "Kitchen",
+   "texture": "res://assets/Kitchen.png",
+   "region": [
+    0,
+    0,
+    329,
+    180
+   ],
+   "pos": [
+    -160.0,
+    -0.0
+   ],
+   "scale": [
+    1.0,
+    1.0
+   ],
+   "flipX": 0,
+   "order": -10,
+   "layer": 0,
+   "color": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "enabled": 1
+  },
+  {
+   "name": "TeeseusHeadDark",
+   "texture": "res://assets/TeeseusHeadDark.png",
+   "region": [
+    0,
+    0,
+    11,
+    7
+   ],
+   "pos": [
+    21.51,
+    10.48
+   ],
+   "scale": [
+    1.0,
+    1.0
+   ],
+   "flipX": 0,
+   "order": 0,
+   "layer": 0,
+   "color": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "enabled": 1
+  },
+  {
+   "name": "Teapot-onStove 0",
+   "texture": "res://assets/Teapot-onStove.png",
+   "region": [
+    0,
+    0,
+    15,
+    22
+   ],
+   "pos": [
+    69.52,
+    32.01
+   ],
+   "scale": [
+    1.0,
+    1.0
+   ],
+   "flipX": 0,
+   "order": 0,
+   "layer": 0,
+   "color": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "enabled": 1
+  },
+  {
+   "name": "WindowOpen",
+   "texture": "res://assets/WindowOpen.png",
+   "region": [
+    0,
+    0,
+    25,
+    24
+   ],
+   "pos": [
+    22.02,
+    3.01
+   ],
+   "scale": [
+    1.0,
+    1.0
+   ],
+   "flipX": 0,
+   "order": 0,
+   "layer": 0,
+   "color": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "enabled": 1
+  },
+  {
+   "name": "WoodStackHolder",
+   "texture": "res://assets/WoodStackHolder.png",
+   "region": [
+    0,
+    0,
+    18,
+    28
+   ],
+   "pos": [
+    -12.99,
+    28.0
+   ],
+   "scale": [
+    1.0,
+    1.0
+   ],
+   "flipX": 0,
+   "order": 0,
+   "layer": 0,
+   "color": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "enabled": 1
+  },
+  {
+   "name": "Teas",
+   "texture": "res://assets/Teas.png",
+   "region": [
+    0,
+    0,
+    25,
+    38
+   ],
+   "pos": [
+    64.0,
+    -4.99
+   ],
+   "scale": [
+    1.0,
+    1.0
+   ],
+   "flipX": 0,
+   "order": 0,
+   "layer": 0,
+   "color": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "enabled": 1
+  },
+  {
+   "name": "TeeseusHead-OnStove 0",
+   "texture": "res://assets/TeeseusHead-OnStove.png",
+   "region": [
+    0,
+    0,
+    15,
+    22
+   ],
+   "pos": [
+    69.52,
+    32.01
+   ],
+   "scale": [
+    1.0,
+    1.0
+   ],
+   "flipX": 0,
+   "order": 0,
+   "layer": 0,
+   "color": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "enabled": 1
+  },
+  {
+   "name": "Cups",
+   "texture": "res://assets/Cups.png",
+   "region": [
+    0,
+    0,
+    12,
+    16
+   ],
+   "pos": [
+    36.0,
+    -12.99
+   ],
+   "scale": [
+    1.0,
+    1.0
+   ],
+   "flipX": 0,
+   "order": 0,
+   "layer": 0,
+   "color": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "enabled": 1
+  },
+  {
+   "name": "Fidibus",
+   "texture": "res://assets/Fidibus.png",
+   "region": [
+    0,
+    0,
+    14,
+    11
+   ],
+   "pos": [
+    100.03,
+    60.51
+   ],
+   "scale": [
+    1.0,
+    1.0
+   ],
+   "flipX": 0,
+   "order": 0,
+   "layer": 0,
+   "color": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "enabled": 1
+  },
+  {
+   "name": "Stove-hot 0",
+   "texture": "res://assets/Stove-hot.png",
+   "region": [
+    0,
+    0,
+    68,
+    25
+   ],
+   "pos": [
+    95.01,
+    33.98
+   ],
+   "scale": [
+    1.0,
+    1.0
+   ],
+   "flipX": 0,
+   "order": 0,
+   "layer": 0,
+   "color": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "enabled": 1
+  },
+  {
+   "name": "Tea-Yak",
+   "texture": "res://assets/Tea-Yak.png",
+   "region": [
+    0,
+    0,
+    7,
+    9
+   ],
+   "pos": [
+    67.51,
+    -8.5
+   ],
+   "scale": [
+    1.0,
+    1.0
+   ],
+   "flipX": 0,
+   "order": 0,
+   "layer": 0,
+   "color": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "enabled": 1
+  },
+  {
+   "name": "WindowClosed",
+   "texture": "res://assets/WindowClosed.png",
+   "region": [
+    0,
+    0,
+    17,
+    20
+   ],
+   "pos": [
+    14.02,
+    -0.99
+   ],
+   "scale": [
+    1.0,
+    1.0
+   ],
+   "flipX": 0,
+   "order": 0,
+   "layer": 0,
+   "color": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "enabled": 1
+  },
+  {
+   "name": "Oven-open 0",
+   "texture": "res://assets/Oven-open.png",
+   "region": [
+    0,
+    0,
+    13,
+    49
+   ],
+   "pos": [
+    36.0,
+    59.01
+   ],
+   "scale": [
+    1.0,
+    1.0
+   ],
+   "flipX": 0,
+   "order": 0,
+   "layer": 0,
+   "color": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "enabled": 1
+  }
+ ],
+ "hotspots": [
+  {
+   "name": "Tea (2)",
+   "pos": [
+    52.0,
+    -36.0
+   ],
+   "box": {
+    "pos": [
+     52.0,
+     -36.0
+    ],
+    "size": [
+     7.0,
+     9.0
+    ]
+   },
+   "buttons": [
+    {
+     "verb": "look",
+     "iconID": 2,
+     "interaction": "9018934299931633157",
+     "playerAction": 3
+    }
+   ],
+   "displayName": "Tee"
+  },
+  {
+   "name": "Tea (1)",
+   "pos": [
+    43.01,
+    -34.02
+   ],
+   "box": {
+    "pos": [
+     43.01,
+     -34.02
+    ],
+    "size": [
+     7.0,
+     9.0
+    ]
+   },
+   "buttons": [
+    {
+     "verb": "look",
+     "iconID": 2,
+     "interaction": "8974723651101362322",
+     "playerAction": 3
+    }
+   ],
+   "displayName": "Lebstoff"
+  },
+  {
+   "name": "Tea (5)",
+   "pos": [
+    60.0,
+    -26.02
+   ],
+   "box": {
+    "pos": [
+     60.0,
+     -26.02
+    ],
+    "size": [
+     7.0,
+     9.0
+    ]
+   },
+   "buttons": [
+    {
+     "verb": "look",
+     "iconID": 2,
+     "interaction": "7705840721243530403",
+     "playerAction": 3
+    }
+   ],
+   "displayName": "Weiterhin Tee"
+  },
+  {
+   "name": "Tea (3)",
+   "pos": [
+    60.0,
+    -39.01
+   ],
+   "box": {
+    "pos": [
+     60.0,
+     -39.01
+    ],
+    "size": [
+     7.0,
+     9.0
+    ]
+   },
+   "buttons": [
+    {
+     "verb": "look",
+     "iconID": 2,
+     "interaction": "2509974268562252730",
+     "playerAction": 3
+    }
+   ],
+   "displayName": "Mehr Tee"
+  },
+  {
+   "name": "Tea (8)",
+   "pos": [
+    60.0,
+    -11.01
+   ],
+   "box": {
+    "pos": [
+     60.0,
+     -11.01
+    ],
+    "size": [
+     7.0,
+     9.0
+    ]
+   },
+   "buttons": [
+    {
+     "verb": "look",
+     "iconID": 2,
+     "interaction": "2246574835951943810",
+     "playerAction": 3
+    }
+   ],
+   "displayName": "Tee halt"
+  },
+  {
+   "name": "Oven",
+   "pos": [
+    27.01,
+    48.99
+   ],
+   "box": null,
+   "buttons": [
+    {
+     "verb": "look",
+     "iconID": 2,
+     "interaction": "4849217708942403486",
+     "playerAction": 1
+    },
+    {
+     "verb": "use",
+     "iconID": 0,
+     "interaction": "2708693893962799044",
+     "playerAction": 3
+    }
+   ],
+   "displayName": "Ofen"
+  },
+  {
+   "name": "Stove",
+   "pos": [
+    43.01,
+    26.02
+   ],
+   "box": null,
+   "buttons": [
+    {
+     "verb": "look",
+     "iconID": 2,
+     "interaction": "1143872986666359573",
+     "playerAction": 3
+    }
+   ],
+   "displayName": "Herdplatten"
+  },
+  {
+   "name": "Tea (6)",
+   "pos": [
+    42.02,
+    -14.02
+   ],
+   "box": {
+    "pos": [
+     42.02,
+     -14.02
+    ],
+    "size": [
+     7.0,
+     9.0
+    ]
+   },
+   "buttons": [
+    {
+     "verb": "look",
+     "iconID": 2,
+     "interaction": "2677345903507024082",
+     "playerAction": 3
+    }
+   ],
+   "displayName": "Auch Tee"
+  },
+  {
+   "name": "Tap",
+   "pos": [
+    38.02,
+    18.02
+   ],
+   "box": null,
+   "buttons": [
+    {
+     "verb": "look",
+     "iconID": 2,
+     "interaction": "5067202380155487235",
+     "playerAction": 3
+    }
+   ],
+   "displayName": "Wasserhahn"
+  },
+  {
+   "name": "Stove-hot",
+   "pos": [
+    43.01,
+    26.02
+   ],
+   "box": null,
+   "buttons": [
+    {
+     "verb": "look",
+     "iconID": 2,
+     "interaction": "3230239222403248725",
+     "playerAction": 3
+    }
+   ],
+   "displayName": "Heiße Herdplatten"
+  },
+  {
+   "name": "Tea (7)",
+   "pos": [
+    51.01,
+    -12.0
+   ],
+   "box": {
+    "pos": [
+     51.01,
+     -12.0
+    ],
+    "size": [
+     7.0,
+     9.0
+    ]
+   },
+   "buttons": [
+    {
+     "verb": "look",
+     "iconID": 2,
+     "interaction": "7317469570149132887",
+     "playerAction": 3
+    }
+   ],
+   "displayName": "Nochmal Tee"
+  },
+  {
+   "name": "Tea (4)",
+   "pos": [
+    43.01,
+    -24.0
+   ],
+   "box": {
+    "pos": [
+     43.01,
+     -24.0
+    ],
+    "size": [
+     7.0,
+     9.0
+    ]
+   },
+   "buttons": [
+    {
+     "verb": "look",
+     "iconID": 2,
+     "interaction": "2311515469112555994",
+     "playerAction": 3
+    }
+   ],
+   "displayName": "Immernoch Tee"
+  },
+  {
+   "name": "WindowOpen",
+   "pos": [
+    9.52,
+    -8.99
+   ],
+   "box": {
+    "pos": [
+     9.52,
+     -8.99
+    ],
+    "size": [
+     25.0,
+     24.0
+    ]
+   },
+   "buttons": [
+    {
+     "verb": "look",
+     "iconID": 2,
+     "interaction": "4931293574241086528",
+     "playerAction": 1
+    }
+   ],
+   "displayName": "Offenes Fenster"
+  },
+  {
+   "name": "TeeseusHead-onStove",
+   "pos": [
+    53.49,
+    16.01
+   ],
+   "box": {
+    "pos": [
+     53.49,
+     16.01
+    ],
+    "size": [
+     15.0,
+     22.0
+    ]
+   },
+   "buttons": [
+    {
+     "verb": "look",
+     "iconID": 2,
+     "interaction": "6103259553287022634",
+     "playerAction": 3
+    }
+   ],
+   "displayName": "Heißes Wasser"
+  },
+  {
+   "name": "WindowClosed",
+   "pos": [
+    5.52,
+    -10.99
+   ],
+   "box": {
+    "pos": [
+     5.52,
+     -10.99
+    ],
+    "size": [
+     17.0,
+     20.0
+    ]
+   },
+   "buttons": [
+    {
+     "verb": "use",
+     "iconID": 0,
+     "interaction": "1670499126308241519",
+     "playerAction": 3
+    },
+    {
+     "verb": "look",
+     "iconID": 2,
+     "interaction": "4931293574241086528",
+     "playerAction": 1
+    }
+   ],
+   "displayName": "Fenster"
+  },
+  {
+   "name": "Cups",
+   "pos": [
+    30.0,
+    -20.99
+   ],
+   "box": {
+    "pos": [
+     30.0,
+     -20.99
+    ],
+    "size": [
+     12.0,
+     16.0
+    ]
+   },
+   "buttons": [
+    {
+     "verb": "look",
+     "iconID": 2,
+     "interaction": "8851498924994745161",
+     "playerAction": 1
+    },
+    {
+     "verb": "use",
+     "iconID": 0,
+     "interaction": "4638007027374760903",
+     "playerAction": 3
+    }
+   ],
+   "displayName": "Tassen"
+  },
+  {
+   "name": "WoodStackHolder",
+   "pos": [
+    -21.99,
+    14.0
+   ],
+   "box": {
+    "pos": [
+     -21.99,
+     14.0
+    ],
+    "size": [
+     18.0,
+     28.0
+    ]
+   },
+   "buttons": [
+    {
+     "verb": "look",
+     "iconID": 2,
+     "interaction": "3204694459655500966",
+     "playerAction": 1
+    }
+   ],
+   "displayName": "Holzstapler"
+  },
+  {
+   "name": "Fidibus",
+   "pos": [
+    84.0,
+    46.02
+   ],
+   "box": {
+    "pos": [
+     84.0,
+     45.5
+    ],
+    "size": [
+     14.0,
+     11.06
+    ]
+   },
+   "buttons": [
+    {
+     "verb": "look",
+     "iconID": 2,
+     "interaction": "1925302702772904757",
+     "playerAction": 3
+    },
+    {
+     "verb": "use",
+     "iconID": 0,
+     "interaction": "3093645131790639517",
+     "playerAction": 3
+    }
+   ],
+   "displayName": "Fidibus"
+  },
+  {
+   "name": "Tea-Yak",
+   "pos": [
+    51.51,
+    -24.5
+   ],
+   "box": {
+    "pos": [
+     51.51,
+     -24.5
+    ],
+    "size": [
+     7.0,
+     9.0
+    ]
+   },
+   "buttons": [
+    {
+     "verb": "look",
+     "iconID": 2,
+     "interaction": "6791520271622083487",
+     "playerAction": 3
+    }
+   ],
+   "displayName": "Schon wieder Tee"
+  },
+  {
+   "name": "Door",
+   "pos": [
+    -60.16,
+    -12.16
+   ],
+   "box": null,
+   "buttons": [
+    {
+     "verb": "look",
+     "iconID": 2,
+     "interaction": "5416542151464688525",
+     "playerAction": 1
+    },
+    {
+     "verb": "use",
+     "iconID": 0,
+     "interaction": "6956279325176976032",
+     "playerAction": 3
+    }
+   ],
+   "displayName": "DK zum Vorzimmer"
+  },
+  {
+   "name": "TeeseusHead",
+   "pos": [
+    5.51,
+    -5.52
+   ],
+   "box": {
+    "pos": [
+     5.51,
+     -5.52
+    ],
+    "size": [
+     11.0,
+     7.0
+    ]
+   },
+   "buttons": [
+    {
+     "verb": "look",
+     "iconID": 2,
+     "interaction": "7800321603049850787",
+     "playerAction": 1
+    },
+    {
+     "verb": "use",
+     "iconID": 0,
+     "interaction": "2775184170072993575",
+     "playerAction": 3
+    }
+   ],
+   "displayName": "Kopf voll Regenwasser"
+  }
+ ],
+ "markers": [
+  {
+   "name": "Marker2D: Tea-Yak",
+   "pos": [
+    16.99,
+    62.02
+   ],
+   "id": null
+  },
+  {
+   "name": "Marker2D: Tap",
+   "pos": [
+    8.0,
+    29.98
+   ],
+   "id": null
+  },
+  {
+   "name": "Marker2D: Fidibus",
+   "pos": [
+    22.02,
+    80.99
+   ],
+   "id": null
+  },
+  {
+   "name": "Marker2D: Door",
+   "pos": [
+    -32.99,
+    60.0
+   ],
+   "id": null
+  },
+  {
+   "name": "Marker2D: WindowClosed",
+   "pos": [
+    -8.58,
+    28.29
+   ],
+   "id": null
+  }
+ ],
+ "playerStarts": [
+  {
+   "name": "PlayerStart2D",
+   "pos": [
+    -40.0,
+    60.0
+   ],
+   "id": null
+  }
+ ],
+ "navPolys": [
+  [
+   [
+    -13.44,
+    33.53
+   ],
+   [
+    -8.33,
+    22.66
+   ],
+   [
+    14.94,
+    22.68
+   ],
+   [
+    39.78,
+    88.9
+   ],
+   [
+    -56.27,
+    88.58
+   ],
+   [
+    -55.55,
+    77.11
+   ],
+   [
+    -26.56,
+    33.18
+   ]
+  ]
+ ],
+ "npcs": [],
+ "camera": {
+  "pos": [
+   0.0,
+   -0.0
+  ],
+  "size": 3.0
+ },
+ "onStart": "8763943311353864876",
+ "actionLists": {
+  "1143872986666359573": {
+   "name": null,
+   "type": "Interaction",
+   "actionListType": 0,
+   "actions": [
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": 1,
+     "skipActionActual": {
+      "fileID": "1272024278"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "timeToPause": 0,
+     "type": "ActionPause"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 3,
+     "skipActionActual": {
+      "fileID": "2052178317"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "Die Herdplatten sind auf dem neusten Stand der Technik. ",
+     "lineID": 299,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": 2,
+     "skipActionActual": {
+      "fileID": "1715418145"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "Aber leider sind sie kalt, weil der Ofen aus ist.\r",
+     "lineID": 300,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 2,
+     "skipActionActual": {
+      "fileID": "1715418145"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "Wir haben neulich erst ein Herdprämie vom Zentralordinariat dafür bekommen.",
+     "lineID": 301,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    }
+   ],
+   "hostName": "Herdplatten: Betrachte"
+  },
+  "1670499126308241519": {
+   "name": null,
+   "type": "Interaction",
+   "actionListType": 0,
+   "actions": [
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 6,
+     "skipActionActual": {
+      "fileID": "1986816237"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "timeToPause": 0,
+     "type": "ActionPause"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 2,
+     "skipActionActual": {
+      "fileID": "1264175175"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "Ich mach mal auf. Schadet nicht, wenn hier ein bisschen frischer Wind reinkommt.",
+     "lineID": 302,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": 3,
+     "skipActionActual": {
+      "fileID": "1847855175"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "constantID": 0,
+     "hotspot": {
+      "fileID": "3891506433023856295"
+     },
+     "affectChildren": 1,
+     "changeType": 1,
+     "type": "ActionHotspotEnable"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": 3,
+     "skipActionActual": {
+      "fileID": "1847855175"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "constantID": 0,
+     "hotspot": {
+      "fileID": "627194169984761533"
+     },
+     "affectChildren": 1,
+     "changeType": 0,
+     "type": "ActionHotspotEnable"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "gameObject": {
+      "fileID": "1903971100"
+     },
+     "parameterID": -1,
+     "constantID": 0,
+     "replaceGameObject": {
+      "fileID": "0"
+     },
+     "replaceParameterID": -1,
+     "replaceConstantID": 0,
+     "relativeGameObject": {
+      "fileID": "0"
+     },
+     "relativeGameObjectID": 0,
+     "relativeGameObjectParameterID": -1,
+     "relativeVectorParameterID": -1,
+     "relativeVector": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+     },
+     "vectorVarParameterID": -1,
+     "vectorVarID": 0,
+     "variableLocation": 0,
+     "invAction": 1,
+     "positionRelativeTo": 0,
+     "variables": {
+      "fileID": "0"
+     },
+     "variablesConstantID": 0,
+     "spawnedObjectParameterID": -1,
+     "type": "ActionInstantiate"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "constantID": 0,
+     "obToAffect": {
+      "fileID": "314761435"
+     },
+     "affectChildren": 0,
+     "visState": 0,
+     "type": "ActionVisible"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "trackID": 0,
+     "trackIDParameterID": -1,
+     "fadeTime": 0,
+     "fadeTimeParameterID": -1,
+     "loop": 0,
+     "isQueued": 0,
+     "resumeFromStart": 1,
+     "resumeIfPlayedBefore": 0,
+     "willWaitComplete": 0,
+     "musicAction": 1,
+     "loopingOverlapTime": 0,
+     "type": "ActionAmbience"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 1,
+     "skipActionActual": {
+      "fileID": "1516455621"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "trackID": 1,
+     "trackIDParameterID": -1,
+     "fadeTime": 0,
+     "fadeTimeParameterID": -1,
+     "loop": 1,
+     "isQueued": 0,
+     "resumeFromStart": 1,
+     "resumeIfPlayedBefore": 0,
+     "willWaitComplete": 0,
+     "musicAction": 0,
+     "loopingOverlapTime": 0,
+     "type": "ActionAmbience"
+    }
+   ],
+   "hostName": "Fenster: Benutze"
+  },
+  "1923523589594433125": {
+   "name": null,
+   "type": "Interaction",
+   "actionListType": 0,
+   "actions": [
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": 1,
+     "skipActionActual": {
+      "fileID": "1142086240"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "timeToPause": 0,
+     "type": "ActionPause"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": 2,
+     "skipActionActual": {
+      "fileID": "1111016931"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "Gute Idee. Aber zuerst sollte ich den Ofen anheizen.",
+     "lineID": 303,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": 3,
+     "skipActionActual": {
+      "fileID": "914825270"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "Ich könnte höchstens versuchen, dass Wasser dazu zu bringen, sich aus Wut über meine schlechten Witze zu erhitzen.\r\n",
+     "lineID": 304,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": 3,
+     "skipActionActual": {
+      "fileID": "14525164"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "Nein, vielleicht nicht. Dann wird es cholerisch und wir kriegen vom Trinken Cholera.",
+     "lineID": 305,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    }
+   ],
+   "hostName": "Herdplatten: TeeseusHeadWater"
+  },
+  "1925302702772904757": {
+   "name": null,
+   "type": "Interaction",
+   "actionListType": 0,
+   "actions": [
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": 1,
+     "skipActionActual": {
+      "fileID": "1402154879"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "timeToPause": 0,
+     "type": "ActionPause"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": 1,
+     "skipActionActual": {
+      "fileID": "1383876559"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "Ein Fidibus. Ein Sammelsurium von harzreichen Holzspänen, um Flammen zu transportieren.",
+     "lineID": 306,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    }
+   ],
+   "hostName": "Fidibus: Betrachte"
+  },
+  "2020132557652248805": {
+   "name": null,
+   "type": "Interaction",
+   "actionListType": 0,
+   "actions": [
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 4,
+     "skipActionActual": {
+      "fileID": "1791710395"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "timeToPause": 0,
+     "type": "ActionPause"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": 1,
+     "skipActionActual": {
+      "fileID": "1036294521"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "constantID": 0,
+     "obToAffect": {
+      "fileID": "110941961"
+     },
+     "affectChildren": 0,
+     "visState": 0,
+     "type": "ActionVisible"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": 3,
+     "skipActionActual": {
+      "fileID": "1216530795"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "timeToPause": 1,
+     "type": "ActionPause"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 6,
+     "skipActionActual": {
+      "fileID": "800232156"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "gameObject": {
+      "fileID": "8265663513907978505",
+      "guid": "6e1c3b5552eef8c4eaf1c7a587bf5626",
+      "type": 3
+     },
+     "parameterID": -1,
+     "constantID": 313724,
+     "replaceGameObject": {
+      "fileID": "110941961"
+     },
+     "replaceParameterID": -1,
+     "replaceConstantID": 0,
+     "relativeGameObject": {
+      "fileID": "0"
+     },
+     "relativeGameObjectID": 0,
+     "relativeGameObjectParameterID": -1,
+     "relativeVectorParameterID": -1,
+     "relativeVector": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+     },
+     "vectorVarParameterID": -1,
+     "vectorVarID": 0,
+     "variableLocation": 0,
+     "invAction": 2,
+     "positionRelativeTo": 0,
+     "variables": {
+      "fileID": "0"
+     },
+     "variablesConstantID": 0,
+     "spawnedObjectParameterID": -1,
+     "type": "ActionInstantiate"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": 1,
+     "skipActionActual": {
+      "fileID": "151032494"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "Ich stelle den Kopf aufs Fensterbrett.",
+     "lineID": 307,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 1,
+     "skipActionActual": {
+      "fileID": "1036294521"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "invAction": 1,
+     "parameterID": -1,
+     "invID": 2,
+     "replaceParameterID": -1,
+     "invIDReplace": 0,
+     "setAmount": 0,
+     "amountParameterID": -1,
+     "amount": 1,
+     "setPlayer": 0,
+     "playerID": 0,
+     "addToFront": 0,
+     "removeLast": 0,
+     "type": "ActionInventorySet"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "constantID": 0,
+     "hotspot": {
+      "fileID": "8204726279925184336"
+     },
+     "affectChildren": 0,
+     "changeType": 0,
+     "type": "ActionHotspotEnable"
+    }
+   ],
+   "hostName": "Offenes Fenster: TeeseusHead"
+  },
+  "2246574835951943810": {
+   "name": null,
+   "type": "Interaction",
+   "actionListType": 0,
+   "actions": [
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "timeToPause": 0,
+     "type": "ActionPause"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "Egali-Tee - Wenn sie sich mal nicht entscheiden können",
+     "lineID": 308,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    }
+   ],
+   "hostName": "Tee halt: Betrachte"
+  },
+  "2311515469112555994": {
+   "name": null,
+   "type": "Interaction",
+   "actionListType": 0,
+   "actions": [
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "timeToPause": 0,
+     "type": "ActionPause"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "Tee HC - Kleiner Brauner aus dem Ostreich mit benebelnder Wirkung",
+     "lineID": 309,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    }
+   ],
+   "hostName": "Immernoch Tee: Benutze"
+  },
+  "2387915090030232244": {
+   "name": null,
+   "type": "Interaction",
+   "actionListType": 0,
+   "actions": [
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "timeToPause": 0,
+     "type": "ActionPause"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "Gute Idee. Aber zuerst sollte ich Wasser rein tun.",
+     "lineID": 310,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    }
+   ],
+   "hostName": "Heiße Herdplatten: TeeseusHead"
+  },
+  "2509974268562252730": {
+   "name": null,
+   "type": "Interaction",
+   "actionListType": 0,
+   "actions": [
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "timeToPause": 0,
+     "type": "ActionPause"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "Mamastee - Der Tee für Yoga Muttis",
+     "lineID": 311,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    }
+   ],
+   "hostName": "Mehr Tee: Betrachte"
+  },
+  "2602014108115336590": {
+   "name": null,
+   "type": "Interaction",
+   "actionListType": 0,
+   "actions": [
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": 1,
+     "skipActionActual": {
+      "fileID": "1634747682"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "timeToPause": 0,
+     "type": "ActionPause"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": 1,
+     "skipActionActual": {
+      "fileID": "1156549712"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "Der Ofen ist ofen... ähm... offen.",
+     "lineID": 312,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    }
+   ],
+   "hostName": "OvenOpen: Betrachte"
+  },
+  "2677345903507024082": {
+   "name": null,
+   "type": "Interaction",
+   "actionListType": 0,
+   "actions": [
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "timeToPause": 0,
+     "type": "ActionPause"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "Fraterni-Tee - Brüderliche Teespezialität",
+     "lineID": 313,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    }
+   ],
+   "hostName": "Auch Tee: Betrachte"
+  },
+  "2708693893962799044": {
+   "name": null,
+   "type": "Interaction",
+   "actionListType": 0,
+   "actions": [
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 2,
+     "skipActionActual": {
+      "fileID": "1318464766"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "timeToPause": 0,
+     "type": "ActionPause"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 4,
+     "skipActionActual": {
+      "fileID": "2102115692"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "constantID": 0,
+     "obToAffect": {
+      "fileID": "1924916528"
+     },
+     "affectChildren": 0,
+     "visState": 0,
+     "type": "ActionVisible"
+    },
+    {
+     "numSockets": 4,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "endings": [
+      {
+       "resultAction": 2,
+       "skipAction": 1,
+       "skipActionActual": {
+        "fileID": "1499425203"
+       },
+       "linkedCutscene": {
+        "fileID": "0"
+       },
+       "linkedAsset": {
+        "fileID": "0"
+       }
+      },
+      {
+       "resultAction": 0,
+       "skipAction": -1,
+       "skipActionActual": {
+        "fileID": "0"
+       },
+       "linkedCutscene": {
+        "fileID": "0"
+       },
+       "linkedAsset": {
+        "fileID": "0"
+       }
+      },
+      {
+       "resultAction": 2,
+       "skipAction": 3,
+       "skipActionActual": {
+        "fileID": "1351782615"
+       },
+       "linkedCutscene": {
+        "fileID": "0"
+       },
+       "linkedAsset": {
+        "fileID": "0"
+       }
+      },
+      {
+       "resultAction": 1,
+       "skipAction": 3,
+       "skipActionActual": {
+        "fileID": "484848761"
+       },
+       "linkedCutscene": {
+        "fileID": "0"
+       },
+       "linkedAsset": {
+        "fileID": "0"
+       }
+      }
+     ],
+     "variableID": 3,
+     "variableNumber": 0,
+     "location": 2,
+     "variables": {
+      "fileID": "865379953"
+     },
+     "variablesConstantID": 0,
+     "parameterID": -1,
+     "placeholderNumValues": 4,
+     "placeholderPopUpLabelDataID": 0,
+     "type": "ActionVarPopup"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": 4,
+     "skipActionActual": {
+      "fileID": "2102115692"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "Nö, ich lasse ihn offen. Wenn ich Tee machen will, muss ich ihn irgendwie anheizen.",
+     "lineID": 314,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": 4,
+     "skipActionActual": {
+      "fileID": "2102115692"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "setVarMethod": 0,
+     "setVarMethodString": 0,
+     "setVarMethodIntBool": 0,
+     "setVarMethodVector": 0,
+     "parameterID": -1,
+     "variableID": 3,
+     "variableNumber": 0,
+     "setParameterID": -1,
+     "slotNumber": 0,
+     "slotNumberParameterID": -1,
+     "intValue": 1,
+     "floatValue": 0,
+     "boolValue": 0,
+     "stringValue": null,
+     "formula": null,
+     "vector3Value": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+     },
+     "lineID": -1,
+     "location": 2,
+     "menuName": null,
+     "elementName": null,
+     "animator": {
+      "fileID": "0"
+     },
+     "parameterName": null,
+     "variables": {
+      "fileID": "865379953"
+     },
+     "variablesConstantID": 0,
+     "placeholderType": 4,
+     "placeholderPopUpLabelDataID": 0,
+     "type": "ActionVarSet"
+    }
+   ],
+   "hostName": "Ofen: Benutze"
+  },
+  "2775184170072993575": {
+   "name": null,
+   "type": "Interaction",
+   "actionListType": 0,
+   "actions": [
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": 1,
+     "skipActionActual": {
+      "fileID": "126820103"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "timeToPause": 0,
+     "type": "ActionPause"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": 2,
+     "skipActionActual": {
+      "fileID": "1121764137"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "gameObject": {
+      "fileID": "8265663513907978505",
+      "guid": "6e1c3b5552eef8c4eaf1c7a587bf5626",
+      "type": 3
+     },
+     "parameterID": -1,
+     "constantID": 313724,
+     "replaceGameObject": {
+      "fileID": "0"
+     },
+     "replaceParameterID": -1,
+     "replaceConstantID": 0,
+     "relativeGameObject": {
+      "fileID": "0"
+     },
+     "relativeGameObjectID": 0,
+     "relativeGameObjectParameterID": -1,
+     "relativeVectorParameterID": -1,
+     "relativeVector": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+     },
+     "vectorVarParameterID": -1,
+     "vectorVarID": 0,
+     "variableLocation": 0,
+     "invAction": 1,
+     "positionRelativeTo": 0,
+     "variables": {
+      "fileID": "0"
+     },
+     "variablesConstantID": 0,
+     "spawnedObjectParameterID": -1,
+     "type": "ActionInstantiate"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 4,
+     "skipActionActual": {
+      "fileID": "1397935465"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "constantID": 0,
+     "hotspot": {
+      "fileID": "8204726279925184336"
+     },
+     "affectChildren": 0,
+     "changeType": 1,
+     "type": "ActionHotspotEnable"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": 4,
+     "skipActionActual": {
+      "fileID": "1397935465"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "Juhuu, ich hab eine Kanne voll Wasser!",
+     "lineID": 315,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 3,
+     "skipActionActual": {
+      "fileID": "1855838272"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "invAction": 0,
+     "parameterID": -1,
+     "invID": 5,
+     "replaceParameterID": -1,
+     "invIDReplace": 0,
+     "setAmount": 0,
+     "amountParameterID": -1,
+     "amount": 1,
+     "setPlayer": 0,
+     "playerID": 0,
+     "addToFront": 0,
+     "removeLast": 0,
+     "type": "ActionInventorySet"
+    }
+   ],
+   "hostName": "TeeseusHead: Benutze"
+  },
+  "3093645131790639517": {
+   "name": null,
+   "type": "Interaction",
+   "actionListType": 0,
+   "actions": [
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "timeToPause": 0,
+     "type": "ActionPause"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "Hokus Pokus Fidibus. Ich nehm das Ding mal mit, vielleicht finde ich ja irgendwo eine Flamme.",
+     "lineID": 316,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "gameObject": {
+      "fileID": "4363549219659296199"
+     },
+     "parameterID": -1,
+     "constantID": 0,
+     "replaceGameObject": {
+      "fileID": "0"
+     },
+     "replaceParameterID": -1,
+     "replaceConstantID": 0,
+     "relativeGameObject": {
+      "fileID": "0"
+     },
+     "relativeGameObjectID": 0,
+     "relativeGameObjectParameterID": -1,
+     "relativeVectorParameterID": -1,
+     "relativeVector": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+     },
+     "vectorVarParameterID": -1,
+     "vectorVarID": 0,
+     "variableLocation": 0,
+     "invAction": 1,
+     "positionRelativeTo": 0,
+     "variables": {
+      "fileID": "0"
+     },
+     "variablesConstantID": 0,
+     "spawnedObjectParameterID": -1,
+     "type": "ActionInstantiate"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "invAction": 0,
+     "parameterID": -1,
+     "invID": 3,
+     "replaceParameterID": -1,
+     "invIDReplace": 0,
+     "setAmount": 0,
+     "amountParameterID": -1,
+     "amount": 1,
+     "setPlayer": 0,
+     "playerID": 0,
+     "addToFront": 0,
+     "removeLast": 0,
+     "type": "ActionInventorySet"
+    }
+   ],
+   "hostName": "Fidibus: Benutze"
+  },
+  "3204694459655500966": {
+   "name": null,
+   "type": "Interaction",
+   "actionListType": 0,
+   "actions": [
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "timeToPause": 0,
+     "type": "ActionPause"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "Das Holz für den Ofen ist alle. Da wird das Teekochen schwierig. Mal sehen, ob ich alternativ irgendwas auftreiben kann.",
+     "lineID": 317,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "setVarMethod": 0,
+     "setVarMethodString": 0,
+     "setVarMethodIntBool": 0,
+     "setVarMethodVector": 0,
+     "parameterID": -1,
+     "variableID": 2,
+     "variableNumber": 2,
+     "setParameterID": -1,
+     "slotNumber": 0,
+     "slotNumberParameterID": -1,
+     "intValue": 0,
+     "floatValue": 0,
+     "boolValue": 1,
+     "stringValue": null,
+     "formula": null,
+     "vector3Value": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+     },
+     "lineID": -1,
+     "location": 0,
+     "menuName": null,
+     "elementName": null,
+     "animator": {
+      "fileID": "0"
+     },
+     "parameterName": null,
+     "variables": {
+      "fileID": "0"
+     },
+     "variablesConstantID": 0,
+     "placeholderType": 0,
+     "placeholderPopUpLabelDataID": -1,
+     "type": "ActionVarSet"
+    }
+   ],
+   "hostName": "Holzstapler: Betrachte"
+  },
+  "3230239222403248725": {
+   "name": null,
+   "type": "Interaction",
+   "actionListType": 0,
+   "actions": [
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "timeToPause": 0,
+     "type": "ActionPause"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "Heiß, heiß, Baby! Dum, dum dum dum, dududdum.",
+     "lineID": 318,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    }
+   ],
+   "hostName": "Heiße Herdplatten: Betrachte"
+  },
+  "3637421330792089315": {
+   "name": null,
+   "type": "Interaction",
+   "actionListType": 0,
+   "actions": [
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 7,
+     "skipActionActual": {
+      "fileID": "408122296"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "timeToPause": 0,
+     "type": "ActionPause"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": 2,
+     "skipActionActual": {
+      "fileID": "2002084867"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "Das Wasser ist heiß. Jetzt muss ich nur noch den richtigen Tee rein werfen.\r",
+     "lineID": 319,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": 1,
+     "skipActionActual": {
+      "fileID": "804946306"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "constantID": 0,
+     "hotspot": {
+      "fileID": "681014427046977355"
+     },
+     "affectChildren": 0,
+     "changeType": 0,
+     "type": "ActionHotspotEnable"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 6,
+     "skipActionActual": {
+      "fileID": "1393764179"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "constantID": 0,
+     "obToAffect": {
+      "fileID": "501256835"
+     },
+     "affectChildren": 0,
+     "visState": 0,
+     "type": "ActionVisible"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 1,
+     "skipActionActual": {
+      "fileID": "804946306"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "constantID": 0,
+     "_anim": {
+      "fileID": "0"
+     },
+     "runtimeAnim": {
+      "fileID": "0"
+     },
+     "clip": {
+      "fileID": "0"
+     },
+     "fadeTime": 0,
+     "_anim2D": {
+      "fileID": "0"
+     },
+     "runtimeAnim2D": {
+      "fileID": "0"
+     },
+     "animator": {
+      "fileID": "501256838"
+     },
+     "runtimeAnimator": {
+      "fileID": "0"
+     },
+     "clip2D": "Boiling",
+     "clip2DParameterID": -1,
+     "wrapMode2D": 0,
+     "layerInt": 0,
+     "shapeObject": {
+      "fileID": "0"
+     },
+     "runtimeShapeObject": {
+      "fileID": "0"
+     },
+     "shapeKey": 0,
+     "shapeValue": 0,
+     "isPlayer": 0,
+     "methodMecanim": 0,
+     "mecanimParameterType": 0,
+     "parameterName": null,
+     "parameterNameID": -1,
+     "parameterValue": 0,
+     "parameterValueParameterID": -1,
+     "method": 0,
+     "blendMode": 0,
+     "playMode": 0,
+     "animationEngine": 2,
+     "customClassName": null,
+     "animEngine": {
+      "fileID": "308528762"
+     },
+     "type": "ActionAnim"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 4,
+     "skipActionActual": {
+      "fileID": "1358586345"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "Dum di dum...",
+     "lineID": 320,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 5,
+     "skipActionActual": {
+      "fileID": "253836047"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "timeToPause": 1,
+     "type": "ActionPause"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 2,
+     "skipActionActual": {
+      "fileID": "2002084867"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "invAction": 1,
+     "parameterID": -1,
+     "invID": 5,
+     "replaceParameterID": -1,
+     "invIDReplace": 0,
+     "setAmount": 0,
+     "amountParameterID": -1,
+     "amount": 1,
+     "setPlayer": 0,
+     "playerID": 0,
+     "addToFront": 0,
+     "removeLast": 0,
+     "type": "ActionInventorySet"
+    }
+   ],
+   "hostName": "Heiße Herdplatten: TeeseusHeadWater"
+  },
+  "4020958437160331642": {
+   "name": null,
+   "type": "Interaction",
+   "actionListType": 0,
+   "actions": [
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "timeToPause": 0,
+     "type": "ActionPause"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "Gute Idee, aber zuerst sollte ich das Fenster öffnen.",
+     "lineID": 321,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    }
+   ],
+   "hostName": "Fenster: TeeseusHead"
+  },
+  "4638007027374760903": {
+   "name": null,
+   "type": "Interaction",
+   "actionListType": 0,
+   "actions": [
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "timeToPause": 0,
+     "type": "ActionPause"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "Die Tassen haben leider nicht genug Fassungsvermögen um Tee darin zu kochen.",
+     "lineID": 322,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    }
+   ],
+   "hostName": "Tassen: Benutze"
+  },
+  "4849217708942403486": {
+   "name": null,
+   "type": "Interaction",
+   "actionListType": 0,
+   "actions": [
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 3,
+     "skipActionActual": {
+      "fileID": "46048540"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "timeToPause": 0,
+     "type": "ActionPause"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": 1,
+     "skipActionActual": {
+      "fileID": "2026942190"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "Der Ofen ist aus. Ofensichtlich. Irgendwo müsste hier doch Holz rumliegen, um das Ding anzuheizen...",
+     "lineID": 323,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": 2,
+     "skipActionActual": {
+      "fileID": "1717162013"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "Der Ofen ist ofen... ähm... offen.",
+     "lineID": 324,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 4,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": 2,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "endings": [
+      {
+       "resultAction": 2,
+       "skipAction": 1,
+       "skipActionActual": {
+        "fileID": "2026942190"
+       },
+       "linkedCutscene": {
+        "fileID": "0"
+       },
+       "linkedAsset": {
+        "fileID": "0"
+       }
+      },
+      {
+       "resultAction": 2,
+       "skipAction": 2,
+       "skipActionActual": {
+        "fileID": "1717162013"
+       },
+       "linkedCutscene": {
+        "fileID": "0"
+       },
+       "linkedAsset": {
+        "fileID": "0"
+       }
+      },
+      {
+       "resultAction": 0,
+       "skipAction": -1,
+       "skipActionActual": {
+        "fileID": "0"
+       },
+       "linkedCutscene": {
+        "fileID": "0"
+       },
+       "linkedAsset": {
+        "fileID": "0"
+       }
+      },
+      {
+       "resultAction": 2,
+       "skipAction": 5,
+       "skipActionActual": {
+        "fileID": "1994092828"
+       },
+       "linkedCutscene": {
+        "fileID": "0"
+       },
+       "linkedAsset": {
+        "fileID": "0"
+       }
+      }
+     ],
+     "variableID": 3,
+     "variableNumber": 0,
+     "location": 2,
+     "variables": {
+      "fileID": "865379953"
+     },
+     "variablesConstantID": 0,
+     "parameterID": -1,
+     "placeholderNumValues": 4,
+     "placeholderPopUpLabelDataID": 0,
+     "type": "ActionVarPopup"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "Ich habe das Buch in den Ofen gelegt. Jetzt müsste ich es nur noch anzünden.",
+     "lineID": 325,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "Der Ofen ist angeheizt. Mit Wasser, einem Behältnis und Tee-Blätter kann ich jetzt Tee zubereiten.",
+     "lineID": 326,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    }
+   ],
+   "hostName": "Ofen: Betrachte"
+  },
+  "4931293574241086528": {
+   "name": null,
+   "type": "Interaction",
+   "actionListType": 0,
+   "actions": [
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "timeToPause": 0,
+     "type": "ActionPause"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "Es regnet, es regnet, die Erde wird nass.",
+     "lineID": 327,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    }
+   ],
+   "hostName": "Fenster: Betrachte"
+  },
+  "5067202380155487235": {
+   "name": null,
+   "type": "Interaction",
+   "actionListType": 0,
+   "actions": [
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "timeToPause": 0,
+     "type": "ActionPause"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "Wasserblicke ich? Wasser is weg.",
+     "lineID": 328,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "setVarMethod": 0,
+     "setVarMethodString": 0,
+     "setVarMethodIntBool": 0,
+     "setVarMethodVector": 0,
+     "parameterID": -1,
+     "variableID": 1,
+     "variableNumber": 1,
+     "setParameterID": -1,
+     "slotNumber": 0,
+     "slotNumberParameterID": -1,
+     "intValue": 0,
+     "floatValue": 0,
+     "boolValue": 1,
+     "stringValue": null,
+     "formula": null,
+     "vector3Value": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+     },
+     "lineID": -1,
+     "location": 0,
+     "menuName": null,
+     "elementName": null,
+     "animator": {
+      "fileID": "0"
+     },
+     "parameterName": null,
+     "variables": {
+      "fileID": "0"
+     },
+     "variablesConstantID": 0,
+     "placeholderType": 0,
+     "placeholderPopUpLabelDataID": -1,
+     "type": "ActionVarSet"
+    }
+   ],
+   "hostName": "Wasserhahn: Betrachte"
+  },
+  "5416542151464688525": {
+   "name": null,
+   "type": "Interaction",
+   "actionListType": 0,
+   "actions": [
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "timeToPause": 0,
+     "type": "ActionPause"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "Da geht's zum Vorzimmer.",
+     "lineID": 329,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    }
+   ],
+   "hostName": "DK zum Vorzimmer: Betrachte"
+  },
+  "5440871789658089463": {
+   "name": null,
+   "type": "Interaction",
+   "actionListType": 0,
+   "actions": [
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "timeToPause": 0,
+     "type": "ActionPause"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "Gute Idee. Aber zuerst sollte ich Wasser in den Kopf tun und den Ofen anheizen.",
+     "lineID": 330,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    }
+   ],
+   "hostName": "Herdplatten: TeeseusHead"
+  },
+  "6103259553287022634": {
+   "name": null,
+   "type": "Interaction",
+   "actionListType": 0,
+   "actions": [
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "timeToPause": 0,
+     "type": "ActionPause"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "Das Wasser ist heiß. Jetzt muss ich nur noch den richtigen Tee rein werfen.\r",
+     "lineID": 331,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    }
+   ],
+   "hostName": "Heißes Wasser: Betrachte"
+  },
+  "6791520271622083487": {
+   "name": null,
+   "type": "Interaction",
+   "actionListType": 0,
+   "actions": [
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "timeToPause": 0,
+     "type": "ActionPause"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "Original Teebetanischer Yak-Tee(TM) – nur echt mit dem Mause Dung-Aroma",
+     "lineID": 332,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "Das ist der Tee den ich für die Prüfung brauche. Ich nehme ihn mal mit.",
+     "lineID": 333,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "invAction": 0,
+     "parameterID": -1,
+     "invID": 4,
+     "replaceParameterID": -1,
+     "invIDReplace": 0,
+     "setAmount": 0,
+     "amountParameterID": -1,
+     "amount": 1,
+     "setPlayer": 0,
+     "playerID": 0,
+     "addToFront": 0,
+     "removeLast": 0,
+     "type": "ActionInventorySet"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "constantID": 0,
+     "obToAffect": {
+      "fileID": "1727067347"
+     },
+     "affectChildren": 0,
+     "visState": 1,
+     "type": "ActionVisible"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "constantID": 0,
+     "hotspot": {
+      "fileID": "4530715612919369722"
+     },
+     "affectChildren": 0,
+     "changeType": 1,
+     "type": "ActionHotspotEnable"
+    }
+   ],
+   "hostName": "Schon wieder Tee: Betrachte"
+  },
+  "6859233233816044117": {
+   "name": null,
+   "type": "Interaction",
+   "actionListType": 0,
+   "actions": [
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 3,
+     "skipActionActual": {
+      "fileID": "1270621483"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "timeToPause": 0,
+     "type": "ActionPause"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 5,
+     "skipActionActual": {
+      "fileID": "1810681887"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "constantID": 0,
+     "_anim": {
+      "fileID": "0"
+     },
+     "runtimeAnim": {
+      "fileID": "0"
+     },
+     "clip": {
+      "fileID": "0"
+     },
+     "fadeTime": 0,
+     "_anim2D": {
+      "fileID": "0"
+     },
+     "runtimeAnim2D": {
+      "fileID": "0"
+     },
+     "animator": {
+      "fileID": "1924916531"
+     },
+     "runtimeAnimator": {
+      "fileID": "0"
+     },
+     "clip2D": "WithBook",
+     "clip2DParameterID": -1,
+     "wrapMode2D": 0,
+     "layerInt": 0,
+     "shapeObject": {
+      "fileID": "0"
+     },
+     "runtimeShapeObject": {
+      "fileID": "0"
+     },
+     "shapeKey": 0,
+     "shapeValue": 0,
+     "isPlayer": 0,
+     "methodMecanim": 0,
+     "mecanimParameterType": 0,
+     "parameterName": null,
+     "parameterNameID": -1,
+     "parameterValue": 0,
+     "parameterValueParameterID": -1,
+     "method": 0,
+     "blendMode": 0,
+     "playMode": 0,
+     "animationEngine": 2,
+     "customClassName": null,
+     "animEngine": {
+      "fileID": "1411390193"
+     },
+     "type": "ActionAnim"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 6,
+     "skipActionActual": {
+      "fileID": "1736782783"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "Ich hab das Buch in den Ofen gelegt.",
+     "lineID": 334,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 4,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "endings": [
+      {
+       "resultAction": 2,
+       "skipAction": 4,
+       "skipActionActual": {
+        "fileID": "1792804967"
+       },
+       "linkedCutscene": {
+        "fileID": "0"
+       },
+       "linkedAsset": {
+        "fileID": "0"
+       }
+      },
+      {
+       "resultAction": 2,
+       "skipAction": 1,
+       "skipActionActual": {
+        "fileID": "584403398"
+       },
+       "linkedCutscene": {
+        "fileID": "0"
+       },
+       "linkedAsset": {
+        "fileID": "0"
+       }
+      },
+      {
+       "resultAction": 1,
+       "skipAction": 2,
+       "skipActionActual": {
+        "fileID": "0"
+       },
+       "linkedCutscene": {
+        "fileID": "0"
+       },
+       "linkedAsset": {
+        "fileID": "0"
+       }
+      },
+      {
+       "resultAction": 1,
+       "skipAction": 2,
+       "skipActionActual": {
+        "fileID": "0"
+       },
+       "linkedCutscene": {
+        "fileID": "0"
+       },
+       "linkedAsset": {
+        "fileID": "0"
+       }
+      }
+     ],
+     "variableID": 3,
+     "variableNumber": 0,
+     "location": 2,
+     "variables": {
+      "fileID": "865379953"
+     },
+     "variablesConstantID": 0,
+     "parameterID": -1,
+     "placeholderNumValues": 4,
+     "placeholderPopUpLabelDataID": 0,
+     "type": "ActionVarPopup"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": 4,
+     "skipActionActual": {
+      "fileID": "1792804967"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "Zu erst sollte ich das Ding öffnen.",
+     "lineID": 335,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 2,
+     "skipActionActual": {
+      "fileID": "626325169"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "invAction": 1,
+     "parameterID": -1,
+     "invID": 0,
+     "replaceParameterID": -1,
+     "invIDReplace": 0,
+     "setAmount": 0,
+     "amountParameterID": -1,
+     "amount": 1,
+     "setPlayer": 0,
+     "playerID": 0,
+     "addToFront": 0,
+     "removeLast": 0,
+     "type": "ActionInventorySet"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "setVarMethod": 0,
+     "setVarMethodString": 0,
+     "setVarMethodIntBool": 0,
+     "setVarMethodVector": 0,
+     "parameterID": -1,
+     "variableID": 3,
+     "variableNumber": 0,
+     "setParameterID": -1,
+     "slotNumber": 0,
+     "slotNumberParameterID": -1,
+     "intValue": 2,
+     "floatValue": 0,
+     "boolValue": 0,
+     "stringValue": null,
+     "formula": null,
+     "vector3Value": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+     },
+     "lineID": -1,
+     "location": 2,
+     "menuName": null,
+     "elementName": null,
+     "animator": {
+      "fileID": "0"
+     },
+     "parameterName": null,
+     "variables": {
+      "fileID": "865379953"
+     },
+     "variablesConstantID": 0,
+     "placeholderType": 4,
+     "placeholderPopUpLabelDataID": 0,
+     "type": "ActionVarSet"
+    }
+   ],
+   "hostName": "Ofen: BoringBook"
+  },
+  "6956279325176976032": {
+   "name": null,
+   "type": "Interaction",
+   "actionListType": 0,
+   "actions": [
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "timeToPause": 0,
+     "type": "ActionPause"
+    },
+    {
+     "numSockets": 0,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "chooseSceneBy": 1,
+     "sceneNumber": 0,
+     "sceneNumberParameterID": -1,
+     "sceneName": "TeaistCloisterAnteroom",
+     "sceneNameParameterID": -1,
+     "assignScreenOverlay": 0,
+     "onlyPreload": 0,
+     "relativePosition": 0,
+     "relativeMarker": {
+      "fileID": "0"
+     },
+     "relativeMarkerID": 0,
+     "relativeMarkerParameterID": -1,
+     "forceReload": 0,
+     "type": "ActionScene"
+    }
+   ],
+   "hostName": "DK zum Vorzimmer: Benutze"
+  },
+  "7317469570149132887": {
+   "name": null,
+   "type": "Interaction",
+   "actionListType": 0,
+   "actions": [
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "timeToPause": 0,
+     "type": "ActionPause"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "Liber-Tee - Aus alten Buchheimer Buchblättern",
+     "lineID": 336,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    }
+   ],
+   "hostName": "Nochmal Tee: Betrachte"
+  },
+  "7678157607864922944": {
+   "name": null,
+   "type": "Interaction",
+   "actionListType": 0,
+   "actions": [
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": 1,
+     "skipActionActual": {
+      "fileID": "1596060478"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "timeToPause": 0,
+     "type": "ActionPause"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": 2,
+     "skipActionActual": {
+      "fileID": "486405795"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "constantID": 0,
+     "obToAffect": {
+      "fileID": "501256835"
+     },
+     "affectChildren": 0,
+     "visState": 1,
+     "type": "ActionVisible"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 4,
+     "skipActionActual": {
+      "fileID": "1410896526"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "constantID": 0,
+     "obToAffect": {
+      "fileID": "182443033"
+     },
+     "affectChildren": 0,
+     "visState": 0,
+     "type": "ActionVisible"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 5,
+     "skipActionActual": {
+      "fileID": "1590823846"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "Tee ist fertig! Ich stelle den Tee zurück und dann nichts wie rüber zu Don Kamille zum Teesatz-Lesen.",
+     "lineID": 337,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 3,
+     "skipActionActual": {
+      "fileID": "873968093"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "timeToPause": 1,
+     "type": "ActionPause"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": 6,
+     "skipActionActual": {
+      "fileID": "1673297190"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "constantID": 0,
+     "obToAffect": {
+      "fileID": "182443033"
+     },
+     "affectChildren": 0,
+     "visState": 1,
+     "type": "ActionVisible"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": 6,
+     "skipActionActual": {
+      "fileID": "1673297190"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "invAction": 0,
+     "parameterID": -1,
+     "invID": 6,
+     "replaceParameterID": -1,
+     "invIDReplace": 0,
+     "setAmount": 0,
+     "amountParameterID": -1,
+     "amount": 1,
+     "setPlayer": 0,
+     "playerID": 0,
+     "addToFront": 0,
+     "removeLast": 0,
+     "type": "ActionInventorySet"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "constantID": 0,
+     "obToAffect": {
+      "fileID": "1727067347"
+     },
+     "affectChildren": 0,
+     "visState": 0,
+     "type": "ActionVisible"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "invAction": 1,
+     "parameterID": -1,
+     "invID": 4,
+     "replaceParameterID": -1,
+     "invIDReplace": 0,
+     "setAmount": 0,
+     "amountParameterID": -1,
+     "amount": 1,
+     "setPlayer": 0,
+     "playerID": 0,
+     "addToFront": 0,
+     "removeLast": 0,
+     "type": "ActionInventorySet"
+    }
+   ],
+   "hostName": "Heißes Wasser: Tea-Yak"
+  },
+  "7705840721243530403": {
+   "name": null,
+   "type": "Interaction",
+   "actionListType": 0,
+   "actions": [
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "timeToPause": 0,
+     "type": "ActionPause"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "Girl Ray - Verdrehter Schwarztee",
+     "lineID": 338,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    }
+   ],
+   "hostName": "Weiterhin Tee: Betrachte"
+  },
+  "7768998317324810128": {
+   "name": null,
+   "type": "Interaction",
+   "actionListType": 0,
+   "actions": [
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": 1,
+     "skipActionActual": {
+      "fileID": "1222057869"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "timeToPause": 0,
+     "type": "ActionPause"
+    },
+    {
+     "numSockets": 4,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "endings": [
+      {
+       "resultAction": 0,
+       "skipAction": -1,
+       "skipActionActual": {
+        "fileID": "0"
+       },
+       "linkedCutscene": {
+        "fileID": "0"
+       },
+       "linkedAsset": {
+        "fileID": "0"
+       }
+      },
+      {
+       "resultAction": 2,
+       "skipAction": 3,
+       "skipActionActual": {
+        "fileID": "2063795804"
+       },
+       "linkedCutscene": {
+        "fileID": "0"
+       },
+       "linkedAsset": {
+        "fileID": "0"
+       }
+      },
+      {
+       "resultAction": 2,
+       "skipAction": 12,
+       "skipActionActual": {
+        "fileID": "1993756377"
+       },
+       "linkedCutscene": {
+        "fileID": "0"
+       },
+       "linkedAsset": {
+        "fileID": "0"
+       }
+      },
+      {
+       "resultAction": 1,
+       "skipAction": -1,
+       "skipActionActual": {
+        "fileID": "0"
+       },
+       "linkedCutscene": {
+        "fileID": "0"
+       },
+       "linkedAsset": {
+        "fileID": "0"
+       }
+      }
+     ],
+     "variableID": 3,
+     "variableNumber": 0,
+     "location": 2,
+     "variables": {
+      "fileID": "865379953"
+     },
+     "variablesConstantID": 0,
+     "parameterID": -1,
+     "placeholderNumValues": 4,
+     "placeholderPopUpLabelDataID": 0,
+     "type": "ActionVarPopup"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": 3,
+     "skipActionActual": {
+      "fileID": "2063795804"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "Zuerst sollte ich den Ofen öffnen und Brennmaterial reinlegen.",
+     "lineID": 339,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": 4,
+     "skipActionActual": {
+      "fileID": "912877417"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "Da gibt's nix anzuzünden, weil kein Brennmaterial drin ist.",
+     "lineID": 340,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": 5,
+     "skipActionActual": {
+      "fileID": "14340123"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "constantID": 0,
+     "_anim": {
+      "fileID": "0"
+     },
+     "runtimeAnim": {
+      "fileID": "0"
+     },
+     "clip": {
+      "fileID": "0"
+     },
+     "fadeTime": 0,
+     "_anim2D": {
+      "fileID": "0"
+     },
+     "runtimeAnim2D": {
+      "fileID": "0"
+     },
+     "animator": {
+      "fileID": "1924916531"
+     },
+     "runtimeAnimator": {
+      "fileID": "0"
+     },
+     "clip2D": "Burning",
+     "clip2DParameterID": -1,
+     "wrapMode2D": 0,
+     "layerInt": 0,
+     "shapeObject": {
+      "fileID": "0"
+     },
+     "runtimeShapeObject": {
+      "fileID": "0"
+     },
+     "shapeKey": 0,
+     "shapeValue": 0,
+     "isPlayer": 0,
+     "methodMecanim": 0,
+     "mecanimParameterType": 0,
+     "parameterName": null,
+     "parameterNameID": -1,
+     "parameterValue": 0,
+     "parameterValueParameterID": -1,
+     "method": 0,
+     "blendMode": 0,
+     "playMode": 0,
+     "animationEngine": 2,
+     "customClassName": null,
+     "animEngine": {
+      "fileID": "337735839"
+     },
+     "type": "ActionAnim"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": 6,
+     "skipActionActual": {
+      "fileID": "963675985"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "timeToPause": 1,
+     "type": "ActionPause"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": 7,
+     "skipActionActual": {
+      "fileID": "1314905114"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "So, Ofen zu.",
+     "lineID": 341,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": 8,
+     "skipActionActual": {
+      "fileID": "1003652776"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "constantID": 0,
+     "obToAffect": {
+      "fileID": "1924916528"
+     },
+     "affectChildren": 0,
+     "visState": 1,
+     "type": "ActionVisible"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": 9,
+     "skipActionActual": {
+      "fileID": "1204853754"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "constantID": 0,
+     "hotspot": {
+      "fileID": "865379952"
+     },
+     "affectChildren": 0,
+     "changeType": 1,
+     "type": "ActionHotspotEnable"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": 10,
+     "skipActionActual": {
+      "fileID": "265715644"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "constantID": 0,
+     "obToAffect": {
+      "fileID": "1613558630"
+     },
+     "affectChildren": 0,
+     "visState": 0,
+     "type": "ActionVisible"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": 11,
+     "skipActionActual": {
+      "fileID": "315215376"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "constantID": 0,
+     "hotspot": {
+      "fileID": "1577803864"
+     },
+     "affectChildren": 0,
+     "changeType": 0,
+     "type": "ActionHotspotEnable"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": 12,
+     "skipActionActual": {
+      "fileID": "1111171441"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "setVarMethod": 0,
+     "setVarMethodString": 0,
+     "setVarMethodIntBool": 0,
+     "setVarMethodVector": 0,
+     "parameterID": -1,
+     "variableID": 3,
+     "variableNumber": 0,
+     "setParameterID": -1,
+     "slotNumber": 0,
+     "slotNumberParameterID": -1,
+     "intValue": 3,
+     "floatValue": 0,
+     "boolValue": 0,
+     "stringValue": null,
+     "formula": null,
+     "vector3Value": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+     },
+     "lineID": -1,
+     "location": 2,
+     "menuName": null,
+     "elementName": null,
+     "animator": {
+      "fileID": "0"
+     },
+     "parameterName": null,
+     "variables": {
+      "fileID": "865379953"
+     },
+     "variablesConstantID": 0,
+     "placeholderType": 4,
+     "placeholderPopUpLabelDataID": 0,
+     "type": "ActionVarSet"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 4,
+     "skipActionActual": {
+      "fileID": "912877417"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "invAction": 1,
+     "parameterID": -1,
+     "invID": 1,
+     "replaceParameterID": -1,
+     "invIDReplace": 0,
+     "setAmount": 0,
+     "amountParameterID": -1,
+     "amount": 1,
+     "setPlayer": 0,
+     "playerID": 0,
+     "addToFront": 0,
+     "removeLast": 0,
+     "type": "ActionInventorySet"
+    }
+   ],
+   "hostName": "Ofen: FidibusBurning"
+  },
+  "7777201886147462438": {
+   "name": null,
+   "type": "Interaction",
+   "actionListType": 0,
+   "actions": [
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 3,
+     "skipActionActual": {
+      "fileID": "1473303511"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "timeToPause": 0,
+     "type": "ActionPause"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 5,
+     "skipActionActual": {
+      "fileID": "1000650008"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "constantID": 0,
+     "_anim": {
+      "fileID": "0"
+     },
+     "runtimeAnim": {
+      "fileID": "0"
+     },
+     "clip": {
+      "fileID": "0"
+     },
+     "fadeTime": 0,
+     "_anim2D": {
+      "fileID": "0"
+     },
+     "runtimeAnim2D": {
+      "fileID": "0"
+     },
+     "animator": {
+      "fileID": "0"
+     },
+     "runtimeAnimator": {
+      "fileID": "0"
+     },
+     "clip2D": "WithBook",
+     "clip2DParameterID": -1,
+     "wrapMode2D": 0,
+     "layerInt": 0,
+     "shapeObject": {
+      "fileID": "0"
+     },
+     "runtimeShapeObject": {
+      "fileID": "0"
+     },
+     "shapeKey": 0,
+     "shapeValue": 0,
+     "isPlayer": 0,
+     "methodMecanim": 0,
+     "mecanimParameterType": 0,
+     "parameterName": null,
+     "parameterNameID": -1,
+     "parameterValue": 0,
+     "parameterValueParameterID": -1,
+     "method": 0,
+     "blendMode": 0,
+     "playMode": 0,
+     "animationEngine": 2,
+     "customClassName": null,
+     "animEngine": {
+      "fileID": "1431905266"
+     },
+     "type": "ActionAnim"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": 5,
+     "skipActionActual": {
+      "fileID": "1454432119"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "Ich hab das Buch in den Ofen gelegt.",
+     "lineID": 342,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 4,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "endings": [
+      {
+       "resultAction": 0,
+       "skipAction": -1,
+       "skipActionActual": {
+        "fileID": "0"
+       },
+       "linkedCutscene": {
+        "fileID": "0"
+       },
+       "linkedAsset": {
+        "fileID": "0"
+       }
+      },
+      {
+       "resultAction": 2,
+       "skipAction": 1,
+       "skipActionActual": {
+        "fileID": "1728883622"
+       },
+       "linkedCutscene": {
+        "fileID": "0"
+       },
+       "linkedAsset": {
+        "fileID": "0"
+       }
+      },
+      {
+       "resultAction": 1,
+       "skipAction": -1,
+       "skipActionActual": {
+        "fileID": "0"
+       },
+       "linkedCutscene": {
+        "fileID": "0"
+       },
+       "linkedAsset": {
+        "fileID": "0"
+       }
+      },
+      {
+       "resultAction": 1,
+       "skipAction": -1,
+       "skipActionActual": {
+        "fileID": "0"
+       },
+       "linkedCutscene": {
+        "fileID": "0"
+       },
+       "linkedAsset": {
+        "fileID": "0"
+       }
+      }
+     ],
+     "variableID": 3,
+     "variableNumber": 0,
+     "location": 2,
+     "variables": {
+      "fileID": "865379953"
+     },
+     "variablesConstantID": 0,
+     "parameterID": -1,
+     "placeholderNumValues": 4,
+     "placeholderPopUpLabelDataID": 0,
+     "type": "ActionVarPopup"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": 4,
+     "skipActionActual": {
+      "fileID": "2106412838"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "Zu erst sollte ich das Ding öffnen.",
+     "lineID": 343,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 2,
+     "skipActionActual": {
+      "fileID": "692152961"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "invAction": 1,
+     "parameterID": -1,
+     "invID": 0,
+     "replaceParameterID": -1,
+     "invIDReplace": 0,
+     "setAmount": 0,
+     "amountParameterID": -1,
+     "amount": 1,
+     "setPlayer": 0,
+     "playerID": 0,
+     "addToFront": 0,
+     "removeLast": 0,
+     "type": "ActionInventorySet"
+    }
+   ],
+   "hostName": "OvenOpen: BoringBook"
+  },
+  "7800321603049850787": {
+   "name": null,
+   "type": "Interaction",
+   "actionListType": 0,
+   "actions": [
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": 1,
+     "skipActionActual": {
+      "fileID": "1298163597"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "timeToPause": 0,
+     "type": "ActionPause"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": 2,
+     "skipActionActual": {
+      "fileID": "200376715"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "Durch den Regen hat sich der Kopf mit Wasser gefüllt. ",
+     "lineID": 344,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": 2,
+     "skipActionActual": {
+      "fileID": "778380764"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "Ein bisschen Ruß schwimmt drin rum, aber ich glaube, das ist halb so schlimm.",
+     "lineID": 345,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    }
+   ],
+   "hostName": "TeeseusHead: Betrachte"
+  },
+  "8763943311353864876": {
+   "name": null,
+   "type": "Cutscene",
+   "actionListType": 0,
+   "actions": [
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 1,
+     "skipActionActual": {
+      "fileID": "453673875"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "timeToPause": 0,
+     "type": "ActionPause"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 3,
+     "skipActionActual": {
+      "fileID": "15352561"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "trackID": 2,
+     "trackIDParameterID": -1,
+     "fadeTime": 0,
+     "fadeTimeParameterID": -1,
+     "loop": 1,
+     "isQueued": 0,
+     "resumeFromStart": 1,
+     "resumeIfPlayedBefore": 0,
+     "willWaitComplete": 0,
+     "musicAction": 0,
+     "loopingOverlapTime": 0,
+     "type": "ActionMusic"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": 1,
+     "skipActionActual": {
+      "fileID": "453673875"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "trackID": 0,
+     "trackIDParameterID": -1,
+     "fadeTime": 0,
+     "fadeTimeParameterID": -1,
+     "loop": 1,
+     "isQueued": 0,
+     "resumeFromStart": 1,
+     "resumeIfPlayedBefore": 0,
+     "willWaitComplete": 0,
+     "musicAction": 0,
+     "loopingOverlapTime": 0,
+     "type": "ActionAmbience"
+    },
+    {
+     "numSockets": 2,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "resultActionTrue": 0,
+     "skipActionTrue": -1,
+     "skipActionTrueActual": {
+      "fileID": "0"
+     },
+     "linkedCutsceneTrue": {
+      "fileID": "0"
+     },
+     "linkedAssetTrue": {
+      "fileID": "0"
+     },
+     "resultActionFail": 2,
+     "skipActionFail": 2,
+     "skipActionFailActual": {
+      "fileID": "1820262727"
+     },
+     "linkedCutsceneFail": {
+      "fileID": "0"
+     },
+     "linkedAssetFail": {
+      "fileID": "0"
+     },
+     "parameterID": -1,
+     "constantID": 0,
+     "obToAffect": {
+      "fileID": "314761435"
+     },
+     "checkVisState": 0,
+     "type": "ActionVisibleCheck"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": 1,
+     "skipActionActual": {
+      "fileID": "453673875"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "trackID": 1,
+     "trackIDParameterID": -1,
+     "fadeTime": 0,
+     "fadeTimeParameterID": -1,
+     "loop": 1,
+     "isQueued": 0,
+     "resumeFromStart": 1,
+     "resumeIfPlayedBefore": 0,
+     "willWaitComplete": 0,
+     "musicAction": 0,
+     "loopingOverlapTime": 0,
+     "type": "ActionAmbience"
+    }
+   ],
+   "hostName": "OnStart"
+  },
+  "8851498924994745161": {
+   "name": null,
+   "type": "Interaction",
+   "actionListType": 0,
+   "actions": [
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "timeToPause": 0,
+     "type": "ActionPause"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "Hm... Wo ist denn der Kessel hin, mit dem wir normalerweise den Tee kochen? ",
+     "lineID": 346,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "Da muss ich wohl was improvisieren.",
+     "lineID": 347,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    }
+   ],
+   "hostName": "Tassen: Betrachte"
+  },
+  "8974723651101362322": {
+   "name": null,
+   "type": "Interaction",
+   "actionListType": 0,
+   "actions": [
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": 1,
+     "skipActionActual": {
+      "fileID": "1116729768"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "timeToPause": 0,
+     "type": "ActionPause"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": 2,
+     "skipActionActual": {
+      "fileID": "1903726406"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "Lebstoff - Nahrungsersatzmittel auf Kautschuk-Basis",
+     "lineID": 348,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": 2,
+     "skipActionActual": {
+      "fileID": "1760386345"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "Als Teeisten dürfen wir keine Nahrung zu uns nehmen. Sonst gäbe es keinen Unterschied zu den Essenzialisten.",
+     "lineID": 349,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "Deswegen hat Teeseus Teeus uns den Lebstoff geschickt, um und zu sättigen. ",
+     "lineID": 350,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "Den kochen wir einfach in den Tee ein und schon sind wir satt. Gelobt sei Teeseus… oder so.",
+     "lineID": 351,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    }
+   ],
+   "hostName": "Lebstoff: Betrachte"
+  },
+  "9018934299931633157": {
+   "name": null,
+   "type": "Interaction",
+   "actionListType": 0,
+   "actions": [
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "timeToPause": 0,
+     "type": "ActionPause"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "Darling Jee-Tee",
+     "lineID": 352,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    }
+   ],
+   "hostName": "Tee: Betrachte"
+  }
+ },
+ "refs": {
+  "53933": {
+   "name": "_NavMesh",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "53934": {
+   "name": "_NavMesh",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "23876204": {
+   "name": "_DialogueOptions",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "23876205": {
+   "name": "_DialogueOptions",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "87421383": {
+   "name": "Tea (2)",
+   "pos": [
+    52.0,
+    -36.0
+   ]
+  },
+  "87421384": {
+   "name": "Tea (2)",
+   "pos": [
+    52.0,
+    -36.0
+   ]
+  },
+  "87421386": {
+   "name": "Tea (2)",
+   "pos": [
+    52.0,
+    -36.0
+   ]
+  },
+  "87421385": {
+   "name": "Tea (2)",
+   "pos": [
+    52.0,
+    -36.0
+   ]
+  },
+  "87421387": {
+   "name": "Tea (2)",
+   "pos": [
+    52.0,
+    -36.0
+   ]
+  },
+  "90076885": {
+   "name": "_Lights",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "90076886": {
+   "name": "_Lights",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "110941961": {
+   "name": "TeeseusHeadDark",
+   "pos": [
+    21.51,
+    10.48
+   ]
+  },
+  "110941962": {
+   "name": "TeeseusHeadDark",
+   "pos": [
+    21.51,
+    10.48
+   ]
+  },
+  "110941963": {
+   "name": "TeeseusHeadDark",
+   "pos": [
+    21.51,
+    10.48
+   ]
+  },
+  "110941965": {
+   "name": "TeeseusHeadDark",
+   "pos": [
+    21.51,
+    10.48
+   ]
+  },
+  "110941964": {
+   "name": "TeeseusHeadDark",
+   "pos": [
+    21.51,
+    10.48
+   ]
+  },
+  "182443033": {
+   "name": "Teapot-onStove 0",
+   "pos": [
+    69.52,
+    32.01
+   ]
+  },
+  "182443036": {
+   "name": "Teapot-onStove 0",
+   "pos": [
+    69.52,
+    32.01
+   ]
+  },
+  "182443035": {
+   "name": "Teapot-onStove 0",
+   "pos": [
+    69.52,
+    32.01
+   ]
+  },
+  "182443034": {
+   "name": "Teapot-onStove 0",
+   "pos": [
+    69.52,
+    32.01
+   ]
+  },
+  "182443037": {
+   "name": "Teapot-onStove 0",
+   "pos": [
+    69.52,
+    32.01
+   ]
+  },
+  "202706433": {
+   "name": "Tea (1)",
+   "pos": [
+    43.01,
+    -34.02
+   ]
+  },
+  "202706434": {
+   "name": "Tea (1)",
+   "pos": [
+    43.01,
+    -34.02
+   ]
+  },
+  "202706436": {
+   "name": "Tea (1)",
+   "pos": [
+    43.01,
+    -34.02
+   ]
+  },
+  "202706435": {
+   "name": "Tea (1)",
+   "pos": [
+    43.01,
+    -34.02
+   ]
+  },
+  "202706437": {
+   "name": "Tea (1)",
+   "pos": [
+    43.01,
+    -34.02
+   ]
+  },
+  "314761435": {
+   "name": "WindowOpen",
+   "pos": [
+    22.02,
+    3.01
+   ]
+  },
+  "314761436": {
+   "name": "WindowOpen",
+   "pos": [
+    22.02,
+    3.01
+   ]
+  },
+  "314761437": {
+   "name": "WindowOpen",
+   "pos": [
+    22.02,
+    3.01
+   ]
+  },
+  "314761438": {
+   "name": "WindowOpen",
+   "pos": [
+    22.02,
+    3.01
+   ]
+  },
+  "349381290": {
+   "name": "_NavMeshSegments",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "349381291": {
+   "name": "_NavMeshSegments",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "406084087": {
+   "name": "_PlayerStarts",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "406084088": {
+   "name": "_PlayerStarts",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "451081292": {
+   "name": "WoodStackHolder",
+   "pos": [
+    -12.99,
+    28.0
+   ]
+  },
+  "451081293": {
+   "name": "WoodStackHolder",
+   "pos": [
+    -12.99,
+    28.0
+   ]
+  },
+  "451081294": {
+   "name": "WoodStackHolder",
+   "pos": [
+    -12.99,
+    28.0
+   ]
+  },
+  "455962482": {
+   "name": "WindowOutside",
+   "pos": [
+    14.02,
+    -0.99
+   ]
+  },
+  "455962483": {
+   "name": "WindowOutside",
+   "pos": [
+    14.02,
+    -0.99
+   ]
+  },
+  "455962484": {
+   "name": "WindowOutside",
+   "pos": [
+    14.02,
+    -0.99
+   ]
+  },
+  "456108970": {
+   "name": "Teas",
+   "pos": [
+    64.0,
+    -4.99
+   ]
+  },
+  "456108971": {
+   "name": "Teas",
+   "pos": [
+    64.0,
+    -4.99
+   ]
+  },
+  "456108972": {
+   "name": "Teas",
+   "pos": [
+    64.0,
+    -4.99
+   ]
+  },
+  "481122540": {
+   "name": "_SortingMaps",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "481122541": {
+   "name": "_SortingMaps",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "481785578": {
+   "name": "_Moveables",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "481785579": {
+   "name": "_Moveables",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "501256835": {
+   "name": "TeeseusHead-OnStove 0",
+   "pos": [
+    69.52,
+    32.01
+   ]
+  },
+  "501256836": {
+   "name": "TeeseusHead-OnStove 0",
+   "pos": [
+    69.52,
+    32.01
+   ]
+  },
+  "501256837": {
+   "name": "TeeseusHead-OnStove 0",
+   "pos": [
+    69.52,
+    32.01
+   ]
+  },
+  "501256838": {
+   "name": "TeeseusHead-OnStove 0",
+   "pos": [
+    69.52,
+    32.01
+   ]
+  },
+  "501256839": {
+   "name": "TeeseusHead-OnStove 0",
+   "pos": [
+    69.52,
+    32.01
+   ]
+  },
+  "641710153": {
+   "name": "_Interactions",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "641710154": {
+   "name": "_Interactions",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "642441736": {
+   "name": "_Markers",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "642441737": {
+   "name": "_Markers",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "670148578": {
+   "name": "Tea (5)",
+   "pos": [
+    60.0,
+    -26.02
+   ]
+  },
+  "670148579": {
+   "name": "Tea (5)",
+   "pos": [
+    60.0,
+    -26.02
+   ]
+  },
+  "670148581": {
+   "name": "Tea (5)",
+   "pos": [
+    60.0,
+    -26.02
+   ]
+  },
+  "670148580": {
+   "name": "Tea (5)",
+   "pos": [
+    60.0,
+    -26.02
+   ]
+  },
+  "670148582": {
+   "name": "Tea (5)",
+   "pos": [
+    60.0,
+    -26.02
+   ]
+  },
+  "707666914": {
+   "name": "_UI",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "707666915": {
+   "name": "_UI",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "743398037": {
+   "name": "_Hotspots",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "743398038": {
+   "name": "_Hotspots",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "756794972": {
+   "name": "_NPCs",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "756794973": {
+   "name": "_NPCs",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "771439629": {
+   "name": "Tea (3)",
+   "pos": [
+    60.0,
+    -39.01
+   ]
+  },
+  "771439630": {
+   "name": "Tea (3)",
+   "pos": [
+    60.0,
+    -39.01
+   ]
+  },
+  "771439632": {
+   "name": "Tea (3)",
+   "pos": [
+    60.0,
+    -39.01
+   ]
+  },
+  "771439631": {
+   "name": "Tea (3)",
+   "pos": [
+    60.0,
+    -39.01
+   ]
+  },
+  "771439633": {
+   "name": "Tea (3)",
+   "pos": [
+    60.0,
+    -39.01
+   ]
+  },
+  "775120765": {
+   "name": "Tea (8)",
+   "pos": [
+    60.0,
+    -11.01
+   ]
+  },
+  "775120766": {
+   "name": "Tea (8)",
+   "pos": [
+    60.0,
+    -11.01
+   ]
+  },
+  "775120768": {
+   "name": "Tea (8)",
+   "pos": [
+    60.0,
+    -11.01
+   ]
+  },
+  "775120767": {
+   "name": "Tea (8)",
+   "pos": [
+    60.0,
+    -11.01
+   ]
+  },
+  "775120769": {
+   "name": "Tea (8)",
+   "pos": [
+    60.0,
+    -11.01
+   ]
+  },
+  "801160060": {
+   "name": "_GameCameras",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "801160061": {
+   "name": "_GameCameras",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "836890338": {
+   "name": "_Logic",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "836890339": {
+   "name": "_Logic",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "843737730": {
+   "name": "_Tracks",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "843737731": {
+   "name": "_Tracks",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "852909315": {
+   "name": "_Triggers",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "852909316": {
+   "name": "_Triggers",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "865379949": {
+   "name": "Oven",
+   "pos": [
+    27.01,
+    48.99
+   ]
+  },
+  "865379950": {
+   "name": "Oven",
+   "pos": [
+    27.01,
+    48.99
+   ]
+  },
+  "865379952": {
+   "name": "Oven",
+   "pos": [
+    27.01,
+    48.99
+   ]
+  },
+  "865379951": {
+   "name": "Oven",
+   "pos": [
+    27.01,
+    48.99
+   ]
+  },
+  "865379953": {
+   "name": "Oven",
+   "pos": [
+    27.01,
+    48.99
+   ]
+  },
+  "865379954": {
+   "name": "Oven",
+   "pos": [
+    27.01,
+    48.99
+   ]
+  },
+  "865379955": {
+   "name": "Oven",
+   "pos": [
+    27.01,
+    48.99
+   ]
+  },
+  "865379956": {
+   "name": "Oven",
+   "pos": [
+    27.01,
+    48.99
+   ]
+  },
+  "912184395": {
+   "name": "_Containers",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "912184396": {
+   "name": "_Containers",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "955824204": {
+   "name": "_ArrowPrompts",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "955824205": {
+   "name": "_ArrowPrompts",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "992951153": {
+   "name": "Cups",
+   "pos": [
+    36.0,
+    -12.99
+   ]
+  },
+  "992951154": {
+   "name": "Cups",
+   "pos": [
+    36.0,
+    -12.99
+   ]
+  },
+  "992951155": {
+   "name": "Cups",
+   "pos": [
+    36.0,
+    -12.99
+   ]
+  },
+  "995733503": {
+   "name": "_Paths",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "995733504": {
+   "name": "_Paths",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1126594571": {
+   "name": "_Cutscenes",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1126594572": {
+   "name": "_Cutscenes",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1130301600": {
+   "name": "Stove",
+   "pos": [
+    43.01,
+    26.02
+   ]
+  },
+  "1130301601": {
+   "name": "Stove",
+   "pos": [
+    43.01,
+    26.02
+   ]
+  },
+  "1130301603": {
+   "name": "Stove",
+   "pos": [
+    43.01,
+    26.02
+   ]
+  },
+  "1130301602": {
+   "name": "Stove",
+   "pos": [
+    43.01,
+    26.02
+   ]
+  },
+  "1130301604": {
+   "name": "Stove",
+   "pos": [
+    43.01,
+    26.02
+   ]
+  },
+  "1157148134": {
+   "name": "_Cameras",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1157148135": {
+   "name": "_Cameras",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1237661998": {
+   "name": "Fidibus",
+   "pos": [
+    100.03,
+    60.51
+   ]
+  },
+  "1237661999": {
+   "name": "Fidibus",
+   "pos": [
+    100.03,
+    60.51
+   ]
+  },
+  "1237662000": {
+   "name": "Fidibus",
+   "pos": [
+    100.03,
+    60.51
+   ]
+  },
+  "1272529288": {
+   "name": "_Conversations",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1272529289": {
+   "name": "_Conversations",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1280602821": {
+   "name": "_CollisionCubes",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1280602822": {
+   "name": "_CollisionCubes",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1320201020": {
+   "name": "_SetGeometry",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1320201021": {
+   "name": "_SetGeometry",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1330781291": {
+   "name": "Tea (6)",
+   "pos": [
+    42.02,
+    -14.02
+   ]
+  },
+  "1330781292": {
+   "name": "Tea (6)",
+   "pos": [
+    42.02,
+    -14.02
+   ]
+  },
+  "1330781294": {
+   "name": "Tea (6)",
+   "pos": [
+    42.02,
+    -14.02
+   ]
+  },
+  "1330781293": {
+   "name": "Tea (6)",
+   "pos": [
+    42.02,
+    -14.02
+   ]
+  },
+  "1330781295": {
+   "name": "Tea (6)",
+   "pos": [
+    42.02,
+    -14.02
+   ]
+  },
+  "1392570317": {
+   "name": "_CollisionCylinders",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1392570318": {
+   "name": "_CollisionCylinders",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1397390078": {
+   "name": "Tap",
+   "pos": [
+    38.02,
+    18.02
+   ]
+  },
+  "1397390079": {
+   "name": "Tap",
+   "pos": [
+    38.02,
+    18.02
+   ]
+  },
+  "1397390081": {
+   "name": "Tap",
+   "pos": [
+    38.02,
+    18.02
+   ]
+  },
+  "1397390080": {
+   "name": "Tap",
+   "pos": [
+    38.02,
+    18.02
+   ]
+  },
+  "1397390082": {
+   "name": "Tap",
+   "pos": [
+    38.02,
+    18.02
+   ]
+  },
+  "1577803861": {
+   "name": "Stove-hot",
+   "pos": [
+    43.01,
+    26.02
+   ]
+  },
+  "1577803862": {
+   "name": "Stove-hot",
+   "pos": [
+    43.01,
+    26.02
+   ]
+  },
+  "1577803864": {
+   "name": "Stove-hot",
+   "pos": [
+    43.01,
+    26.02
+   ]
+  },
+  "1577803863": {
+   "name": "Stove-hot",
+   "pos": [
+    43.01,
+    26.02
+   ]
+  },
+  "1577803865": {
+   "name": "Stove-hot",
+   "pos": [
+    43.01,
+    26.02
+   ]
+  },
+  "1577803866": {
+   "name": "Stove-hot",
+   "pos": [
+    43.01,
+    26.02
+   ]
+  },
+  "1613558630": {
+   "name": "Stove-hot 0",
+   "pos": [
+    95.01,
+    33.98
+   ]
+  },
+  "1613558631": {
+   "name": "Stove-hot 0",
+   "pos": [
+    95.01,
+    33.98
+   ]
+  },
+  "1613558632": {
+   "name": "Stove-hot 0",
+   "pos": [
+    95.01,
+    33.98
+   ]
+  },
+  "1613558633": {
+   "name": "Stove-hot 0",
+   "pos": [
+    95.01,
+    33.98
+   ]
+  },
+  "1727067347": {
+   "name": "Tea-Yak",
+   "pos": [
+    67.51,
+    -8.5
+   ]
+  },
+  "1727067348": {
+   "name": "Tea-Yak",
+   "pos": [
+    67.51,
+    -8.5
+   ]
+  },
+  "1727067349": {
+   "name": "Tea-Yak",
+   "pos": [
+    67.51,
+    -8.5
+   ]
+  },
+  "1727067350": {
+   "name": "Tea-Yak",
+   "pos": [
+    67.51,
+    -8.5
+   ]
+  },
+  "1748471748": {
+   "name": "_Navigation",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1748471749": {
+   "name": "_Navigation",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1843009366": {
+   "name": "Tea (7)",
+   "pos": [
+    51.01,
+    -12.0
+   ]
+  },
+  "1843009367": {
+   "name": "Tea (7)",
+   "pos": [
+    51.01,
+    -12.0
+   ]
+  },
+  "1843009369": {
+   "name": "Tea (7)",
+   "pos": [
+    51.01,
+    -12.0
+   ]
+  },
+  "1843009368": {
+   "name": "Tea (7)",
+   "pos": [
+    51.01,
+    -12.0
+   ]
+  },
+  "1843009370": {
+   "name": "Tea (7)",
+   "pos": [
+    51.01,
+    -12.0
+   ]
+  },
+  "1903971100": {
+   "name": "WindowClosed",
+   "pos": [
+    14.02,
+    -0.99
+   ]
+  },
+  "1903971101": {
+   "name": "WindowClosed",
+   "pos": [
+    14.02,
+    -0.99
+   ]
+  },
+  "1903971102": {
+   "name": "WindowClosed",
+   "pos": [
+    14.02,
+    -0.99
+   ]
+  },
+  "1903971103": {
+   "name": "WindowClosed",
+   "pos": [
+    14.02,
+    -0.99
+   ]
+  },
+  "1924916528": {
+   "name": "Oven-open 0",
+   "pos": [
+    36.0,
+    59.01
+   ]
+  },
+  "1924916530": {
+   "name": "Oven-open 0",
+   "pos": [
+    36.0,
+    59.01
+   ]
+  },
+  "1924916529": {
+   "name": "Oven-open 0",
+   "pos": [
+    36.0,
+    59.01
+   ]
+  },
+  "1924916531": {
+   "name": "Oven-open 0",
+   "pos": [
+    36.0,
+    59.01
+   ]
+  },
+  "1924916532": {
+   "name": "Oven-open 0",
+   "pos": [
+    36.0,
+    59.01
+   ]
+  },
+  "1924916533": {
+   "name": "Oven-open 0",
+   "pos": [
+    36.0,
+    59.01
+   ]
+  },
+  "1942461498": {
+   "name": "_Sounds",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1942461499": {
+   "name": "_Sounds",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "2020666835": {
+   "name": "Kitchen",
+   "pos": [
+    -160.0,
+    -0.0
+   ]
+  },
+  "2020666836": {
+   "name": "Kitchen",
+   "pos": [
+    -160.0,
+    -0.0
+   ]
+  },
+  "2020666837": {
+   "name": "Kitchen",
+   "pos": [
+    -160.0,
+    -0.0
+   ]
+  },
+  "2119217140": {
+   "name": "Tea (4)",
+   "pos": [
+    43.01,
+    -24.0
+   ]
+  },
+  "2119217141": {
+   "name": "Tea (4)",
+   "pos": [
+    43.01,
+    -24.0
+   ]
+  },
+  "2119217143": {
+   "name": "Tea (4)",
+   "pos": [
+    43.01,
+    -24.0
+   ]
+  },
+  "2119217142": {
+   "name": "Tea (4)",
+   "pos": [
+    43.01,
+    -24.0
+   ]
+  },
+  "2119217144": {
+   "name": "Tea (4)",
+   "pos": [
+    43.01,
+    -24.0
+   ]
+  },
+  "159468847328404606": {
+   "name": "GameCamera",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "159468847328901214": {
+   "name": "GameCamera",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "159468847330436702": {
+   "name": "GameCamera",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "159468847322911134": {
+   "name": "GameCamera",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "627194169991842653": {
+   "name": "WindowOpen",
+   "pos": [
+    9.52,
+    -8.99
+   ]
+  },
+  "627194169991419773": {
+   "name": "WindowOpen",
+   "pos": [
+    9.52,
+    -8.99
+   ]
+  },
+  "627194169996335581": {
+   "name": "WindowOpen",
+   "pos": [
+    9.52,
+    -8.99
+   ]
+  },
+  "627194169984761533": {
+   "name": "WindowOpen",
+   "pos": [
+    9.52,
+    -8.99
+   ]
+  },
+  "627194169991842654": {
+   "name": "WindowOpen",
+   "pos": [
+    9.52,
+    -8.99
+   ]
+  },
+  "627194169991842655": {
+   "name": "WindowOpen",
+   "pos": [
+    9.52,
+    -8.99
+   ]
+  },
+  "681014427056695979": {
+   "name": "TeeseusHead-onStove",
+   "pos": [
+    53.49,
+    16.01
+   ]
+  },
+  "681014427057059467": {
+   "name": "TeeseusHead-onStove",
+   "pos": [
+    53.49,
+    16.01
+   ]
+  },
+  "681014427062761515": {
+   "name": "TeeseusHead-onStove",
+   "pos": [
+    53.49,
+    16.01
+   ]
+  },
+  "681014427046977355": {
+   "name": "TeeseusHead-onStove",
+   "pos": [
+    53.49,
+    16.01
+   ]
+  },
+  "681014427056695980": {
+   "name": "TeeseusHead-onStove",
+   "pos": [
+    53.49,
+    16.01
+   ]
+  },
+  "681014427056695981": {
+   "name": "TeeseusHead-onStove",
+   "pos": [
+    53.49,
+    16.01
+   ]
+  },
+  "906018117551668521": {
+   "name": "Marker2D: Tea-Yak",
+   "pos": [
+    16.99,
+    62.02
+   ]
+  },
+  "906018117551628553": {
+   "name": "Marker2D: Tea-Yak",
+   "pos": [
+    16.99,
+    62.02
+   ]
+  },
+  "906018117572806409": {
+   "name": "Marker2D: Tea-Yak",
+   "pos": [
+    16.99,
+    62.02
+   ]
+  },
+  "906018117540399305": {
+   "name": "Marker2D: Tea-Yak",
+   "pos": [
+    16.99,
+    62.02
+   ]
+  },
+  "1143872986672377589": {
+   "name": "Herdplatten: Betrachte",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1143872986672149205": {
+   "name": "Herdplatten: Betrachte",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1143872986666359573": {
+   "name": "Herdplatten: Betrachte",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1670499126314825103": {
+   "name": "Fenster: Benutze",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1670499126315313583": {
+   "name": "Fenster: Benutze",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1670499126308241519": {
+   "name": "Fenster: Benutze",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1789003786493098481": {
+   "name": "Marker2D: Tap",
+   "pos": [
+    8.0,
+    29.98
+   ]
+  },
+  "1789003786492601809": {
+   "name": "Marker2D: Tap",
+   "pos": [
+    8.0,
+    29.98
+   ]
+  },
+  "1789003786480321489": {
+   "name": "Marker2D: Tap",
+   "pos": [
+    8.0,
+    29.98
+   ]
+  },
+  "1789003786481798161": {
+   "name": "Marker2D: Tap",
+   "pos": [
+    8.0,
+    29.98
+   ]
+  },
+  "1923523589587350405": {
+   "name": "Herdplatten: TeeseusHeadWater",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1923523589587840933": {
+   "name": "Herdplatten: TeeseusHeadWater",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1923523589594433125": {
+   "name": "Herdplatten: TeeseusHeadWater",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1925302702763185877": {
+   "name": "Fidibus: Betrachte",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1925302702763084533": {
+   "name": "Fidibus: Betrachte",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1925302702772904757": {
+   "name": "Fidibus: Betrachte",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "2020132557663517957": {
+   "name": "Offenes Fenster: TeeseusHead",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "2020132557663478053": {
+   "name": "Offenes Fenster: TeeseusHead",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "2020132557652248805": {
+   "name": "Offenes Fenster: TeeseusHead",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "2246574835957445986": {
+   "name": "Tee halt: Betrachte",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "2246574835957541186": {
+   "name": "Tee halt: Betrachte",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "2246574835951943810": {
+   "name": "Tee halt: Betrachte",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "2311515469123308602": {
+   "name": "Immernoch Tee: Benutze",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "2311515469123538970": {
+   "name": "Immernoch Tee: Benutze",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "2311515469112555994": {
+   "name": "Immernoch Tee: Benutze",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "2387915090039961428": {
+   "name": "Heiße Herdplatten: TeeseusHead",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "2387915090040449908": {
+   "name": "Heiße Herdplatten: TeeseusHead",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "2387915090030232244": {
+   "name": "Heiße Herdplatten: TeeseusHead",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "2415709737560808086": {
+   "name": "Marker2D: Fidibus",
+   "pos": [
+    22.02,
+    80.99
+   ]
+  },
+  "2415709737560835766": {
+   "name": "Marker2D: Fidibus",
+   "pos": [
+    22.02,
+    80.99
+   ]
+  },
+  "2415709737539690678": {
+   "name": "Marker2D: Fidibus",
+   "pos": [
+    22.02,
+    80.99
+   ]
+  },
+  "2415709737555324790": {
+   "name": "Marker2D: Fidibus",
+   "pos": [
+    22.02,
+    80.99
+   ]
+  },
+  "2509974268573013594": {
+   "name": "Mehr Tee: Betrachte",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "2509974268573239930": {
+   "name": "Mehr Tee: Betrachte",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "2509974268562252730": {
+   "name": "Mehr Tee: Betrachte",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "2602014108109277294": {
+   "name": "OvenOpen: Betrachte",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "2602014108109706318": {
+   "name": "OvenOpen: Betrachte",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "2602014108115336590": {
+   "name": "OvenOpen: Betrachte",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "2677345903514115378": {
+   "name": "Auch Tee: Betrachte",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "2677345903513813266": {
+   "name": "Auch Tee: Betrachte",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "2677345903507024082": {
+   "name": "Auch Tee: Betrachte",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "2708693893951545892": {
+   "name": "Ofen: Benutze",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "2708693893952044548": {
+   "name": "Ofen: Benutze",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "2708693893962799044": {
+   "name": "Ofen: Benutze",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "2734009603833031117": {
+   "name": "PlayerStart2D",
+   "pos": [
+    -40.0,
+    60.0
+   ]
+  },
+  "2734009603833394669": {
+   "name": "PlayerStart2D",
+   "pos": [
+    -40.0,
+    60.0
+   ]
+  },
+  "2734009603845755885": {
+   "name": "PlayerStart2D",
+   "pos": [
+    -40.0,
+    60.0
+   ]
+  },
+  "2734009603822263341": {
+   "name": "PlayerStart2D",
+   "pos": [
+    -40.0,
+    60.0
+   ]
+  },
+  "2775184170078476999": {
+   "name": "TeeseusHead: Benutze",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "2775184170078897895": {
+   "name": "TeeseusHead: Benutze",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "2775184170072993575": {
+   "name": "TeeseusHead: Benutze",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "2996250381376004895": {
+   "name": "KitchenNavMesh",
+   "pos": [
+    -6.02,
+    63.01
+   ]
+  },
+  "2996250381376044863": {
+   "name": "KitchenNavMesh",
+   "pos": [
+    -6.02,
+    63.01
+   ]
+  },
+  "2996250381380593727": {
+   "name": "KitchenNavMesh",
+   "pos": [
+    -6.02,
+    63.01
+   ]
+  },
+  "2996250381386241789": {
+   "name": "KitchenNavMesh",
+   "pos": [
+    -6.02,
+    63.01
+   ]
+  },
+  "2996250381386241791": {
+   "name": "KitchenNavMesh",
+   "pos": [
+    -6.02,
+    63.01
+   ]
+  },
+  "3086783790483606125": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "3086783790483379789": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "3086783790490189709": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "3086783790490189705": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "3086783790490189707": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "3086783790490189701": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "3086783790490189703": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "3086783790490243471": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "3086783790490189699": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "3086783790490189725": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "3086783790490189727": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "3086783790490189721": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "3086783790490189723": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "3086783790490189717": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "3086783790490189711": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "3086783790490218709": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "3086783790490199351": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "3093645131796124797": {
+   "name": "Fidibus: Benutze",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "3093645131796219997": {
+   "name": "Fidibus: Benutze",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "3093645131790639517": {
+   "name": "Fidibus: Benutze",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "3204694459661009222": {
+   "name": "Holzstapler: Betrachte",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "3204694459661311334": {
+   "name": "Holzstapler: Betrachte",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "3204694459655500966": {
+   "name": "Holzstapler: Betrachte",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "3230239222393554869": {
+   "name": "Heiße Herdplatten: Betrachte",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "3230239222393396117": {
+   "name": "Heiße Herdplatten: Betrachte",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "3230239222403248725": {
+   "name": "Heiße Herdplatten: Betrachte",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "3637421330802340611": {
+   "name": "Heiße Herdplatten: TeeseusHeadWater",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "3637421330801979171": {
+   "name": "Heiße Herdplatten: TeeseusHeadWater",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "3637421330792089315": {
+   "name": "Heiße Herdplatten: TeeseusHeadWater",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "3891506433017297735": {
+   "name": "WindowClosed",
+   "pos": [
+    5.52,
+    -10.99
+   ]
+  },
+  "3891506433017194343": {
+   "name": "WindowClosed",
+   "pos": [
+    5.52,
+    -10.99
+   ]
+  },
+  "3891506433022765511": {
+   "name": "WindowClosed",
+   "pos": [
+    5.52,
+    -10.99
+   ]
+  },
+  "3891506433023856295": {
+   "name": "WindowClosed",
+   "pos": [
+    5.52,
+    -10.99
+   ]
+  },
+  "3891506433017297736": {
+   "name": "WindowClosed",
+   "pos": [
+    5.52,
+    -10.99
+   ]
+  },
+  "3891506433017297737": {
+   "name": "WindowClosed",
+   "pos": [
+    5.52,
+    -10.99
+   ]
+  },
+  "3941559134951880936": {
+   "name": "Cups",
+   "pos": [
+    30.0,
+    -20.99
+   ]
+  },
+  "3941559134952301768": {
+   "name": "Cups",
+   "pos": [
+    30.0,
+    -20.99
+   ]
+  },
+  "3941559134957873768": {
+   "name": "Cups",
+   "pos": [
+    30.0,
+    -20.99
+   ]
+  },
+  "3941559134963158280": {
+   "name": "Cups",
+   "pos": [
+    30.0,
+    -20.99
+   ]
+  },
+  "3941559134951880937": {
+   "name": "Cups",
+   "pos": [
+    30.0,
+    -20.99
+   ]
+  },
+  "4020958437153266842": {
+   "name": "Fenster: TeeseusHead",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "4020958437153620154": {
+   "name": "Fenster: TeeseusHead",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "4020958437160331642": {
+   "name": "Fenster: TeeseusHead",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "4299592521811132923": {
+   "name": "WoodStackHolder",
+   "pos": [
+    -21.99,
+    14.0
+   ]
+  },
+  "4299592521811303899": {
+   "name": "WoodStackHolder",
+   "pos": [
+    -21.99,
+    14.0
+   ]
+  },
+  "4299592521805599611": {
+   "name": "WoodStackHolder",
+   "pos": [
+    -21.99,
+    14.0
+   ]
+  },
+  "4299592521817191451": {
+   "name": "WoodStackHolder",
+   "pos": [
+    -21.99,
+    14.0
+   ]
+  },
+  "4299592521811132924": {
+   "name": "WoodStackHolder",
+   "pos": [
+    -21.99,
+    14.0
+   ]
+  },
+  "4363549219659296199": {
+   "name": "Fidibus",
+   "pos": [
+    84.0,
+    46.02
+   ]
+  },
+  "4363549219659592167": {
+   "name": "Fidibus",
+   "pos": [
+    84.0,
+    46.02
+   ]
+  },
+  "4363549219662151495": {
+   "name": "Fidibus",
+   "pos": [
+    84.0,
+    46.02
+   ]
+  },
+  "4363549219648559143": {
+   "name": "Fidibus",
+   "pos": [
+    84.0,
+    46.02
+   ]
+  },
+  "4363549219659296200": {
+   "name": "Fidibus",
+   "pos": [
+    84.0,
+    46.02
+   ]
+  },
+  "4363549219659296201": {
+   "name": "Fidibus",
+   "pos": [
+    84.0,
+    46.02
+   ]
+  },
+  "4530715612926474778": {
+   "name": "Tea-Yak",
+   "pos": [
+    51.51,
+    -24.5
+   ]
+  },
+  "4530715612926436922": {
+   "name": "Tea-Yak",
+   "pos": [
+    51.51,
+    -24.5
+   ]
+  },
+  "4530715612922570906": {
+   "name": "Tea-Yak",
+   "pos": [
+    51.51,
+    -24.5
+   ]
+  },
+  "4530715612919369722": {
+   "name": "Tea-Yak",
+   "pos": [
+    51.51,
+    -24.5
+   ]
+  },
+  "4530715612926474779": {
+   "name": "Tea-Yak",
+   "pos": [
+    51.51,
+    -24.5
+   ]
+  },
+  "4530715612926474780": {
+   "name": "Tea-Yak",
+   "pos": [
+    51.51,
+    -24.5
+   ]
+  },
+  "4638007027381851687": {
+   "name": "Tassen: Benutze",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "4638007027381815815": {
+   "name": "Tassen: Benutze",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "4638007027374760903": {
+   "name": "Tassen: Benutze",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "4670181373878542864": {
+   "name": "KitchenSortingMap",
+   "pos": [
+    -0.99,
+    23.01
+   ]
+  },
+  "4670181373878386224": {
+   "name": "KitchenSortingMap",
+   "pos": [
+    -0.99,
+    23.01
+   ]
+  },
+  "4670181373867284464": {
+   "name": "KitchenSortingMap",
+   "pos": [
+    -0.99,
+    23.01
+   ]
+  },
+  "4849217708952638078": {
+   "name": "Ofen: Betrachte",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "4849217708952145502": {
+   "name": "Ofen: Betrachte",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "4849217708942403486": {
+   "name": "Ofen: Betrachte",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "4931293574233987488": {
+   "name": "Fenster: Betrachte",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "4931293574234211712": {
+   "name": "Fenster: Betrachte",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "4931293574241086528": {
+   "name": "Fenster: Betrachte",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "5067202380161020387": {
+   "name": "Wasserhahn: Betrachte",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "5067202380161183171": {
+   "name": "Wasserhahn: Betrachte",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "5067202380155487235": {
+   "name": "Wasserhahn: Betrachte",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "5416542151453961837": {
+   "name": "DK zum Vorzimmer: Betrachte",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "5416542151453471309": {
+   "name": "DK zum Vorzimmer: Betrachte",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "5416542151464688525": {
+   "name": "DK zum Vorzimmer: Betrachte",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "5440871789669372439": {
+   "name": "Herdplatten: TeeseusHead",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "5440871789668879927": {
+   "name": "Herdplatten: TeeseusHead",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "5440871789658089463": {
+   "name": "Herdplatten: TeeseusHead",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "6103259553275764170": {
+   "name": "Heißes Wasser: Betrachte",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "6103259553275920874": {
+   "name": "Heißes Wasser: Betrachte",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "6103259553287022634": {
+   "name": "Heißes Wasser: Betrachte",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "6575318214218395612": {
+   "name": "Marker2D: Door",
+   "pos": [
+    -32.99,
+    60.0
+   ]
+  },
+  "6575318214218298364": {
+   "name": "Marker2D: Door",
+   "pos": [
+    -32.99,
+    60.0
+   ]
+  },
+  "6575318214205920764": {
+   "name": "Marker2D: Door",
+   "pos": [
+    -32.99,
+    60.0
+   ]
+  },
+  "6575318214208182844": {
+   "name": "Marker2D: Door",
+   "pos": [
+    -32.99,
+    60.0
+   ]
+  },
+  "6791520271611881087": {
+   "name": "Schon wieder Tee: Betrachte",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "6791520271612115551": {
+   "name": "Schon wieder Tee: Betrachte",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "6791520271622083487": {
+   "name": "Schon wieder Tee: Betrachte",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "6859233233822070709": {
+   "name": "Ofen: BoringBook",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "6859233233821969301": {
+   "name": "Ofen: BoringBook",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "6859233233816044117": {
+   "name": "Ofen: BoringBook",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "6930720053364869353": {
+   "name": "Door",
+   "pos": [
+    -60.16,
+    -12.16
+   ]
+  },
+  "6930720053364708553": {
+   "name": "Door",
+   "pos": [
+    -60.16,
+    -12.16
+   ]
+  },
+  "6930720053370371337": {
+   "name": "Door",
+   "pos": [
+    -60.16,
+    -12.16
+   ]
+  },
+  "6930720053364869354": {
+   "name": "Door",
+   "pos": [
+    -60.16,
+    -12.16
+   ]
+  },
+  "6930720053364869355": {
+   "name": "Door",
+   "pos": [
+    -60.16,
+    -12.16
+   ]
+  },
+  "6956279325171459904": {
+   "name": "DK zum Vorzimmer: Benutze",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "6956279325171301216": {
+   "name": "DK zum Vorzimmer: Benutze",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "6956279325176976032": {
+   "name": "DK zum Vorzimmer: Benutze",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "7317469570155175863": {
+   "name": "Nochmal Tee: Betrachte",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "7317469570155135895": {
+   "name": "Nochmal Tee: Betrachte",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "7317469570149132887": {
+   "name": "Nochmal Tee: Betrachte",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "7678157607876167328": {
+   "name": "Heißes Wasser: Tea-Yak",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "7678157607876139648": {
+   "name": "Heißes Wasser: Tea-Yak",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "7678157607864922944": {
+   "name": "Heißes Wasser: Tea-Yak",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "7705840721250062659": {
+   "name": "Weiterhin Tee: Betrachte",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "7705840721250356579": {
+   "name": "Weiterhin Tee: Betrachte",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "7705840721243530403": {
+   "name": "Weiterhin Tee: Betrachte",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "7768998317319307888": {
+   "name": "Ofen: FidibusBurning",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "7768998317319216720": {
+   "name": "Ofen: FidibusBurning",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "7768998317324810128": {
+   "name": "Ofen: FidibusBurning",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "7777201886158729414": {
+   "name": "OvenOpen: BoringBook",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "7777201886158564582": {
+   "name": "OvenOpen: BoringBook",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "7777201886147462438": {
+   "name": "OvenOpen: BoringBook",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "7800321603043848771": {
+   "name": "TeeseusHead: Betrachte",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "7800321603043880547": {
+   "name": "TeeseusHead: Betrachte",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "7800321603049850787": {
+   "name": "TeeseusHead: Betrachte",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "7895412673239749845": {
+   "name": "Marker2D: WindowClosed",
+   "pos": [
+    -8.58,
+    28.29
+   ]
+  },
+  "7895412673239910645": {
+   "name": "Marker2D: WindowClosed",
+   "pos": [
+    -8.58,
+    28.29
+   ]
+  },
+  "7895412673227026165": {
+   "name": "Marker2D: WindowClosed",
+   "pos": [
+    -8.58,
+    28.29
+   ]
+  },
+  "7895412673234264373": {
+   "name": "Marker2D: WindowClosed",
+   "pos": [
+    -8.58,
+    28.29
+   ]
+  },
+  "8204726279936459440": {
+   "name": "TeeseusHead",
+   "pos": [
+    5.51,
+    -5.52
+   ]
+  },
+  "8204726279936368272": {
+   "name": "TeeseusHead",
+   "pos": [
+    5.51,
+    -5.52
+   ]
+  },
+  "8204726279932497968": {
+   "name": "TeeseusHead",
+   "pos": [
+    5.51,
+    -5.52
+   ]
+  },
+  "8204726279925184336": {
+   "name": "TeeseusHead",
+   "pos": [
+    5.51,
+    -5.52
+   ]
+  },
+  "8204726279936459441": {
+   "name": "TeeseusHead",
+   "pos": [
+    5.51,
+    -5.52
+   ]
+  },
+  "8204726279936459442": {
+   "name": "TeeseusHead",
+   "pos": [
+    5.51,
+    -5.52
+   ]
+  },
+  "8763943311343097676": {
+   "name": "OnStart",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "8763943311343061868": {
+   "name": "OnStart",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "8763943311353864876": {
+   "name": "OnStart",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "6297383104719356856": {
+   "name": "OnStart",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "8851498925006005929": {
+   "name": "Tassen: Betrachte",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "8851498925005978249": {
+   "name": "Tassen: Betrachte",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "8851498924994745161": {
+   "name": "Tassen: Betrachte",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "8974723651108470130": {
+   "name": "Lebstoff: Betrachte",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "8974723651108233554": {
+   "name": "Lebstoff: Betrachte",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "8974723651101362322": {
+   "name": "Lebstoff: Betrachte",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "9018934299942884325": {
+   "name": "Tee: Betrachte",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "9018934299942522821": {
+   "name": "Tee: Betrachte",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "9018934299931633157": {
+   "name": "Tee: Betrachte",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  }
+ }
+}

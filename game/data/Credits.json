@@ -1,0 +1,1330 @@
+{
+ "name": "Credits",
+ "sprites": [
+  {
+   "name": "Background",
+   "texture": "res://assets/IntroCutscene.png",
+   "region": [
+    1920,
+    0,
+    320,
+    180
+   ],
+   "pos": [
+    0.0,
+    89.6
+   ],
+   "scale": [
+    1.0,
+    1.0
+   ],
+   "flipX": 0,
+   "order": -5,
+   "layer": 0,
+   "color": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "enabled": 1
+  }
+ ],
+ "hotspots": [
+  {
+   "name": "Narrator",
+   "pos": [
+    -0.96,
+    18.88
+   ],
+   "box": {
+    "pos": [
+     -0.96,
+     -13.12
+    ],
+    "size": [
+     32.0,
+     64.0
+    ]
+   },
+   "buttons": [],
+   "displayName": "Narrator"
+  }
+ ],
+ "markers": [],
+ "playerStarts": [
+  {
+   "name": "PlayerStart2D",
+   "pos": [
+    238.08,
+    39.04
+   ],
+   "id": null
+  }
+ ],
+ "navPolys": [],
+ "npcs": [
+  {
+   "name": "Narrator",
+   "pos": [
+    0.0,
+    11.84
+   ],
+   "speechColor": {
+    "r": 1,
+    "g": 1,
+    "b": 1,
+    "a": 1
+   }
+  }
+ ],
+ "camera": null,
+ "onStart": "6458324208513333557",
+ "actionLists": {
+  "6458324208513333557": {
+   "name": null,
+   "type": "Cutscene",
+   "actionListType": 0,
+   "actions": [
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 9,
+     "skipActionActual": {
+      "fileID": "1174141168"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "timeToPause": 0,
+     "type": "ActionPause"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 3,
+     "skipActionActual": {
+      "fileID": "951800363"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 0,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "1859192125"
+     },
+     "messageText": "Sprecher:\nTeesa - Julia\nDon Kamille - Andi\nTassilo, Erzähler - Lorenz",
+     "lineID": 387,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0.5,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 6,
+     "skipActionActual": {
+      "fileID": "698248246"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 0,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "1859192125"
+     },
+     "messageText": "Idee, Dialoge, Grafik, Skripting, Musik:\nLorenz ",
+     "lineID": 388,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0.5,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": 3,
+     "skipActionActual": {
+      "fileID": "951800363"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 0,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "1859192125"
+     },
+     "messageText": "Witzinspirationen:\nDaniel, Flo, Hias, Helena, Julia, Julika, Kili, Max, Philip, Stutz, Steffi, Tine ",
+     "lineID": 389,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0.5,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 2,
+     "skipActionActual": {
+      "fileID": "1041083076"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 0,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "1859192125"
+     },
+     "messageText": "Logo-Design:\nSteffi",
+     "lineID": 390,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0.5,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 7,
+     "skipActionActual": {
+      "fileID": "382224722"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 0,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "1859192125"
+     },
+     "messageText": "Fortsetzung folgt... Eventuell.",
+     "lineID": 391,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0.5,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 5,
+     "skipActionActual": {
+      "fileID": "1063507717"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 0,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "1859192125"
+     },
+     "messageText": "Copyright: Lorenz @Gaudi Games 2021",
+     "lineID": 392,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0.5,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 12,
+     "skipActionActual": {
+      "fileID": "664600520"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 0,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "1859192125"
+     },
+     "messageText": "Wenn Ihr einen zweiten Teil möchtet, stimmt ab auf www.teeokratie-adventure.de",
+     "lineID": 393,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 11,
+     "skipActionActual": {
+      "fileID": "2106163925"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "trackID": 0,
+     "trackIDParameterID": -1,
+     "fadeTime": 0,
+     "fadeTimeParameterID": -1,
+     "loop": 1,
+     "isQueued": 0,
+     "resumeFromStart": 1,
+     "resumeIfPlayedBefore": 0,
+     "willWaitComplete": 0,
+     "musicAction": 0,
+     "loopingOverlapTime": 0,
+     "type": "ActionMusic"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": 1,
+     "skipActionActual": {
+      "fileID": "1438248172"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "changeType": 2,
+     "removeJournalPageMethod": 0,
+     "menuToChange": "InGame",
+     "menuToChangeParameterID": -1,
+     "elementToChange": "MenuButton",
+     "elementToChangeParameterID": -1,
+     "journalText": null,
+     "onlyAddNewJournal": 0,
+     "doFade": 0,
+     "lineID": -1,
+     "journalPageIndex": -1,
+     "journalPageIndexParameterID": -1,
+     "type": "ActionMenuState"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 1,
+     "skipActionActual": {
+      "fileID": "1438248172"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "changeType": 2,
+     "removeJournalPageMethod": 0,
+     "menuToChange": "InGame",
+     "menuToChangeParameterID": -1,
+     "elementToChange": "InventoryButton",
+     "elementToChangeParameterID": -1,
+     "journalText": null,
+     "onlyAddNewJournal": 0,
+     "doFade": 0,
+     "lineID": -1,
+     "journalPageIndex": -1,
+     "journalPageIndexParameterID": -1,
+     "type": "ActionMenuState"
+    },
+    {
+     "numSockets": 0,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": 12,
+     "skipActionActual": {
+      "fileID": "664600520"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "chooseSceneBy": 1,
+     "sceneNumber": 0,
+     "sceneNumberParameterID": -1,
+     "sceneName": "TitleScreen",
+     "sceneNameParameterID": -1,
+     "assignScreenOverlay": 1,
+     "onlyPreload": 0,
+     "relativePosition": 0,
+     "relativeMarker": {
+      "fileID": "0"
+     },
+     "relativeMarkerID": 0,
+     "relativeMarkerParameterID": -1,
+     "forceReload": 0,
+     "type": "ActionScene"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 1,
+     "endAction": 2,
+     "skipAction": 13,
+     "skipActionActual": {
+      "fileID": "1992406849"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "numSnapshots": 1,
+     "audioMixer": {
+      "fileID": "0"
+     },
+     "snapshot": {
+      "fileID": "-4757829189342530132",
+      "guid": "426ef2810aadcf8458d3b5304ba7eaed",
+      "type": 2
+     },
+     "snapshotMixes": [],
+     "changeTime": 4,
+     "type": "ActionMixerSnapshot"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": 14,
+     "skipActionActual": {
+      "fileID": "418233561"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "trackID": 0,
+     "trackIDParameterID": -1,
+     "fadeTime": 0,
+     "fadeTimeParameterID": -1,
+     "loop": 0,
+     "isQueued": 0,
+     "resumeFromStart": 1,
+     "resumeIfPlayedBefore": 0,
+     "willWaitComplete": 0,
+     "musicAction": 1,
+     "loopingOverlapTime": 0,
+     "type": "ActionMusic"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 1,
+     "endAction": 2,
+     "skipAction": 8,
+     "skipActionActual": {
+      "fileID": "1124328262"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "numSnapshots": 1,
+     "audioMixer": {
+      "fileID": "0"
+     },
+     "snapshot": {
+      "fileID": "24500006",
+      "guid": "426ef2810aadcf8458d3b5304ba7eaed",
+      "type": 2
+     },
+     "snapshotMixes": [],
+     "changeTime": 0.1,
+     "type": "ActionMixerSnapshot"
+    }
+   ],
+   "hostName": "Credits"
+  }
+ },
+ "refs": {
+  "33161264": {
+   "name": "_Triggers",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "33161265": {
+   "name": "_Triggers",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "47350627": {
+   "name": "Background",
+   "pos": [
+    0.0,
+    89.6
+   ]
+  },
+  "47350629": {
+   "name": "Background",
+   "pos": [
+    0.0,
+    89.6
+   ]
+  },
+  "47350628": {
+   "name": "Background",
+   "pos": [
+    0.0,
+    89.6
+   ]
+  },
+  "82895287": {
+   "name": "_ArrowPrompts",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "82895288": {
+   "name": "_ArrowPrompts",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "105563697": {
+   "name": "_Conversations",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "105563698": {
+   "name": "_Conversations",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "286833700": {
+   "name": "Narrator",
+   "pos": [
+    -0.96,
+    18.88
+   ]
+  },
+  "286833701": {
+   "name": "Narrator",
+   "pos": [
+    -0.96,
+    18.88
+   ]
+  },
+  "286833706": {
+   "name": "Narrator",
+   "pos": [
+    -0.96,
+    18.88
+   ]
+  },
+  "286833705": {
+   "name": "Narrator",
+   "pos": [
+    -0.96,
+    18.88
+   ]
+  },
+  "286833704": {
+   "name": "Narrator",
+   "pos": [
+    -0.96,
+    18.88
+   ]
+  },
+  "286833703": {
+   "name": "Narrator",
+   "pos": [
+    -0.96,
+    18.88
+   ]
+  },
+  "286833702": {
+   "name": "Narrator",
+   "pos": [
+    -0.96,
+    18.88
+   ]
+  },
+  "295594895": {
+   "name": "_CollisionCylinders",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "295594896": {
+   "name": "_CollisionCylinders",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "455214266": {
+   "name": "_UI",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "455214267": {
+   "name": "_UI",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "516311982": {
+   "name": "_Containers",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "516311983": {
+   "name": "_Containers",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "550799082": {
+   "name": "_DialogueOptions",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "550799083": {
+   "name": "_DialogueOptions",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "691382167": {
+   "name": "_Interactions",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "691382168": {
+   "name": "_Interactions",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "701723871": {
+   "name": "_Markers",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "701723872": {
+   "name": "_Markers",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "771129762": {
+   "name": "_SortingMaps",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "771129763": {
+   "name": "_SortingMaps",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "771654630": {
+   "name": "_SetGeometry",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "771654631": {
+   "name": "_SetGeometry",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "814037384": {
+   "name": "_Logic",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "814037385": {
+   "name": "_Logic",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "835725469": {
+   "name": "_Cameras",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "835725470": {
+   "name": "_Cameras",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "918894533": {
+   "name": "_Navigation",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "918894534": {
+   "name": "_Navigation",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "943682313": {
+   "name": "_Lights",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "943682314": {
+   "name": "_Lights",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1198524883": {
+   "name": "_NavMeshSegments",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1198524884": {
+   "name": "_NavMeshSegments",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1302446152": {
+   "name": "_NavMesh",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1302446153": {
+   "name": "_NavMesh",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1381148191": {
+   "name": "_PlayerStarts",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1381148192": {
+   "name": "_PlayerStarts",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1397276509": {
+   "name": "_CollisionCubes",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1397276510": {
+   "name": "_CollisionCubes",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1417033974": {
+   "name": "_Tracks",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1417033975": {
+   "name": "_Tracks",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1448206981": {
+   "name": "_Cutscenes",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1448206982": {
+   "name": "_Cutscenes",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1494692377": {
+   "name": "_Moveables",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1494692378": {
+   "name": "_Moveables",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1517936394": {
+   "name": "_Hotspots",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1517936395": {
+   "name": "_Hotspots",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1532260068": {
+   "name": "_NPCs",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1532260069": {
+   "name": "_NPCs",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1566036345": {
+   "name": "_GameCameras",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1566036346": {
+   "name": "_GameCameras",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1611314378": {
+   "name": "_Sounds",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1611314379": {
+   "name": "_Sounds",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1652899440": {
+   "name": "Directional Light",
+   "pos": [
+    0.0,
+    -96.0
+   ]
+  },
+  "1652899442": {
+   "name": "Directional Light",
+   "pos": [
+    0.0,
+    -96.0
+   ]
+  },
+  "1652899441": {
+   "name": "Directional Light",
+   "pos": [
+    0.0,
+    -96.0
+   ]
+  },
+  "1755539141": {
+   "name": "Sound child",
+   "pos": [
+    0.0,
+    11.84
+   ]
+  },
+  "1755539142": {
+   "name": "Sound child",
+   "pos": [
+    0.0,
+    11.84
+   ]
+  },
+  "1755539144": {
+   "name": "Sound child",
+   "pos": [
+    0.0,
+    11.84
+   ]
+  },
+  "1755539143": {
+   "name": "Sound child",
+   "pos": [
+    0.0,
+    11.84
+   ]
+  },
+  "1859192122": {
+   "name": "Narrator",
+   "pos": [
+    0.0,
+    11.84
+   ]
+  },
+  "1859192123": {
+   "name": "Narrator",
+   "pos": [
+    0.0,
+    11.84
+   ]
+  },
+  "1859192127": {
+   "name": "Narrator",
+   "pos": [
+    0.0,
+    11.84
+   ]
+  },
+  "1859192126": {
+   "name": "Narrator",
+   "pos": [
+    0.0,
+    11.84
+   ]
+  },
+  "1859192125": {
+   "name": "Narrator",
+   "pos": [
+    0.0,
+    11.84
+   ]
+  },
+  "1859192124": {
+   "name": "Narrator",
+   "pos": [
+    0.0,
+    11.84
+   ]
+  },
+  "1897061851": {
+   "name": "_Paths",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1897061852": {
+   "name": "_Paths",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "541842553949553739": {
+   "name": "PlayerStart2D",
+   "pos": [
+    238.08,
+    39.04
+   ]
+  },
+  "541842553949722731": {
+   "name": "PlayerStart2D",
+   "pos": [
+    238.08,
+    39.04
+   ]
+  },
+  "541842553962004075": {
+   "name": "PlayerStart2D",
+   "pos": [
+    238.08,
+    39.04
+   ]
+  },
+  "541842553959805355": {
+   "name": "PlayerStart2D",
+   "pos": [
+    238.08,
+    39.04
+   ]
+  },
+  "6458324208502066389": {
+   "name": "Credits",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "6458324208502296821": {
+   "name": "Credits",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "6458324208513333557": {
+   "name": "Credits",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "8600634171025414177": {
+   "name": "Credits",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "9199024081009440182": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "9199024081009338774": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "9199024081003380822": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "9199024081003380818": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "9199024081003380816": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "9199024081003380830": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "9199024081003380828": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "9199024081003589204": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "9199024081003380824": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "9199024081003380806": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "9199024081003380804": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "9199024081003380802": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "9199024081003380800": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "9199024081003380814": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "9199024081003380820": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "9199024081003548430": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "9199024081003567852": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  }
+ }
+}

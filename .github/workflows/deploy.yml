@@ -1,0 +1,62 @@
+name: Deploy web build to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+env:
+  GODOT_VERSION: 4.3-stable
+  GODOT_TEMPLATE_DIR: 4.3.stable
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Godot ${{ env.GODOT_VERSION }} + export templates
+        run: |
+          set -euo pipefail
+          base="https://github.com/godotengine/godot/releases/download/${GODOT_VERSION}"
+          curl -sSL -o godot.zip "${base}/Godot_v${GODOT_VERSION}_linux.x86_64.zip"
+          unzip -q godot.zip
+          chmod +x "Godot_v${GODOT_VERSION}_linux.x86_64"
+          sudo mv "Godot_v${GODOT_VERSION}_linux.x86_64" /usr/local/bin/godot
+          curl -sSL -o templates.tpz "${base}/Godot_v${GODOT_VERSION}_export_templates.tpz"
+          mkdir -p "$HOME/.local/share/godot/export_templates/${GODOT_TEMPLATE_DIR}"
+          unzip -q templates.tpz
+          mv templates/* "$HOME/.local/share/godot/export_templates/${GODOT_TEMPLATE_DIR}/"
+
+      - name: Export Web build
+        run: |
+          set -euo pipefail
+          mkdir -p game/build
+          # First pass imports resources, second pass exports.
+          godot --headless --path game --import
+          godot --headless --path game --export-release "Web" game/build/index.html
+          test -f game/build/index.wasm
+          touch game/build/.nojekyll
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: game/build
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

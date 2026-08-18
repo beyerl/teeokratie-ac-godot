@@ -1,0 +1,6318 @@
+{
+ "name": "Office",
+ "sprites": [
+  {
+   "name": "Window-Outside",
+   "texture": "res://assets/Window-Outside.png",
+   "region": null,
+   "pos": [
+    -31.0,
+    -0.0
+   ],
+   "scale": [
+    1.0,
+    1.0
+   ],
+   "flipX": 0,
+   "order": -10,
+   "layer": 0,
+   "color": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "enabled": 1
+  },
+  {
+   "name": "Office",
+   "texture": "res://assets/Office-1.png",
+   "region": null,
+   "pos": [
+    0.0,
+    -0.0
+   ],
+   "scale": [
+    1.0,
+    1.0
+   ],
+   "flipX": 0,
+   "order": -10,
+   "layer": 0,
+   "color": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "enabled": 1
+  },
+  {
+   "name": "PuddleOfTea",
+   "texture": "res://assets/PuddleOfTea.png",
+   "region": null,
+   "pos": [
+    -42.02,
+    44.99
+   ],
+   "scale": [
+    1.0,
+    1.0
+   ],
+   "flipX": 0,
+   "order": -5,
+   "layer": 0,
+   "color": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "enabled": 1
+  },
+  {
+   "name": "Door",
+   "texture": "res://assets/Door.png",
+   "region": null,
+   "pos": [
+    132.99,
+    32.45
+   ],
+   "scale": [
+    1.0,
+    1.0
+   ],
+   "flipX": 0,
+   "order": -5,
+   "layer": 0,
+   "color": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "enabled": 1
+  },
+  {
+   "name": "Bookshelve",
+   "texture": "res://assets/Bookshelve.png",
+   "region": null,
+   "pos": [
+    32.51,
+    18.0
+   ],
+   "scale": [
+    1.0,
+    1.0
+   ],
+   "flipX": 0,
+   "order": -5,
+   "layer": 0,
+   "color": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "enabled": 1
+  },
+  {
+   "name": "ExamRegulations",
+   "texture": "res://assets/ExamRegulations.png",
+   "region": null,
+   "pos": [
+    84.0,
+    5.0
+   ],
+   "scale": [
+    1.0,
+    1.0
+   ],
+   "flipX": 0,
+   "order": -5,
+   "layer": 0,
+   "color": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "enabled": 1
+  },
+  {
+   "name": "DonKamilleSprite",
+   "texture": "res://assets/DonKamille.png",
+   "region": [
+    0,
+    0,
+    69,
+    89
+   ],
+   "pos": [
+    -92.35,
+    88.06
+   ],
+   "scale": [
+    1.0,
+    1.0
+   ],
+   "flipX": 0,
+   "order": -4,
+   "layer": 0,
+   "color": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "enabled": 1
+  },
+  {
+   "name": "Blackscreen",
+   "texture": "res://assets/Blackscreen.png",
+   "region": null,
+   "pos": [
+    0.0,
+    -0.0
+   ],
+   "scale": [
+    1.0,
+    1.0
+   ],
+   "flipX": 0,
+   "order": -3,
+   "layer": 0,
+   "color": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "enabled": 1
+  },
+  {
+   "name": "TeesaPour 0",
+   "texture": "res://assets/TeesaPour.png",
+   "region": [
+    0,
+    0,
+    92,
+    80
+   ],
+   "pos": [
+    -15.01,
+    74.02
+   ],
+   "scale": [
+    1.0,
+    1.0
+   ],
+   "flipX": 0,
+   "order": 1,
+   "layer": 0,
+   "color": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "enabled": 1
+  }
+ ],
+ "hotspots": [
+  {
+   "name": "DonKamilleSprite",
+   "pos": [
+    -92.35,
+    88.06
+   ],
+   "box": {
+    "pos": [
+     -92.35,
+     56.06
+    ],
+    "size": [
+     32.0,
+     64.0
+    ]
+   },
+   "buttons": [
+    {
+     "verb": "talk",
+     "iconID": 1,
+     "interaction": "2803344227790993876",
+     "playerAction": 3
+    },
+    {
+     "verb": "look",
+     "iconID": 2,
+     "interaction": "7633282923776066281",
+     "playerAction": 1
+    }
+   ],
+   "displayName": "Don Kamille"
+  },
+  {
+   "name": "TeesaPour 0",
+   "pos": [
+    -15.01,
+    74.02
+   ],
+   "box": null,
+   "buttons": [],
+   "displayName": "TeesaPour"
+  },
+  {
+   "name": "ExamRegulations",
+   "pos": [
+    89.0,
+    -6.0
+   ],
+   "box": {
+    "pos": [
+     84.08,
+     5.1
+    ],
+    "size": [
+     24.25,
+     35.21
+    ]
+   },
+   "buttons": [
+    {
+     "verb": "look",
+     "iconID": 2,
+     "interaction": "8090778292293068239",
+     "playerAction": 3
+    }
+   ],
+   "displayName": "Prüfungsordnung"
+  },
+  {
+   "name": "Door",
+   "pos": [
+    121.5,
+    3.55
+   ],
+   "box": null,
+   "buttons": [
+    {
+     "verb": "look",
+     "iconID": 2,
+     "interaction": "2462552173916339810",
+     "playerAction": 1
+    },
+    {
+     "verb": "use",
+     "iconID": 0,
+     "interaction": "5275834277233837662",
+     "playerAction": 3
+    }
+   ],
+   "displayName": "Durchgangsklappvorrichtung (DK)"
+  },
+  {
+   "name": "Bookshelve",
+   "pos": [
+    42.0,
+    7.0
+   ],
+   "box": {
+    "pos": [
+     32.47,
+     17.81
+    ],
+    "size": [
+     70.98,
+     72.01
+    ]
+   },
+   "buttons": [
+    {
+     "verb": "look",
+     "iconID": 2,
+     "interaction": "152330589758904843",
+     "playerAction": 2
+    }
+   ],
+   "displayName": "Bücherregal"
+  },
+  {
+   "name": "Window",
+   "pos": [
+    -34.3,
+    -10.11
+   ],
+   "box": {
+    "pos": [
+     -34.32,
+     -0.02
+    ],
+    "size": [
+     33.84,
+     34.42
+    ]
+   },
+   "buttons": [
+    {
+     "verb": "look",
+     "iconID": 2,
+     "interaction": "4452479099210989550",
+     "playerAction": 1
+    }
+   ],
+   "displayName": "Fenster"
+  }
+ ],
+ "markers": [
+  {
+   "name": "Marker2D: ExamRegulations",
+   "pos": [
+    86.02,
+    60.0
+   ],
+   "id": null
+  },
+  {
+   "name": "TeesaTalkToDonKamille",
+   "pos": [
+    -2.24,
+    76.8
+   ],
+   "id": null
+  },
+  {
+   "name": "PourTea",
+   "pos": [
+    -15.01,
+    74.02
+   ],
+   "id": null
+  },
+  {
+   "name": "Marker2D: Door",
+   "pos": [
+    116.0,
+    74.02
+   ],
+   "id": null
+  },
+  {
+   "name": "Dump",
+   "pos": [
+    224.0,
+    49.92
+   ],
+   "id": null
+  }
+ ],
+ "playerStarts": [
+  {
+   "name": "PlayerStart2DAfterCutscene",
+   "pos": [
+    112.99,
+    70.02
+   ],
+   "id": null
+  },
+  {
+   "name": "PlayerStart2D",
+   "pos": [
+    70.4,
+    64.0
+   ],
+   "id": null
+  }
+ ],
+ "navPolys": [
+  [
+   [
+    -4.82,
+    58.39
+   ],
+   [
+    75.59,
+    58.53
+   ],
+   [
+    74.75,
+    53.0
+   ],
+   [
+    100.55,
+    53.96
+   ],
+   [
+    147.54,
+    85.09
+   ],
+   [
+    147.65,
+    85.11
+   ],
+   [
+    147.02,
+    87.08
+   ],
+   [
+    101.69,
+    87.16
+   ],
+   [
+    -19.01,
+    87.02
+   ],
+   [
+    -17.87,
+    78.46
+   ],
+   [
+    -19.78,
+    78.3
+   ],
+   [
+    -19.4,
+    75.36
+   ],
+   [
+    -19.39,
+    71.9
+   ],
+   [
+    -19.15,
+    67.37
+   ],
+   [
+    -15.14,
+    57.86
+   ]
+  ]
+ ],
+ "npcs": [
+  {
+   "name": "TeesaPour",
+   "pos": [
+    -15.01,
+    74.02
+   ],
+   "speechColor": {
+    "r": 1,
+    "g": 1,
+    "b": 1,
+    "a": 1
+   }
+  },
+  {
+   "name": "Don Kamille",
+   "pos": [
+    -92.35,
+    88.06
+   ],
+   "speechColor": {
+    "r": 0.48627454,
+    "g": 0.5254902,
+    "b": 0.5176471,
+    "a": 1
+   }
+  }
+ ],
+ "camera": null,
+ "onStart": "5484406662091409009",
+ "actionLists": {
+  "152330589758904843": {
+   "name": null,
+   "type": "Interaction",
+   "actionListType": 0,
+   "actions": [
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "Ein Haufen pietistischer Plunder. Laaangweilig!",
+     "lineID": 106,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "Die interessanten Bücher stehen alle im Vorzimmer.",
+     "lineID": 176,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    }
+   ],
+   "hostName": "Bücherregal: Look at"
+  },
+  "2462552173916339810": {
+   "name": null,
+   "type": "Interaction",
+   "actionListType": 0,
+   "actions": [
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 1,
+     "skipActionActual": {
+      "fileID": "1140476316"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "Eine Durchgangsklappvorrichtung.",
+     "lineID": 174,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": 1,
+     "skipActionActual": {
+      "fileID": "1140476316"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "Es ist verboten, Tyr oder Thor dazu zu sagen, weil das beides heidnische Götter sind.",
+     "lineID": 175,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    }
+   ],
+   "hostName": "Durchgangsklappvorrichtung zum Vorzimmer: Betrachte"
+  },
+  "2803344227790993876": {
+   "name": null,
+   "type": "Interaction",
+   "actionListType": 0,
+   "actions": [
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 6,
+     "skipActionActual": {
+      "fileID": "1141966083"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "timeToPause": 0,
+     "type": "ActionPause"
+    },
+    {
+     "numSockets": 0,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "endings": [],
+     "parameterID": -1,
+     "constantID": 0,
+     "conversation": {
+      "fileID": "3385629549905414117"
+     },
+     "overrideOptions": 0,
+     "type": "ActionConversation"
+    },
+    {
+     "numSockets": 2,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "resultActionTrue": 0,
+     "skipActionTrue": -1,
+     "skipActionTrueActual": {
+      "fileID": "0"
+     },
+     "linkedCutsceneTrue": {
+      "fileID": "0"
+     },
+     "linkedAssetTrue": {
+      "fileID": "0"
+     },
+     "resultActionFail": 2,
+     "skipActionFail": 4,
+     "skipActionFailActual": {
+      "fileID": "553876067"
+     },
+     "linkedCutsceneFail": {
+      "fileID": "0"
+     },
+     "linkedAssetFail": {
+      "fileID": "0"
+     },
+     "parameterID": -1,
+     "variableID": 1,
+     "variableNumber": 1,
+     "checkParameterID": -1,
+     "getVarMethod": 0,
+     "compareVariableID": 0,
+     "intValue": 0,
+     "floatValue": 0,
+     "intCondition": 0,
+     "isAdditive": 0,
+     "boolValue": 1,
+     "boolCondition": 0,
+     "stringValue": null,
+     "checkCase": 1,
+     "vector3Value": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+     },
+     "vectorCondition": 0,
+     "location": 0,
+     "variables": {
+      "fileID": "0"
+     },
+     "variablesConstantID": 0,
+     "compareVariables": {
+      "fileID": "0"
+     },
+     "compareVariablesConstantID": 0,
+     "placeholderType": 0,
+     "placeholderPopUpLabelDataID": 0,
+     "type": "ActionVarCheck"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": 4,
+     "skipActionActual": {
+      "fileID": "553876067"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "switchType": 0,
+     "optionNumber": 1,
+     "constantID": 0,
+     "linkedConversation": {
+      "fileID": "3385629549905414117"
+     },
+     "type": "ActionDialogOption"
+    },
+    {
+     "numSockets": 2,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "resultActionTrue": 0,
+     "skipActionTrue": -1,
+     "skipActionTrueActual": {
+      "fileID": "0"
+     },
+     "linkedCutsceneTrue": {
+      "fileID": "0"
+     },
+     "linkedAssetTrue": {
+      "fileID": "0"
+     },
+     "resultActionFail": 2,
+     "skipActionFail": 1,
+     "skipActionFailActual": {
+      "fileID": "1744045737"
+     },
+     "linkedCutsceneFail": {
+      "fileID": "0"
+     },
+     "linkedAssetFail": {
+      "fileID": "0"
+     },
+     "parameterID": -1,
+     "variableID": 2,
+     "variableNumber": 2,
+     "checkParameterID": -1,
+     "getVarMethod": 0,
+     "compareVariableID": 0,
+     "intValue": 0,
+     "floatValue": 0,
+     "intCondition": 0,
+     "isAdditive": 0,
+     "boolValue": 1,
+     "boolCondition": 0,
+     "stringValue": null,
+     "checkCase": 1,
+     "vector3Value": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+     },
+     "vectorCondition": 0,
+     "location": 0,
+     "variables": {
+      "fileID": "0"
+     },
+     "variablesConstantID": 0,
+     "compareVariables": {
+      "fileID": "0"
+     },
+     "compareVariablesConstantID": 0,
+     "placeholderType": 0,
+     "placeholderPopUpLabelDataID": 0,
+     "type": "ActionVarCheck"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 1,
+     "skipActionActual": {
+      "fileID": "1744045737"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "switchType": 0,
+     "optionNumber": 2,
+     "constantID": 0,
+     "linkedConversation": {
+      "fileID": "3385629549905414117"
+     },
+     "type": "ActionDialogOption"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 2,
+     "skipActionActual": {
+      "fileID": "1462242766"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "charToMoveParameterID": -1,
+     "charToMoveID": 0,
+     "isInstant": 1,
+     "direction": 3,
+     "directionParameterID": -1,
+     "charToMove": {
+      "fileID": "1639797174"
+     },
+     "isPlayer": 0,
+     "playerID": -1,
+     "relativeTo": 0,
+     "type": "ActionCharFaceDirection"
+    }
+   ],
+   "hostName": "Don Kamille: Sprich mit"
+  },
+  "3470577450449248708": {
+   "name": null,
+   "type": "Cutscene",
+   "actionListType": 0,
+   "actions": [
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 1,
+     "skipActionActual": {
+      "fileID": "1088317361"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "timeToPause": 0,
+     "type": "ActionPause"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 1,
+     "endAction": 2,
+     "skipAction": 2,
+     "skipActionActual": {
+      "fileID": "1231090917"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "charToMoveParameterID": -1,
+     "markerParameterID": -1,
+     "charToMoveID": 0,
+     "markerID": 0,
+     "marker": {
+      "fileID": "5399570825899240245"
+     },
+     "isPlayer": 1,
+     "playerID": -1,
+     "playerParameterID": -1,
+     "charToMove": {
+      "fileID": "0"
+     },
+     "speed": 0,
+     "pathFind": 1,
+     "doFloat": 0,
+     "doTimeLimit": 0,
+     "maxTimeParameterID": -1,
+     "maxTime": 10,
+     "onReachTimeLimit": 0,
+     "faceAfter": 0,
+     "type": "ActionCharPathFind"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": 2,
+     "skipActionActual": {
+      "fileID": "1231090917"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "Der Tee ist fertig.",
+     "lineID": 177,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 2,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "endings": [
+      {
+       "resultAction": 2,
+       "skipAction": 5,
+       "skipActionActual": {
+        "fileID": "662032992"
+       },
+       "linkedCutscene": {
+        "fileID": "0"
+       },
+       "linkedAsset": {
+        "fileID": "0"
+       }
+      },
+      {
+       "resultAction": 2,
+       "skipAction": 33,
+       "skipActionActual": {
+        "fileID": "1492211533"
+       },
+       "linkedCutscene": {
+        "fileID": "0"
+       },
+       "linkedAsset": {
+        "fileID": "0"
+       }
+      }
+     ],
+     "type": "ActionParallel"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": 5,
+     "skipActionActual": {
+      "fileID": "662032992"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "constantID": 0,
+     "obToAffect": {
+      "fileID": "270952187"
+     },
+     "affectChildren": 0,
+     "visState": 0,
+     "type": "ActionVisible"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 4,
+     "skipActionActual": {
+      "fileID": "422258408"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "timeToPause": 1.6,
+     "type": "ActionPause"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": 4,
+     "skipActionActual": {
+      "fileID": "422258408"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "timeToPause": 2,
+     "type": "ActionPause"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 19,
+     "skipActionActual": {
+      "fileID": "401531730"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 0,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "1639797174"
+     },
+     "messageText": "Hmpf.",
+     "lineID": 178,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 21,
+     "skipActionActual": {
+      "fileID": "834444927"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 0,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "1639797174"
+     },
+     "messageText": "Tee. ",
+     "lineID": 179,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 20,
+     "skipActionActual": {
+      "fileID": "763819538"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 0,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "1639797174"
+     },
+     "messageText": "Tatsächlich.",
+     "lineID": 180,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 23,
+     "skipActionActual": {
+      "fileID": "1679918106"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 0,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "1639797174"
+     },
+     "messageText": "Dann sagen Sie mal die Zukunft voraus, bitte.",
+     "lineID": 181,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 36,
+     "skipActionActual": {
+      "fileID": "338673216"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "...Ich sehe Dich auf einer langen Reise. Du bist der Kapitän eines Schiffs… ",
+     "lineID": 182,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 28,
+     "skipActionActual": {
+      "fileID": "993317395"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "Ähm, nein. Da ist irgendwas durcheinander gekommen.",
+     "lineID": 183,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": 14,
+     "skipActionActual": {
+      "fileID": "1291355441"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "Und es wird kommen ein Wesen, das klingt wie ein Klebestreifen. ",
+     "lineID": 184,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": 15,
+     "skipActionActual": {
+      "fileID": "1186002718"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "Summen und Brummen werden untergehen, wenn das Wesen sich zum Tiefton wandelt.",
+     "lineID": 185,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": 16,
+     "skipActionActual": {
+      "fileID": "1629598940"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "Doch verzaget nicht, denn weil im Wurm der Wurm drin ist, wird das Wesen zum IQ mutieren.",
+     "lineID": 186,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": 17,
+     "skipActionActual": {
+      "fileID": "182796266"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "Wenn Milch und Honig fließen und das Seegezücht an Land tanzt, dann werdet ihr feststellen, dass man Tee nicht essen kann.",
+     "lineID": 187,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": 18,
+     "skipActionActual": {
+      "fileID": "720634844"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "Dann fällt die Entscheidung! ",
+     "lineID": 188,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 29,
+     "skipActionActual": {
+      "fileID": "40409596"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "Tee oder Leben, das ist hier die Frage!",
+     "lineID": 189,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 9,
+     "skipActionActual": {
+      "fileID": "164310406"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "timeToPause": 1,
+     "type": "ActionPause"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 8,
+     "skipActionActual": {
+      "fileID": "2076564059"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "timeToPause": 1,
+     "type": "ActionPause"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 10,
+     "skipActionActual": {
+      "fileID": "1505231516"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "timeToPause": 1,
+     "type": "ActionPause"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 27,
+     "skipActionActual": {
+      "fileID": "1983333026"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "spriteFader": {
+      "fileID": "356303983"
+     },
+     "fadeType": 0,
+     "fadeSpeed": 4,
+     "type": "ActionSpriteFade"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 22,
+     "skipActionActual": {
+      "fileID": "737198283"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "timeToPause": 2,
+     "type": "ActionPause"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 12,
+     "skipActionActual": {
+      "fileID": "377843244"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "spriteFader": {
+      "fileID": "356303983"
+     },
+     "fadeType": 1,
+     "fadeSpeed": 0.6,
+     "type": "ActionSpriteFade"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": 13,
+     "skipActionActual": {
+      "fileID": "610281846"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "spriteFader": {
+      "fileID": "356303983"
+     },
+     "fadeType": 0,
+     "fadeSpeed": 4,
+     "type": "ActionSpriteFade"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 1,
+     "endAction": 2,
+     "skipAction": 13,
+     "skipActionActual": {
+      "fileID": "610281846"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "charToMoveParameterID": -1,
+     "charToMoveID": 0,
+     "isInstant": 1,
+     "direction": 1,
+     "directionParameterID": -1,
+     "charToMove": {
+      "fileID": "0"
+     },
+     "isPlayer": 1,
+     "playerID": -1,
+     "relativeTo": 0,
+     "type": "ActionCharFaceDirection"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 11,
+     "skipActionActual": {
+      "fileID": "534305913"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "numSnapshots": 1,
+     "audioMixer": {
+      "fileID": "0"
+     },
+     "snapshot": {
+      "fileID": "-4757829189342530132",
+      "guid": "426ef2810aadcf8458d3b5304ba7eaed",
+      "type": 2
+     },
+     "snapshotMixes": [],
+     "changeTime": 4,
+     "type": "ActionMixerSnapshot"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 25,
+     "skipActionActual": {
+      "fileID": "1831965132"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "trackID": 4,
+     "trackIDParameterID": -1,
+     "fadeTime": 0,
+     "fadeTimeParameterID": -1,
+     "loop": 0,
+     "isQueued": 0,
+     "resumeFromStart": 1,
+     "resumeIfPlayedBefore": 0,
+     "willWaitComplete": 0,
+     "musicAction": 0,
+     "loopingOverlapTime": 0,
+     "type": "ActionMusic"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 39,
+     "skipActionActual": {
+      "fileID": "1564445964"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "objectiveID": 0,
+     "newStateID": 1,
+     "selectAfter": 0,
+     "playerID": 0,
+     "setPlayer": 0,
+     "type": "ActionObjectiveSet"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 6,
+     "skipActionActual": {
+      "fileID": "13832032"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "obToMoveParameterID": -1,
+     "obToMoveID": 0,
+     "obToMove": {
+      "fileID": "0"
+     },
+     "markerParameterID": -1,
+     "markerID": 0,
+     "teleporter": {
+      "fileID": "5399570825899240245"
+     },
+     "relativeGameObject": {
+      "fileID": "0"
+     },
+     "relativeGameObjectID": 0,
+     "relativeGameObjectParameterID": -1,
+     "positionRelativeTo": 0,
+     "relativeVectorParameterID": -1,
+     "relativeVector": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+     },
+     "vectorVarParameterID": -1,
+     "vectorVarID": 0,
+     "variableLocation": 0,
+     "recalculateActivePathFind": 0,
+     "isPlayer": 1,
+     "snapCamera": 0,
+     "copyRotation": 0,
+     "variables": {
+      "fileID": "0"
+     },
+     "variablesConstantID": 0,
+     "type": "ActionTeleport"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 1,
+     "endAction": 0,
+     "skipAction": 32,
+     "skipActionActual": {
+      "fileID": "260509993"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "constantID": 0,
+     "_anim": {
+      "fileID": "0"
+     },
+     "runtimeAnim": {
+      "fileID": "0"
+     },
+     "clip": {
+      "fileID": "0"
+     },
+     "fadeTime": 0,
+     "_anim2D": {
+      "fileID": "0"
+     },
+     "runtimeAnim2D": {
+      "fileID": "0"
+     },
+     "animator": {
+      "fileID": "1233750761"
+     },
+     "runtimeAnimator": {
+      "fileID": "0"
+     },
+     "clip2D": "Pour",
+     "clip2DParameterID": -1,
+     "wrapMode2D": 0,
+     "layerInt": 0,
+     "shapeObject": {
+      "fileID": "0"
+     },
+     "runtimeShapeObject": {
+      "fileID": "0"
+     },
+     "shapeKey": 0,
+     "shapeValue": 0,
+     "isPlayer": 0,
+     "methodMecanim": 0,
+     "mecanimParameterType": 0,
+     "parameterName": null,
+     "parameterNameID": -1,
+     "parameterValue": 0,
+     "parameterValueParameterID": -1,
+     "method": 0,
+     "blendMode": 0,
+     "playMode": 0,
+     "animationEngine": 2,
+     "customClassName": null,
+     "animEngine": {
+      "fileID": "623561554"
+     },
+     "type": "ActionAnim"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 30,
+     "skipActionActual": {
+      "fileID": "1845257804"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "gameObject": {
+      "fileID": "1233750760"
+     },
+     "parameterID": -1,
+     "constantID": 0,
+     "replaceGameObject": {
+      "fileID": "0"
+     },
+     "replaceParameterID": -1,
+     "replaceConstantID": 0,
+     "relativeGameObject": {
+      "fileID": "0"
+     },
+     "relativeGameObjectID": 0,
+     "relativeGameObjectParameterID": -1,
+     "relativeVectorParameterID": -1,
+     "relativeVector": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+     },
+     "vectorVarParameterID": -1,
+     "vectorVarID": 0,
+     "variableLocation": 0,
+     "invAction": 1,
+     "positionRelativeTo": 0,
+     "variables": {
+      "fileID": "0"
+     },
+     "variablesConstantID": 0,
+     "spawnedObjectParameterID": -1,
+     "type": "ActionInstantiate"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": 31,
+     "skipActionActual": {
+      "fileID": "250443342"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "obToMoveParameterID": -1,
+     "obToMoveID": 0,
+     "obToMove": {
+      "fileID": "0"
+     },
+     "markerParameterID": -1,
+     "markerID": 0,
+     "teleporter": {
+      "fileID": "8796455570248962812"
+     },
+     "relativeGameObject": {
+      "fileID": "0"
+     },
+     "relativeGameObjectID": 0,
+     "relativeGameObjectParameterID": -1,
+     "positionRelativeTo": 0,
+     "relativeVectorParameterID": -1,
+     "relativeVector": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+     },
+     "vectorVarParameterID": -1,
+     "vectorVarID": 0,
+     "variableLocation": 0,
+     "recalculateActivePathFind": 0,
+     "isPlayer": 1,
+     "snapCamera": 0,
+     "copyRotation": 0,
+     "variables": {
+      "fileID": "0"
+     },
+     "variablesConstantID": 0,
+     "type": "ActionTeleport"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 31,
+     "skipActionActual": {
+      "fileID": "250443342"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "constantID": 0,
+     "obToAffect": {
+      "fileID": "1233750760"
+     },
+     "affectChildren": 0,
+     "visState": 0,
+     "type": "ActionVisible"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 24,
+     "skipActionActual": {
+      "fileID": "1499500151"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "numSnapshots": 1,
+     "audioMixer": {
+      "fileID": "0"
+     },
+     "snapshot": {
+      "fileID": "24500006",
+      "guid": "426ef2810aadcf8458d3b5304ba7eaed",
+      "type": 2
+     },
+     "snapshotMixes": [],
+     "changeTime": 0.1,
+     "type": "ActionMixerSnapshot"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": 24,
+     "skipActionActual": {
+      "fileID": "1499500151"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "timeToPause": 0,
+     "type": "ActionPause"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": 38,
+     "skipActionActual": {
+      "fileID": "915964910"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "trackID": 0,
+     "trackIDParameterID": -1,
+     "fadeTime": 0,
+     "fadeTimeParameterID": -1,
+     "loop": 0,
+     "isQueued": 0,
+     "resumeFromStart": 1,
+     "resumeIfPlayedBefore": 0,
+     "willWaitComplete": 0,
+     "musicAction": 1,
+     "loopingOverlapTime": 0,
+     "type": "ActionMusic"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 35,
+     "skipActionActual": {
+      "fileID": "888699313"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "trackID": 0,
+     "trackIDParameterID": -1,
+     "fadeTime": 0,
+     "fadeTimeParameterID": -1,
+     "loop": 0,
+     "isQueued": 0,
+     "resumeFromStart": 1,
+     "resumeIfPlayedBefore": 0,
+     "willWaitComplete": 0,
+     "musicAction": 1,
+     "loopingOverlapTime": 0,
+     "type": "ActionAmbience"
+    },
+    {
+     "numSockets": 0,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "chooseSceneBy": 1,
+     "sceneNumber": 0,
+     "sceneNumberParameterID": -1,
+     "sceneName": "Credits",
+     "sceneNameParameterID": -1,
+     "assignScreenOverlay": 0,
+     "onlyPreload": 0,
+     "relativePosition": 0,
+     "relativeMarker": {
+      "fileID": "0"
+     },
+     "relativeMarkerID": 0,
+     "relativeMarkerParameterID": -1,
+     "forceReload": 0,
+     "type": "ActionScene"
+    }
+   ],
+   "hostName": "Prophecy"
+  },
+  "4452479099210989550": {
+   "name": null,
+   "type": "Interaction",
+   "actionListType": 0,
+   "actions": [
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": 0,
+     "skipActionActual": {
+      "fileID": "453191233"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "Es regnet Katzen und Hunde.",
+     "lineID": 110,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    }
+   ],
+   "hostName": "Fenster: Look at"
+  },
+  "5275834277233837662": {
+   "name": null,
+   "type": "Interaction",
+   "actionListType": 0,
+   "actions": [
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "timeToPause": 0,
+     "type": "ActionPause"
+    },
+    {
+     "numSockets": 0,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "chooseSceneBy": 1,
+     "sceneNumber": 0,
+     "sceneNumberParameterID": -1,
+     "sceneName": "TeaistCloisterAnteroom",
+     "sceneNameParameterID": -1,
+     "assignScreenOverlay": 0,
+     "onlyPreload": 0,
+     "relativePosition": 0,
+     "relativeMarker": {
+      "fileID": "0"
+     },
+     "relativeMarkerID": 0,
+     "relativeMarkerParameterID": -1,
+     "forceReload": 0,
+     "type": "ActionScene"
+    }
+   ],
+   "hostName": "Durchgangsklappvorrichtung: Benutze"
+  },
+  "5484406662091409009": {
+   "name": null,
+   "type": "Cutscene",
+   "actionListType": 0,
+   "actions": [
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 13,
+     "skipActionActual": {
+      "fileID": "115978130"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "timeToPause": 0,
+     "type": "ActionPause"
+    },
+    {
+     "numSockets": 2,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "resultActionTrue": 0,
+     "skipActionTrue": 1,
+     "skipActionTrueActual": {
+      "fileID": "0"
+     },
+     "linkedCutsceneTrue": {
+      "fileID": "0"
+     },
+     "linkedAssetTrue": {
+      "fileID": "0"
+     },
+     "resultActionFail": 2,
+     "skipActionFail": 3,
+     "skipActionFailActual": {
+      "fileID": "1327188471"
+     },
+     "linkedCutsceneFail": {
+      "fileID": "0"
+     },
+     "linkedAssetFail": {
+      "fileID": "0"
+     },
+     "chooseSceneBy": 1,
+     "sceneToCheck": 1,
+     "chooseSceneByPlayerSwitching": -1,
+     "sceneNumberParameterID": -1,
+     "sceneNumber": 0,
+     "sceneNameParameterID": -1,
+     "sceneName": "IntroCutscene",
+     "playerID": -1,
+     "playerParameterID": -1,
+     "intCondition": 0,
+     "type": "ActionSceneCheck"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": 3,
+     "skipActionActual": {
+      "fileID": "1327188471"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "listSource": 0,
+     "actionList": {
+      "fileID": "7858826604110559583"
+     },
+     "constantID": 0,
+     "parameterID": -1,
+     "invActionList": {
+      "fileID": "0"
+     },
+     "assetParameterID": -1,
+     "runFromStart": 1,
+     "jumpToAction": 0,
+     "jumpToActionParameterID": -1,
+     "jumpToActionActual": {
+      "fileID": "0"
+     },
+     "runInParallel": 1,
+     "isSkippable": 0,
+     "localParameters": [],
+     "parameterIDs": null,
+     "setParameters": 0,
+     "runMode": 0,
+     "hasUpgradedAgain": 0,
+     "type": "ActionRunActionList"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 4,
+     "skipActionActual": {
+      "fileID": "1951136409"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "obToMoveParameterID": -1,
+     "obToMoveID": 0,
+     "obToMove": {
+      "fileID": "0"
+     },
+     "markerParameterID": -1,
+     "markerID": 0,
+     "teleporter": {
+      "fileID": "6013396725698179966"
+     },
+     "relativeGameObject": {
+      "fileID": "0"
+     },
+     "relativeGameObjectID": 0,
+     "relativeGameObjectParameterID": -1,
+     "positionRelativeTo": 0,
+     "relativeVectorParameterID": -1,
+     "relativeVector": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+     },
+     "vectorVarParameterID": -1,
+     "vectorVarID": 0,
+     "variableLocation": 0,
+     "recalculateActivePathFind": 0,
+     "isPlayer": 1,
+     "snapCamera": 0,
+     "copyRotation": 0,
+     "variables": {
+      "fileID": "0"
+     },
+     "variablesConstantID": 0,
+     "type": "ActionTeleport"
+    },
+    {
+     "numSockets": 2,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "resultActionTrue": 0,
+     "skipActionTrue": -1,
+     "skipActionTrueActual": {
+      "fileID": "0"
+     },
+     "linkedCutsceneTrue": {
+      "fileID": "0"
+     },
+     "linkedAssetTrue": {
+      "fileID": "0"
+     },
+     "resultActionFail": 1,
+     "skipActionFail": -1,
+     "skipActionFailActual": {
+      "fileID": "0"
+     },
+     "linkedCutsceneFail": {
+      "fileID": "0"
+     },
+     "linkedAssetFail": {
+      "fileID": "0"
+     },
+     "parameterID": -1,
+     "invID": 6,
+     "invCheckType": 0,
+     "checkNumberInCategory": 0,
+     "categoryIDToCheck": 0,
+     "doCount": 0,
+     "intValueParameterID": -1,
+     "intValue": 1,
+     "intCondition": 0,
+     "setPlayer": 0,
+     "playerID": 0,
+     "type": "ActionInventoryCheck"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 1,
+     "endAction": 2,
+     "skipAction": 8,
+     "skipActionActual": {
+      "fileID": "524151908"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "listSource": 0,
+     "actionList": {
+      "fileID": "3470577450449248708"
+     },
+     "constantID": 0,
+     "parameterID": -1,
+     "invActionList": {
+      "fileID": "0"
+     },
+     "assetParameterID": -1,
+     "runFromStart": 1,
+     "jumpToAction": 0,
+     "jumpToActionParameterID": -1,
+     "jumpToActionActual": {
+      "fileID": "0"
+     },
+     "runInParallel": 1,
+     "isSkippable": 0,
+     "localParameters": [],
+     "parameterIDs": null,
+     "setParameters": 0,
+     "runMode": 0,
+     "hasUpgradedAgain": 0,
+     "type": "ActionRunActionList"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": 1,
+     "skipActionActual": {
+      "fileID": "832189626"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "trackID": 2,
+     "trackIDParameterID": -1,
+     "fadeTime": 0,
+     "fadeTimeParameterID": -1,
+     "loop": 1,
+     "isQueued": 0,
+     "resumeFromStart": 1,
+     "resumeIfPlayedBefore": 0,
+     "willWaitComplete": 0,
+     "musicAction": 0,
+     "loopingOverlapTime": 0,
+     "type": "ActionMusic"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 1,
+     "skipActionActual": {
+      "fileID": "832189626"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "trackID": 0,
+     "trackIDParameterID": -1,
+     "fadeTime": 0.5,
+     "fadeTimeParameterID": -1,
+     "loop": 1,
+     "isQueued": 0,
+     "resumeFromStart": 1,
+     "resumeIfPlayedBefore": 0,
+     "willWaitComplete": 0,
+     "musicAction": 0,
+     "loopingOverlapTime": 1,
+     "type": "ActionAmbience"
+    },
+    {
+     "numSockets": 2,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "endings": [
+      {
+       "resultAction": 0,
+       "skipAction": -1,
+       "skipActionActual": {
+        "fileID": "0"
+       },
+       "linkedCutscene": {
+        "fileID": "0"
+       },
+       "linkedAsset": {
+        "fileID": "0"
+       }
+      },
+      {
+       "resultAction": 2,
+       "skipAction": 10,
+       "skipActionActual": {
+        "fileID": "1662259227"
+       },
+       "linkedCutscene": {
+        "fileID": "0"
+       },
+       "linkedAsset": {
+        "fileID": "0"
+       }
+      }
+     ],
+     "type": "ActionParallel"
+    },
+    {
+     "numSockets": 2,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "resultActionTrue": 2,
+     "skipActionTrue": 12,
+     "skipActionTrueActual": {
+      "fileID": "42489030"
+     },
+     "linkedCutsceneTrue": {
+      "fileID": "0"
+     },
+     "linkedAssetTrue": {
+      "fileID": "0"
+     },
+     "resultActionFail": 1,
+     "skipActionFail": -1,
+     "skipActionFailActual": {
+      "fileID": "0"
+     },
+     "linkedCutsceneFail": {
+      "fileID": "0"
+     },
+     "linkedAssetFail": {
+      "fileID": "0"
+     },
+     "parameterID": -1,
+     "variableID": 2,
+     "variableNumber": 2,
+     "checkParameterID": -1,
+     "getVarMethod": 0,
+     "compareVariableID": 0,
+     "intValue": 0,
+     "floatValue": 0,
+     "intCondition": 0,
+     "isAdditive": 0,
+     "boolValue": 0,
+     "boolCondition": 0,
+     "stringValue": null,
+     "checkCase": 1,
+     "vector3Value": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+     },
+     "vectorCondition": 0,
+     "location": 0,
+     "variables": {
+      "fileID": "0"
+     },
+     "variablesConstantID": 0,
+     "compareVariables": {
+      "fileID": "0"
+     },
+     "compareVariablesConstantID": 0,
+     "placeholderType": 0,
+     "placeholderPopUpLabelDataID": 0,
+     "type": "ActionVarCheck"
+    },
+    {
+     "numSockets": 2,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "resultActionTrue": 0,
+     "skipActionTrue": -1,
+     "skipActionTrueActual": {
+      "fileID": "0"
+     },
+     "linkedCutsceneTrue": {
+      "fileID": "0"
+     },
+     "linkedAssetTrue": {
+      "fileID": "0"
+     },
+     "resultActionFail": 1,
+     "skipActionFail": -1,
+     "skipActionFailActual": {
+      "fileID": "0"
+     },
+     "linkedCutsceneFail": {
+      "fileID": "0"
+     },
+     "linkedAssetFail": {
+      "fileID": "0"
+     },
+     "parameterID": -1,
+     "variableID": 1,
+     "variableNumber": 1,
+     "checkParameterID": -1,
+     "getVarMethod": 0,
+     "compareVariableID": 0,
+     "intValue": 0,
+     "floatValue": 0,
+     "intCondition": 0,
+     "isAdditive": 0,
+     "boolValue": 0,
+     "boolCondition": 0,
+     "stringValue": null,
+     "checkCase": 1,
+     "vector3Value": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+     },
+     "vectorCondition": 0,
+     "location": 0,
+     "variables": {
+      "fileID": "0"
+     },
+     "variablesConstantID": 0,
+     "compareVariables": {
+      "fileID": "0"
+     },
+     "compareVariablesConstantID": 0,
+     "placeholderType": 0,
+     "placeholderPopUpLabelDataID": 0,
+     "type": "ActionVarCheck"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": 12,
+     "skipActionActual": {
+      "fileID": "42489030"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "switchType": 1,
+     "optionNumber": 1,
+     "constantID": 0,
+     "linkedConversation": {
+      "fileID": "3385629549905414117"
+     },
+     "type": "ActionDialogOption"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": 13,
+     "skipActionActual": {
+      "fileID": "560921551"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 0,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": null,
+     "lineID": -1,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 6,
+     "skipActionActual": {
+      "fileID": "1590129512"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "charToMoveParameterID": -1,
+     "charToMoveID": 0,
+     "isInstant": 1,
+     "direction": 3,
+     "directionParameterID": -1,
+     "charToMove": {
+      "fileID": "1639797174"
+     },
+     "isPlayer": 0,
+     "playerID": -1,
+     "relativeTo": 0,
+     "type": "ActionCharFaceDirection"
+    }
+   ],
+   "hostName": "OnStart"
+  },
+  "7633282923776066281": {
+   "name": null,
+   "type": "Interaction",
+   "actionListType": 0,
+   "actions": [
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "timeToPause": 0,
+     "type": "ActionPause"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "Das ist mein Chef, Hohepriester Don Kamille.",
+     "lineID": 198,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "Wenn es nach ihm geht, dann haben wir hier in Teegernseh bald eine Teeokratie mit ihm an der Spitze.",
+     "lineID": 199,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "Ich bin mir nicht so sicher, ob ich das gut finde.",
+     "lineID": 200,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    }
+   ],
+   "hostName": "Don Kamille: Betrachte"
+  },
+  "7858826604110559583": {
+   "name": null,
+   "type": "Cutscene",
+   "actionListType": 0,
+   "actions": [
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 16,
+     "skipActionActual": {
+      "fileID": "271954939"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "timeToPause": 0,
+     "type": "ActionPause"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 12,
+     "skipActionActual": {
+      "fileID": "521451376"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 0,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "1639797174"
+     },
+     "messageText": "Da sind Sie ja, Schwester Teegießertochter. ",
+     "lineID": 111,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": 3,
+     "skipActionActual": {
+      "fileID": "431186840"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 0,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "1639797174"
+     },
+     "messageText": "Dann wollen wir mal. Sie kennen Ihre Aufgabe?",
+     "lineID": 112,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": 4,
+     "skipActionActual": {
+      "fileID": "1302208611"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "Ich glaube schon, hohler... ähm... edler Hohepriester!",
+     "lineID": 113,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": 5,
+     "skipActionActual": {
+      "fileID": "532113"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 0,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "1639797174"
+     },
+     "messageText": "Vorschriftsgemäß verlese ich die Teeisten-Prüfungsordnung:",
+     "lineID": 114,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 13,
+     "skipActionActual": {
+      "fileID": "523276801"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 0,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "1639797174"
+     },
+     "messageText": "“Zum Abschluss seiner Literertour hat der Anwärter den Original Teebetanischen Yak-Tee(TM) aufzugießen.” ",
+     "lineID": 115,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 17,
+     "skipActionActual": {
+      "fileID": "147404722"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 0,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "1639797174"
+     },
+     "messageText": "\"Ausgenommen sind: Börsendaten, Wettervorhersagen und Quantenfluktiationen.\"",
+     "lineID": 116,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 14,
+     "skipActionActual": {
+      "fileID": "791292920"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 0,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "1639797174"
+     },
+     "messageText": "“Der Prüfling darf sich während der Prüfung nicht aus dem Kloster entfernen.\"",
+     "lineID": 117,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": 9,
+     "skipActionActual": {
+      "fileID": "1541227205"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "Wo finde ich denn...",
+     "lineID": 118,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": 10,
+     "skipActionActual": {
+      "fileID": "1026198799"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 0,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "1639797174"
+     },
+     "messageText": "Danke für mein Gespräch, verehrte Schwester.\r",
+     "lineID": 119,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": 11,
+     "skipActionActual": {
+      "fileID": "1148461982"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "Sehr wohl, Hohepriester!",
+     "lineID": 120,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 23,
+     "skipActionActual": {
+      "fileID": "328952151"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "objectiveID": 0,
+     "newStateID": 0,
+     "selectAfter": 0,
+     "playerID": 0,
+     "setPlayer": 0,
+     "type": "ActionObjectiveSet"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 2,
+     "skipActionActual": {
+      "fileID": "1948348634"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 0,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "1639797174"
+     },
+     "messageText": "52 Sekunden zu spät, wie ich sehe.",
+     "lineID": 121,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 6,
+     "skipActionActual": {
+      "fileID": "1685770360"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 0,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "1639797174"
+     },
+     "messageText": "\"Aus dem Teesatz sagt er die Zukunft  vorraus.\"",
+     "lineID": 122,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 8,
+     "skipActionActual": {
+      "fileID": "1485490572"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 0,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "1639797174"
+     },
+     "messageText": "\"Gelobt sei Teeseus in Ewigkeit, Teemen“. Noch Fragen?\r",
+     "lineID": 124,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 1,
+     "endAction": 2,
+     "skipAction": 1,
+     "skipActionActual": {
+      "fileID": "1471615002"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "charToMoveParameterID": -1,
+     "markerParameterID": -1,
+     "charToMoveID": 0,
+     "markerID": 0,
+     "marker": {
+      "fileID": "5115756913453319299"
+     },
+     "isPlayer": 1,
+     "playerID": -1,
+     "playerParameterID": -1,
+     "charToMove": {
+      "fileID": "0"
+     },
+     "speed": 0,
+     "pathFind": 1,
+     "doFloat": 0,
+     "doTimeLimit": 0,
+     "maxTimeParameterID": -1,
+     "maxTime": 10,
+     "onReachTimeLimit": 0,
+     "faceAfter": 0,
+     "type": "ActionCharPathFind"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 15,
+     "skipActionActual": {
+      "fileID": "453845026"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "charToMoveParameterID": -1,
+     "charToMoveID": 0,
+     "isInstant": 1,
+     "direction": 1,
+     "directionParameterID": -1,
+     "charToMove": {
+      "fileID": "0"
+     },
+     "isPlayer": 1,
+     "playerID": -1,
+     "relativeTo": 0,
+     "type": "ActionCharFaceDirection"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": 18,
+     "skipActionActual": {
+      "fileID": "1234664656"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 0,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "1639797174"
+     },
+     "messageText": "\"Zur Zubereitung wird benötigt: 1. Original Teebetanische Yak-Tee(TM)-Blätter\"",
+     "lineID": 201,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": 19,
+     "skipActionActual": {
+      "fileID": "1681018079"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 0,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "1639797174"
+     },
+     "messageText": "\"2. Kristallklares, mineralstoffreiches Quellwasser\"",
+     "lineID": 202,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": 20,
+     "skipActionActual": {
+      "fileID": "789043839"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 0,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "1639797174"
+     },
+     "messageText": "\"3. Ein Teekessel oder ein anderes Gefäß\"",
+     "lineID": 203,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": 7,
+     "skipActionActual": {
+      "fileID": "1349202732"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 0,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "1639797174"
+     },
+     "messageText": "\"4. Ein angeheizter Ofen\"",
+     "lineID": 204,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 7,
+     "skipActionActual": {
+      "fileID": "1349202732"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 0,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "1639797174"
+     },
+     "messageText": "\"Der Prüfling schüttet das Wasser in den Kessel, erhitzt diesen auf dem Ofen und gibt dann die Blätter hinein.\"",
+     "lineID": 205,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 25,
+     "skipActionActual": {
+      "fileID": "2036944270"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "changeType": 0,
+     "removeJournalPageMethod": 0,
+     "menuToChange": "Controls",
+     "menuToChangeParameterID": -1,
+     "elementToChange": null,
+     "elementToChangeParameterID": -1,
+     "journalText": null,
+     "onlyAddNewJournal": 0,
+     "doFade": 0,
+     "lineID": -1,
+     "journalPageIndex": -1,
+     "journalPageIndexParameterID": -1,
+     "type": "ActionMenuState"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": 24,
+     "skipActionActual": {
+      "fileID": "2065932380"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "changeType": 2,
+     "removeJournalPageMethod": 0,
+     "menuToChange": "Controls",
+     "menuToChangeParameterID": -1,
+     "elementToChange": "MenuButton",
+     "elementToChangeParameterID": -1,
+     "journalText": null,
+     "onlyAddNewJournal": 0,
+     "doFade": 0,
+     "lineID": -1,
+     "journalPageIndex": -1,
+     "journalPageIndexParameterID": -1,
+     "type": "ActionMenuState"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 22,
+     "skipActionActual": {
+      "fileID": "2094844601"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "changeType": 3,
+     "removeJournalPageMethod": 0,
+     "menuToChange": "Controls",
+     "menuToChangeParameterID": -1,
+     "elementToChange": "GameButton",
+     "elementToChangeParameterID": -1,
+     "journalText": null,
+     "onlyAddNewJournal": 0,
+     "doFade": 0,
+     "lineID": -1,
+     "journalPageIndex": -1,
+     "journalPageIndexParameterID": -1,
+     "type": "ActionMenuState"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "changeType": 3,
+     "removeJournalPageMethod": 0,
+     "menuToChange": "InGame",
+     "menuToChangeParameterID": -1,
+     "elementToChange": "MenuButton",
+     "elementToChangeParameterID": -1,
+     "journalText": null,
+     "onlyAddNewJournal": 0,
+     "doFade": 0,
+     "lineID": -1,
+     "journalPageIndex": -1,
+     "journalPageIndexParameterID": -1,
+     "type": "ActionMenuState"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "changeType": 3,
+     "removeJournalPageMethod": 0,
+     "menuToChange": "InGame",
+     "menuToChangeParameterID": -1,
+     "elementToChange": "InventoryButton",
+     "elementToChangeParameterID": -1,
+     "journalText": null,
+     "onlyAddNewJournal": 0,
+     "doFade": 0,
+     "lineID": -1,
+     "journalPageIndex": -1,
+     "journalPageIndexParameterID": -1,
+     "type": "ActionMenuState"
+    }
+   ],
+   "hostName": "ExamBriefing"
+  },
+  "8090778292293068239": {
+   "name": null,
+   "type": "Interaction",
+   "actionListType": 0,
+   "actions": [
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 3,
+     "skipActionActual": {
+      "fileID": "1770253980"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "Da steht: „Zum Abschluss seiner Literertour hat der Anwärter...“ Da fehlt das Anwärterin",
+     "lineID": 125,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": 2,
+     "skipActionActual": {
+      "fileID": "1507290667"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "“Der Prüfling darf sich während der Prüfung nicht aus dem Kloster entfernen.\"",
+     "lineID": 126,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": 2,
+     "skipActionActual": {
+      "fileID": "1507290667"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "\"Gelobt sei Teeseus in Ewigkeit, Teemen.“",
+     "lineID": 127,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 4,
+     "skipActionActual": {
+      "fileID": "377357595"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": " “...den Original Teebetanischen Yak-Tee(TM) aufzugießen.\"",
+     "lineID": 154,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": 4,
+     "skipActionActual": {
+      "fileID": "377357595"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "\"Aus dem Teesatz sagt er  - oder sie - die Zukunft vorraus.\"",
+     "lineID": 155,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 6,
+     "skipActionActual": {
+      "fileID": "420988986"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "\"bla.. bla...\"",
+     "lineID": 156,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": 7,
+     "skipActionActual": {
+      "fileID": "1601641505"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "\"Zur Zubereitung wird benötigt: 1. Original Teebetanische Yak-Tee(TM)-Blätter\"",
+     "lineID": 206,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": 8,
+     "skipActionActual": {
+      "fileID": "1228957162"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "\"2. Kristallklares, mineralstoffreiches Quellwasser\"",
+     "lineID": 207,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": 9,
+     "skipActionActual": {
+      "fileID": "1896317805"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "\"3. Ein Teekessel oder ein anderes Gefäß\"",
+     "lineID": 208,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": 10,
+     "skipActionActual": {
+      "fileID": "1353850472"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "\"4. Ein angeheizter Ofen\"",
+     "lineID": 209,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 1,
+     "skipActionActual": {
+      "fileID": "1526308910"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "\"Der Prüfling schüttet das Wasser in den Kessel, erhitzt diesen auf dem Ofen und gibt dann die Blätter hinein.\"",
+     "lineID": 210,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    }
+   ],
+   "hostName": "Prüfungsordnung: Look at"
+  }
+ },
+ "refs": {
+  "34931393": {
+   "name": "_Containers",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "34931394": {
+   "name": "_Containers",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "42977627": {
+   "name": "_Moveables",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "42977628": {
+   "name": "_Moveables",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "52116664": {
+   "name": "_SortingMaps",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "52116665": {
+   "name": "_SortingMaps",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "138168369": {
+   "name": "_NavMeshSegments",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "138168370": {
+   "name": "_NavMeshSegments",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "270952187": {
+   "name": "PuddleOfTea",
+   "pos": [
+    -42.02,
+    44.99
+   ]
+  },
+  "270952188": {
+   "name": "PuddleOfTea",
+   "pos": [
+    -42.02,
+    44.99
+   ]
+  },
+  "270952189": {
+   "name": "PuddleOfTea",
+   "pos": [
+    -42.02,
+    44.99
+   ]
+  },
+  "270952190": {
+   "name": "PuddleOfTea",
+   "pos": [
+    -42.02,
+    44.99
+   ]
+  },
+  "311719853": {
+   "name": "_Sounds",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "311719854": {
+   "name": "_Sounds",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "334646084": {
+   "name": "DonKamilleSprite",
+   "pos": [
+    -92.35,
+    88.06
+   ]
+  },
+  "334646085": {
+   "name": "DonKamilleSprite",
+   "pos": [
+    -92.35,
+    88.06
+   ]
+  },
+  "334646091": {
+   "name": "DonKamilleSprite",
+   "pos": [
+    -92.35,
+    88.06
+   ]
+  },
+  "334646090": {
+   "name": "DonKamilleSprite",
+   "pos": [
+    -92.35,
+    88.06
+   ]
+  },
+  "334646089": {
+   "name": "DonKamilleSprite",
+   "pos": [
+    -92.35,
+    88.06
+   ]
+  },
+  "334646088": {
+   "name": "DonKamilleSprite",
+   "pos": [
+    -92.35,
+    88.06
+   ]
+  },
+  "334646087": {
+   "name": "DonKamilleSprite",
+   "pos": [
+    -92.35,
+    88.06
+   ]
+  },
+  "334646086": {
+   "name": "DonKamilleSprite",
+   "pos": [
+    -92.35,
+    88.06
+   ]
+  },
+  "356303980": {
+   "name": "Blackscreen",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "356303981": {
+   "name": "Blackscreen",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "356303984": {
+   "name": "Blackscreen",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "356303983": {
+   "name": "Blackscreen",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "356303982": {
+   "name": "Blackscreen",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "455727218": {
+   "name": "_Navigation",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "455727219": {
+   "name": "_Navigation",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "475176429": {
+   "name": "_Logic",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "475176430": {
+   "name": "_Logic",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "533732808": {
+   "name": "_Hotspots",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "533732809": {
+   "name": "_Hotspots",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "542445027": {
+   "name": "_Conversations",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "542445028": {
+   "name": "_Conversations",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "559242133": {
+   "name": "_SetGeometry",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "559242134": {
+   "name": "_SetGeometry",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "575803800": {
+   "name": "_DialogueOptions",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "575803801": {
+   "name": "_DialogueOptions",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "631206389": {
+   "name": "Door",
+   "pos": [
+    132.99,
+    32.45
+   ]
+  },
+  "631206390": {
+   "name": "Door",
+   "pos": [
+    132.99,
+    32.45
+   ]
+  },
+  "631206392": {
+   "name": "Door",
+   "pos": [
+    132.99,
+    32.45
+   ]
+  },
+  "631206391": {
+   "name": "Door",
+   "pos": [
+    132.99,
+    32.45
+   ]
+  },
+  "765034800": {
+   "name": "_Triggers",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "765034801": {
+   "name": "_Triggers",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "839932759": {
+   "name": "_CollisionCylinders",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "839932760": {
+   "name": "_CollisionCylinders",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "868542304": {
+   "name": "Bookshelve",
+   "pos": [
+    32.51,
+    18.0
+   ]
+  },
+  "868542305": {
+   "name": "Bookshelve",
+   "pos": [
+    32.51,
+    18.0
+   ]
+  },
+  "868542307": {
+   "name": "Bookshelve",
+   "pos": [
+    32.51,
+    18.0
+   ]
+  },
+  "868542306": {
+   "name": "Bookshelve",
+   "pos": [
+    32.51,
+    18.0
+   ]
+  },
+  "883904756": {
+   "name": "_Cutscenes",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "883904757": {
+   "name": "_Cutscenes",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1003951381": {
+   "name": "_Interactions",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1003951382": {
+   "name": "_Interactions",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1075546919": {
+   "name": "_UI",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1075546920": {
+   "name": "_UI",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1156517273": {
+   "name": "TeesaPour",
+   "pos": [
+    -15.01,
+    74.02
+   ]
+  },
+  "1156517278": {
+   "name": "TeesaPour",
+   "pos": [
+    -15.01,
+    74.02
+   ]
+  },
+  "1156517277": {
+   "name": "TeesaPour",
+   "pos": [
+    -15.01,
+    74.02
+   ]
+  },
+  "1156517275": {
+   "name": "TeesaPour",
+   "pos": [
+    -15.01,
+    74.02
+   ]
+  },
+  "1165858493": {
+   "name": "Window-Outside",
+   "pos": [
+    -31.0,
+    -0.0
+   ]
+  },
+  "1165858494": {
+   "name": "Window-Outside",
+   "pos": [
+    -31.0,
+    -0.0
+   ]
+  },
+  "1165858495": {
+   "name": "Window-Outside",
+   "pos": [
+    -31.0,
+    -0.0
+   ]
+  },
+  "1165858496": {
+   "name": "Window-Outside",
+   "pos": [
+    -31.0,
+    -0.0
+   ]
+  },
+  "1226277529": {
+   "name": "_Cameras",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1226277530": {
+   "name": "_Cameras",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1233750760": {
+   "name": "TeesaPour 0",
+   "pos": [
+    -15.01,
+    74.02
+   ]
+  },
+  "1233750764": {
+   "name": "TeesaPour 0",
+   "pos": [
+    -15.01,
+    74.02
+   ]
+  },
+  "1233750763": {
+   "name": "TeesaPour 0",
+   "pos": [
+    -15.01,
+    74.02
+   ]
+  },
+  "1233750762": {
+   "name": "TeesaPour 0",
+   "pos": [
+    -15.01,
+    74.02
+   ]
+  },
+  "1233750761": {
+   "name": "TeesaPour 0",
+   "pos": [
+    -15.01,
+    74.02
+   ]
+  },
+  "1233750765": {
+   "name": "TeesaPour 0",
+   "pos": [
+    -15.01,
+    74.02
+   ]
+  },
+  "1233750768": {
+   "name": "TeesaPour 0",
+   "pos": [
+    -15.01,
+    74.02
+   ]
+  },
+  "1233750766": {
+   "name": "TeesaPour 0",
+   "pos": [
+    -15.01,
+    74.02
+   ]
+  },
+  "1294166944": {
+   "name": "_ArrowPrompts",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1294166945": {
+   "name": "_ArrowPrompts",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1433983973": {
+   "name": "_CollisionCubes",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1433983974": {
+   "name": "_CollisionCubes",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1505052387": {
+   "name": "_Lights",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1505052388": {
+   "name": "_Lights",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1523581217": {
+   "name": "_Paths",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1523581218": {
+   "name": "_Paths",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1639797172": {
+   "name": "Don Kamille",
+   "pos": [
+    -92.35,
+    88.06
+   ]
+  },
+  "1639797177": {
+   "name": "Don Kamille",
+   "pos": [
+    -92.35,
+    88.06
+   ]
+  },
+  "1639797176": {
+   "name": "Don Kamille",
+   "pos": [
+    -92.35,
+    88.06
+   ]
+  },
+  "1639797175": {
+   "name": "Don Kamille",
+   "pos": [
+    -92.35,
+    88.06
+   ]
+  },
+  "1639797174": {
+   "name": "Don Kamille",
+   "pos": [
+    -92.35,
+    88.06
+   ]
+  },
+  "1639797173": {
+   "name": "Don Kamille",
+   "pos": [
+    -92.35,
+    88.06
+   ]
+  },
+  "1639797178": {
+   "name": "Don Kamille",
+   "pos": [
+    -92.35,
+    88.06
+   ]
+  },
+  "1881053170": {
+   "name": "_NPCs",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1881053171": {
+   "name": "_NPCs",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1881053172": {
+   "name": "_NPCs",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1899719530": {
+   "name": "ExamRegulations",
+   "pos": [
+    84.0,
+    5.0
+   ]
+  },
+  "1899719532": {
+   "name": "ExamRegulations",
+   "pos": [
+    84.0,
+    5.0
+   ]
+  },
+  "1899719531": {
+   "name": "ExamRegulations",
+   "pos": [
+    84.0,
+    5.0
+   ]
+  },
+  "1899719533": {
+   "name": "ExamRegulations",
+   "pos": [
+    84.0,
+    5.0
+   ]
+  },
+  "1919957024": {
+   "name": "_NavMesh",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1919957025": {
+   "name": "_NavMesh",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1944894710": {
+   "name": "_PlayerStarts",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1944894711": {
+   "name": "_PlayerStarts",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1979989210": {
+   "name": "_Markers",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1979989211": {
+   "name": "_Markers",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1984789934": {
+   "name": "Sound child",
+   "pos": [
+    -92.35,
+    88.06
+   ]
+  },
+  "1984789937": {
+   "name": "Sound child",
+   "pos": [
+    -92.35,
+    88.06
+   ]
+  },
+  "1984789936": {
+   "name": "Sound child",
+   "pos": [
+    -92.35,
+    88.06
+   ]
+  },
+  "1984789935": {
+   "name": "Sound child",
+   "pos": [
+    -92.35,
+    88.06
+   ]
+  },
+  "2060115817": {
+   "name": "Office",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "2060115819": {
+   "name": "Office",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "2060115818": {
+   "name": "Office",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "2060115820": {
+   "name": "Office",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "2100753619": {
+   "name": "_Tracks",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "2100753620": {
+   "name": "_Tracks",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "152330589770166251": {
+   "name": "Bücherregal: Look at",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "152330589770003403": {
+   "name": "Bücherregal: Look at",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "152330589758904843": {
+   "name": "Bücherregal: Look at",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "153930930369626847": {
+   "name": "ExamRegulations",
+   "pos": [
+    89.0,
+    -6.0
+   ]
+  },
+  "153930930370060031": {
+   "name": "ExamRegulations",
+   "pos": [
+    89.0,
+    -6.0
+   ]
+  },
+  "153930930375626847": {
+   "name": "ExamRegulations",
+   "pos": [
+    89.0,
+    -6.0
+   ]
+  },
+  "153930930359957311": {
+   "name": "ExamRegulations",
+   "pos": [
+    89.0,
+    -6.0
+   ]
+  },
+  "541313212304154979": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "541313212303998275": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "541313212297057411": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "541313212297057415": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "541313212297057413": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "541313212297057419": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "541313212297057417": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "541313212297132673": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "541313212297057421": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "541313212297057427": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "541313212297057425": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "541313212297057431": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "541313212297057429": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "541313212297057435": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "541313212297057409": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "541313212297157595": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "541313212297170489": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1447007630123844237": {
+   "name": "Default NavMesh",
+   "pos": [
+    3.84,
+    61.44
+   ]
+  },
+  "1447007630123359917": {
+   "name": "Default NavMesh",
+   "pos": [
+    3.84,
+    61.44
+   ]
+  },
+  "1447007630120044973": {
+   "name": "Default NavMesh",
+   "pos": [
+    3.84,
+    61.44
+   ]
+  },
+  "1447007630116763503": {
+   "name": "Default NavMesh",
+   "pos": [
+    3.84,
+    61.44
+   ]
+  },
+  "1447007630116763501": {
+   "name": "Default NavMesh",
+   "pos": [
+    3.84,
+    61.44
+   ]
+  },
+  "1476362763001361446": {
+   "name": "SortingMap",
+   "pos": [
+    95.68,
+    43.84
+   ]
+  },
+  "1476362763000932358": {
+   "name": "SortingMap",
+   "pos": [
+    95.68,
+    43.84
+   ]
+  },
+  "1476362763011031494": {
+   "name": "SortingMap",
+   "pos": [
+    95.68,
+    43.84
+   ]
+  },
+  "2462552173922896770": {
+   "name": "Durchgangsklappvorrichtung zum Vorzimmer: Betrachte",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "2462552173923129250": {
+   "name": "Durchgangsklappvorrichtung zum Vorzimmer: Betrachte",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "2462552173916339810": {
+   "name": "Durchgangsklappvorrichtung zum Vorzimmer: Betrachte",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "2803344227783920692": {
+   "name": "Don Kamille: Sprich mit",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "2803344227783954452": {
+   "name": "Don Kamille: Sprich mit",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "2803344227790993876": {
+   "name": "Don Kamille: Sprich mit",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "3215361888741282818": {
+   "name": "Door",
+   "pos": [
+    121.5,
+    3.55
+   ]
+  },
+  "3215361888741705762": {
+   "name": "Door",
+   "pos": [
+    121.5,
+    3.55
+   ]
+  },
+  "3215361888741282819": {
+   "name": "Door",
+   "pos": [
+    121.5,
+    3.55
+   ]
+  },
+  "3215361888735764962": {
+   "name": "Door",
+   "pos": [
+    121.5,
+    3.55
+   ]
+  },
+  "3385629549910946309": {
+   "name": "DonKamilleConversation",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "3385629549911240229": {
+   "name": "DonKamilleConversation",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "3385629549905414119": {
+   "name": "DonKamilleConversation",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "3385629549905414117": {
+   "name": "DonKamilleConversation",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "3470577450443756580": {
+   "name": "Prophecy",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "3470577450443458564": {
+   "name": "Prophecy",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "3470577450449248708": {
+   "name": "Prophecy",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "2221105151705497808": {
+   "name": "Prophecy",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "4452479099222231566": {
+   "name": "Fenster: Look at",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "4452479099221939758": {
+   "name": "Fenster: Look at",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "4452479099210989550": {
+   "name": "Fenster: Look at",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "4815645952169440951": {
+   "name": "DonKamilleConversation_Option2",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "4815645952169536151": {
+   "name": "DonKamilleConversation_Option2",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "4815645952179635031": {
+   "name": "DonKamilleConversation_Option2",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "4934344689954822288": {
+   "name": "Marker2D: ExamRegulations",
+   "pos": [
+    86.02,
+    60.0
+   ]
+  },
+  "4934344689954325680": {
+   "name": "Marker2D: ExamRegulations",
+   "pos": [
+    86.02,
+    60.0
+   ]
+  },
+  "4934344689975648944": {
+   "name": "Marker2D: ExamRegulations",
+   "pos": [
+    86.02,
+    60.0
+   ]
+  },
+  "4934344689965591920": {
+   "name": "Marker2D: ExamRegulations",
+   "pos": [
+    86.02,
+    60.0
+   ]
+  },
+  "5115756913443615075": {
+   "name": "TeesaTalkToDonKamille",
+   "pos": [
+    -2.24,
+    76.8
+   ]
+  },
+  "5115756913443319107": {
+   "name": "TeesaTalkToDonKamille",
+   "pos": [
+    -2.24,
+    76.8
+   ]
+  },
+  "5115756913430940483": {
+   "name": "TeesaTalkToDonKamille",
+   "pos": [
+    -2.24,
+    76.8
+   ]
+  },
+  "5115756913453319299": {
+   "name": "TeesaTalkToDonKamille",
+   "pos": [
+    -2.24,
+    76.8
+   ]
+  },
+  "5275834277244056510": {
+   "name": "Durchgangsklappvorrichtung: Benutze",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "5275834277243760542": {
+   "name": "Durchgangsklappvorrichtung: Benutze",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "5275834277233837662": {
+   "name": "Durchgangsklappvorrichtung: Benutze",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "5399570825909444309": {
+   "name": "PourTea",
+   "pos": [
+    -15.01,
+    74.02
+   ]
+  },
+  "5399570825909273333": {
+   "name": "PourTea",
+   "pos": [
+    -15.01,
+    74.02
+   ]
+  },
+  "5399570825888654581": {
+   "name": "PourTea",
+   "pos": [
+    -15.01,
+    74.02
+   ]
+  },
+  "5399570825899240245": {
+   "name": "PourTea",
+   "pos": [
+    -15.01,
+    74.02
+   ]
+  },
+  "5484406662080164753": {
+   "name": "OnStart",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "5484406662080327601": {
+   "name": "OnStart",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "5484406662091409009": {
+   "name": "OnStart",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "7126808277891868517": {
+   "name": "OnStart",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "6013396725686912670": {
+   "name": "PlayerStart2DAfterCutscene",
+   "pos": [
+    112.99,
+    70.02
+   ]
+  },
+  "6013396725687343806": {
+   "name": "PlayerStart2DAfterCutscene",
+   "pos": [
+    112.99,
+    70.02
+   ]
+  },
+  "6013396725707979966": {
+   "name": "PlayerStart2DAfterCutscene",
+   "pos": [
+    112.99,
+    70.02
+   ]
+  },
+  "6013396725698179966": {
+   "name": "PlayerStart2DAfterCutscene",
+   "pos": [
+    112.99,
+    70.02
+   ]
+  },
+  "6464279603498829094": {
+   "name": "PlayerStart2D",
+   "pos": [
+    70.4,
+    64.0
+   ]
+  },
+  "6464279603499129094": {
+   "name": "PlayerStart2D",
+   "pos": [
+    70.4,
+    64.0
+   ]
+  },
+  "6464279603477954310": {
+   "name": "PlayerStart2D",
+   "pos": [
+    70.4,
+    64.0
+   ]
+  },
+  "6464279603509047494": {
+   "name": "PlayerStart2D",
+   "pos": [
+    70.4,
+    64.0
+   ]
+  },
+  "6648287171407550301": {
+   "name": "DonKamilleConversation_Option3",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "6648287171407973245": {
+   "name": "DonKamilleConversation_Option3",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "6648287171401015997": {
+   "name": "DonKamilleConversation_Option3",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "7167411446369197745": {
+   "name": "DonKamilleConversation_Option",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "7167411446368699025": {
+   "name": "DonKamilleConversation_Option",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "7167411446358993745": {
+   "name": "DonKamilleConversation_Option",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "7295210038363860370": {
+   "name": "Marker2D: Door",
+   "pos": [
+    116.0,
+    74.02
+   ]
+  },
+  "7295210038364025266": {
+   "name": "Marker2D: Door",
+   "pos": [
+    116.0,
+    74.02
+   ]
+  },
+  "7295210038384678834": {
+   "name": "Marker2D: Door",
+   "pos": [
+    116.0,
+    74.02
+   ]
+  },
+  "7295210038357317746": {
+   "name": "Marker2D: Door",
+   "pos": [
+    116.0,
+    74.02
+   ]
+  },
+  "7633282923765315337": {
+   "name": "Don Kamille: Betrachte",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "7633282923765017385": {
+   "name": "Don Kamille: Betrachte",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "7633282923776066281": {
+   "name": "Don Kamille: Betrachte",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "7858826604117118143": {
+   "name": "ExamBriefing",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "7858826604117348511": {
+   "name": "ExamBriefing",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "7858826604110559583": {
+   "name": "ExamBriefing",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "8090778292287541295": {
+   "name": "Prüfungsordnung: Look at",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "8090778292287310863": {
+   "name": "Prüfungsordnung: Look at",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "8090778292293068239": {
+   "name": "Prüfungsordnung: Look at",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "8558094749602586160": {
+   "name": "Bookshelve",
+   "pos": [
+    42.0,
+    7.0
+   ]
+  },
+  "8558094749602742800": {
+   "name": "Bookshelve",
+   "pos": [
+    42.0,
+    7.0
+   ]
+  },
+  "8558094749606481072": {
+   "name": "Bookshelve",
+   "pos": [
+    42.0,
+    7.0
+   ]
+  },
+  "8558094749609683920": {
+   "name": "Bookshelve",
+   "pos": [
+    42.0,
+    7.0
+   ]
+  },
+  "8788006669293160989": {
+   "name": "DonKamilleConversation_Option4",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "8788006669293196861": {
+   "name": "DonKamilleConversation_Option4",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "8788006669282443261": {
+   "name": "DonKamilleConversation_Option4",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "8796455570256062236": {
+   "name": "Dump",
+   "pos": [
+    224.0,
+    49.92
+   ]
+  },
+  "8796455570255772476": {
+   "name": "Dump",
+   "pos": [
+    224.0,
+    49.92
+   ]
+  },
+  "8796455570243362108": {
+   "name": "Dump",
+   "pos": [
+    224.0,
+    49.92
+   ]
+  },
+  "8796455570248962812": {
+   "name": "Dump",
+   "pos": [
+    224.0,
+    49.92
+   ]
+  },
+  "8935608126907631555": {
+   "name": "Window",
+   "pos": [
+    -34.3,
+    -10.11
+   ]
+  },
+  "8935608126907603939": {
+   "name": "Window",
+   "pos": [
+    -34.3,
+    -10.11
+   ]
+  },
+  "8935608126903735619": {
+   "name": "Window",
+   "pos": [
+    -34.3,
+    -10.11
+   ]
+  },
+  "8935608126913131043": {
+   "name": "Window",
+   "pos": [
+    -34.3,
+    -10.11
+   ]
+  }
+ }
+}

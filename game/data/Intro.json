@@ -1,0 +1,2253 @@
+{
+ "name": "Intro",
+ "sprites": [
+  {
+   "name": "Intro",
+   "texture": "res://assets/IntroCutscene.png",
+   "region": [
+    0,
+    0,
+    320,
+    180
+   ],
+   "pos": [
+    0.0,
+    89.6
+   ],
+   "scale": [
+    1.0,
+    1.0
+   ],
+   "flipX": 0,
+   "order": -10,
+   "layer": 0,
+   "color": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "enabled": 1
+  }
+ ],
+ "hotspots": [
+  {
+   "name": "Narrator",
+   "pos": [
+    0.0,
+    123.84
+   ],
+   "box": {
+    "pos": [
+     0.0,
+     91.84
+    ],
+    "size": [
+     32.0,
+     64.0
+    ]
+   },
+   "buttons": [],
+   "displayName": "Narrator"
+  }
+ ],
+ "markers": [
+  {
+   "name": "WalkEndPlayer",
+   "pos": [
+    70.4,
+    64.0
+   ],
+   "id": null
+  }
+ ],
+ "playerStarts": [
+  {
+   "name": "PlayerStart2D",
+   "pos": [
+    240.0,
+    58.88
+   ],
+   "id": null
+  }
+ ],
+ "navPolys": [],
+ "npcs": [
+  {
+   "name": "Narrator",
+   "pos": [
+    0.0,
+    -0.0
+   ],
+   "speechColor": {
+    "r": 1,
+    "g": 1,
+    "b": 1,
+    "a": 1
+   }
+  }
+ ],
+ "camera": null,
+ "onStart": "5547783415364071961",
+ "actionLists": {
+  "5547783415364071961": {
+   "name": null,
+   "type": "Cutscene",
+   "actionListType": 0,
+   "actions": [
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": 0,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "endings": [
+      {
+       "resultAction": 2,
+       "skipAction": 28,
+       "skipActionActual": {
+        "fileID": "1350478690"
+       },
+       "linkedCutscene": {
+        "fileID": "0"
+       },
+       "linkedAsset": {
+        "fileID": "0"
+       }
+      }
+     ],
+     "type": "ActionParallel"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 1,
+     "endAction": 2,
+     "skipAction": 31,
+     "skipActionActual": {
+      "fileID": "718171144"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "constantID": 0,
+     "_anim": {
+      "fileID": "0"
+     },
+     "runtimeAnim": {
+      "fileID": "0"
+     },
+     "clip": {
+      "fileID": "0"
+     },
+     "fadeTime": 0,
+     "_anim2D": {
+      "fileID": "1412854874"
+     },
+     "runtimeAnim2D": {
+      "fileID": "0"
+     },
+     "animator": {
+      "fileID": "1412854872"
+     },
+     "runtimeAnimator": {
+      "fileID": "0"
+     },
+     "clip2D": "TitleInitial",
+     "clip2DParameterID": -1,
+     "wrapMode2D": 2,
+     "layerInt": 0,
+     "shapeObject": {
+      "fileID": "0"
+     },
+     "runtimeShapeObject": {
+      "fileID": "0"
+     },
+     "shapeKey": 0,
+     "shapeValue": 0,
+     "isPlayer": 0,
+     "methodMecanim": 0,
+     "mecanimParameterType": 0,
+     "parameterName": null,
+     "parameterNameID": -1,
+     "parameterValue": 0,
+     "parameterValueParameterID": -1,
+     "method": 0,
+     "blendMode": 0,
+     "playMode": 0,
+     "animationEngine": 2,
+     "customClassName": null,
+     "animEngine": {
+      "fileID": "1694720496"
+     },
+     "type": "ActionAnim"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 1,
+     "endAction": 2,
+     "skipAction": 8,
+     "skipActionActual": {
+      "fileID": "1308186149"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "constantID": 0,
+     "_anim": {
+      "fileID": "0"
+     },
+     "runtimeAnim": {
+      "fileID": "0"
+     },
+     "clip": {
+      "fileID": "0"
+     },
+     "fadeTime": 0,
+     "_anim2D": {
+      "fileID": "0"
+     },
+     "runtimeAnim2D": {
+      "fileID": "0"
+     },
+     "animator": {
+      "fileID": "1412854872"
+     },
+     "runtimeAnimator": {
+      "fileID": "0"
+     },
+     "clip2D": "BumpOutTitle",
+     "clip2DParameterID": -1,
+     "wrapMode2D": 0,
+     "layerInt": 0,
+     "shapeObject": {
+      "fileID": "0"
+     },
+     "runtimeShapeObject": {
+      "fileID": "0"
+     },
+     "shapeKey": 0,
+     "shapeValue": 0,
+     "isPlayer": 0,
+     "methodMecanim": 0,
+     "mecanimParameterType": 0,
+     "parameterName": null,
+     "parameterNameID": -1,
+     "parameterValue": 0,
+     "parameterValueParameterID": -1,
+     "method": 0,
+     "blendMode": 0,
+     "playMode": 0,
+     "animationEngine": 2,
+     "customClassName": null,
+     "animEngine": {
+      "fileID": "264262505"
+     },
+     "type": "ActionAnim"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 2,
+     "skipActionActual": {
+      "fileID": "190776879"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "timeToPause": 0.5,
+     "type": "ActionPause"
+    },
+    {
+     "numSockets": 2,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "endings": [
+      {
+       "resultAction": 2,
+       "skipAction": 7,
+       "skipActionActual": {
+        "fileID": "1384377482"
+       },
+       "linkedCutscene": {
+        "fileID": "0"
+       },
+       "linkedAsset": {
+        "fileID": "0"
+       }
+      },
+      {
+       "resultAction": 0,
+       "skipAction": -1,
+       "skipActionActual": {
+        "fileID": "0"
+       },
+       "linkedCutscene": {
+        "fileID": "0"
+       },
+       "linkedAsset": {
+        "fileID": "0"
+       }
+      }
+     ],
+     "type": "ActionParallel"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": 6,
+     "skipActionActual": {
+      "fileID": "1056409286"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "constantID": 0,
+     "_anim": {
+      "fileID": "0"
+     },
+     "runtimeAnim": {
+      "fileID": "0"
+     },
+     "clip": {
+      "fileID": "0"
+     },
+     "fadeTime": 0,
+     "_anim2D": {
+      "fileID": "0"
+     },
+     "runtimeAnim2D": {
+      "fileID": "0"
+     },
+     "animator": {
+      "fileID": "1412854872"
+     },
+     "runtimeAnimator": {
+      "fileID": "0"
+     },
+     "clip2D": "DonKamilleFlyIn",
+     "clip2DParameterID": -1,
+     "wrapMode2D": 0,
+     "layerInt": 0,
+     "shapeObject": {
+      "fileID": "0"
+     },
+     "runtimeShapeObject": {
+      "fileID": "0"
+     },
+     "shapeKey": 0,
+     "shapeValue": 0,
+     "isPlayer": 0,
+     "methodMecanim": 0,
+     "mecanimParameterType": 0,
+     "parameterName": null,
+     "parameterNameID": -1,
+     "parameterValue": 0,
+     "parameterValueParameterID": -1,
+     "method": 0,
+     "blendMode": 0,
+     "playMode": 0,
+     "animationEngine": 2,
+     "customClassName": null,
+     "animEngine": {
+      "fileID": "744074308"
+     },
+     "type": "ActionAnim"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 32,
+     "skipActionActual": {
+      "fileID": "1500145036"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 0,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "529430042"
+     },
+     "messageText": "Und es begab sich, dass der edle Hohepriester Don Kamille sich anschickte, eine Teeokratie zu errichten.",
+     "lineID": 163,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 6,
+     "skipActionActual": {
+      "fileID": "1056409286"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "timeToPause": 4.5,
+     "type": "ActionPause"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 4,
+     "skipActionActual": {
+      "fileID": "1819337719"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "timeToPause": 1.5,
+     "type": "ActionPause"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 11,
+     "skipActionActual": {
+      "fileID": "1649028821"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 0,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "529430042"
+     },
+     "messageText": "Bisher hatte ihn die gewählte Bürgermeisterin Ess-Mer-Alda davon abgehalten, die Macht im  beschaulichen Bergdorf Teegernseh zu übernehmen. ",
+     "lineID": 164,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 33,
+     "skipActionActual": {
+      "fileID": "818168147"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "constantID": 0,
+     "_anim": {
+      "fileID": "0"
+     },
+     "runtimeAnim": {
+      "fileID": "0"
+     },
+     "clip": {
+      "fileID": "0"
+     },
+     "fadeTime": 0,
+     "_anim2D": {
+      "fileID": "0"
+     },
+     "runtimeAnim2D": {
+      "fileID": "0"
+     },
+     "animator": {
+      "fileID": "1412854872"
+     },
+     "runtimeAnimator": {
+      "fileID": "0"
+     },
+     "clip2D": "BumpInEsme",
+     "clip2DParameterID": -1,
+     "wrapMode2D": 0,
+     "layerInt": 0,
+     "shapeObject": {
+      "fileID": "0"
+     },
+     "runtimeShapeObject": {
+      "fileID": "0"
+     },
+     "shapeKey": 0,
+     "shapeValue": 0,
+     "isPlayer": 0,
+     "methodMecanim": 0,
+     "mecanimParameterType": 0,
+     "parameterName": null,
+     "parameterNameID": -1,
+     "parameterValue": 0,
+     "parameterValueParameterID": -1,
+     "method": 0,
+     "blendMode": 0,
+     "playMode": 0,
+     "animationEngine": 2,
+     "customClassName": null,
+     "animEngine": {
+      "fileID": "1743690460"
+     },
+     "type": "ActionAnim"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": 12,
+     "skipActionActual": {
+      "fileID": "1824638898"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 0,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "529430042"
+     },
+     "messageText": "Sie und die von ihr tolerierten Essenzialisten hatten die Bevölkerung sogar verleitet, zu Essen, statt nur Tee zu trinken.",
+     "lineID": 165,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": 13,
+     "skipActionActual": {
+      "fileID": "1926519891"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 0,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "529430042"
+     },
+     "messageText": "Mit diesen Verfehlungen sollte nun endgültig Schluss sein. So wollte es der edle Hohepriester.\r",
+     "lineID": 166,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 2,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "endings": [
+      {
+       "resultAction": 2,
+       "skipAction": 15,
+       "skipActionActual": {
+        "fileID": "1500654007"
+       },
+       "linkedCutscene": {
+        "fileID": "0"
+       },
+       "linkedAsset": {
+        "fileID": "0"
+       }
+      },
+      {
+       "resultAction": 0,
+       "skipAction": -1,
+       "skipActionActual": {
+        "fileID": "0"
+       },
+       "linkedCutscene": {
+        "fileID": "0"
+       },
+       "linkedAsset": {
+        "fileID": "0"
+       }
+      }
+     ],
+     "type": "ActionParallel"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 16,
+     "skipActionActual": {
+      "fileID": "12999972"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 1,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "0"
+     },
+     "messageText": "Tz... „Edler Hohepriester“... Wohl eher „Hohler Odelproster“.",
+     "lineID": 167,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": 16,
+     "skipActionActual": {
+      "fileID": "12999972"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "constantID": 0,
+     "_anim": {
+      "fileID": "0"
+     },
+     "runtimeAnim": {
+      "fileID": "0"
+     },
+     "clip": {
+      "fileID": "0"
+     },
+     "fadeTime": 0,
+     "_anim2D": {
+      "fileID": "0"
+     },
+     "runtimeAnim2D": {
+      "fileID": "0"
+     },
+     "animator": {
+      "fileID": "1412854872"
+     },
+     "runtimeAnimator": {
+      "fileID": "0"
+     },
+     "clip2D": "PictureFalling",
+     "clip2DParameterID": -1,
+     "wrapMode2D": 0,
+     "layerInt": 0,
+     "shapeObject": {
+      "fileID": "0"
+     },
+     "runtimeShapeObject": {
+      "fileID": "0"
+     },
+     "shapeKey": 0,
+     "shapeValue": 0,
+     "isPlayer": 0,
+     "methodMecanim": 0,
+     "mecanimParameterType": 0,
+     "parameterName": null,
+     "parameterNameID": -1,
+     "parameterValue": 0,
+     "parameterValueParameterID": -1,
+     "method": 0,
+     "blendMode": 0,
+     "playMode": 0,
+     "animationEngine": 2,
+     "customClassName": null,
+     "animEngine": {
+      "fileID": "1996110734"
+     },
+     "type": "ActionAnim"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 20,
+     "skipActionActual": {
+      "fileID": "1343207026"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 0,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "529430042"
+     },
+     "messageText": "Ruhe! ICH bin die Erzählstimme aus dem Off! ICH erzähle die Geschichte! ",
+     "lineID": 168,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 18,
+     "skipActionActual": {
+      "fileID": "638762957"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 0,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "529430042"
+     },
+     "messageText": "Verehrtes Auditorium, diese vorlaute Stimme, die Sie gerade vernommen haben, gehört Teesa. ",
+     "lineID": 169,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 19,
+     "skipActionActual": {
+      "fileID": "246355359"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 0,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "529430042"
+     },
+     "messageText": "Wenig anpassungsfähig, deswegen zu Disziplinierung von ihrem streng gläubigen Vater ins Kloster verbannt. ",
+     "lineID": 170,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 30,
+     "skipActionActual": {
+      "fileID": "2136450859"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "constantID": 0,
+     "parameterID": -1,
+     "messageParameterID": -1,
+     "isPlayer": 0,
+     "playerID": -1,
+     "speaker": {
+      "fileID": "529430042"
+     },
+     "messageText": "Dort ist sie gerade im Begriff ihre Abschlussprüfung zu vollenden, die sogenannte Literertour. Erstaunlich eigentlich...",
+     "lineID": 171,
+     "multiLineIDs": null,
+     "isBackground": 0,
+     "noAnimation": 0,
+     "headClip": {
+      "fileID": "0"
+     },
+     "mouthClip": {
+      "fileID": "0"
+     },
+     "play2DHeadAnim": 0,
+     "headClip2D": null,
+     "headLayer": 0,
+     "play2DMouthAnim": 0,
+     "mouthClip2D": null,
+     "mouthLayer": 0,
+     "waitTimeOffset": 0,
+     "type": "ActionSpeech"
+    },
+    {
+     "numSockets": 2,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": -1,
+     "skipActionActual": {
+      "fileID": "0"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "endings": [
+      {
+       "resultAction": 0,
+       "skipAction": -1,
+       "skipActionActual": {
+        "fileID": "0"
+       },
+       "linkedCutscene": {
+        "fileID": "0"
+       },
+       "linkedAsset": {
+        "fileID": "0"
+       }
+      },
+      {
+       "resultAction": 2,
+       "skipAction": 34,
+       "skipActionActual": {
+        "fileID": "571311160"
+       },
+       "linkedCutscene": {
+        "fileID": "0"
+       },
+       "linkedAsset": {
+        "fileID": "0"
+       }
+      }
+     ],
+     "type": "ActionParallel"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 1,
+     "endAction": 0,
+     "skipAction": 22,
+     "skipActionActual": {
+      "fileID": "321803819"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "charToMoveParameterID": -1,
+     "markerParameterID": -1,
+     "charToMoveID": 0,
+     "markerID": 0,
+     "marker": {
+      "fileID": "1415519403724236599"
+     },
+     "isPlayer": 1,
+     "playerID": -1,
+     "playerParameterID": -1,
+     "charToMove": {
+      "fileID": "0"
+     },
+     "speed": 0,
+     "pathFind": 1,
+     "doFloat": 0,
+     "doTimeLimit": 0,
+     "maxTimeParameterID": -1,
+     "maxTime": 10,
+     "onReachTimeLimit": 0,
+     "faceAfter": 0,
+     "type": "ActionCharPathFind"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": 23,
+     "skipActionActual": {
+      "fileID": "270270212"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "charToMoveParameterID": -1,
+     "charToMoveID": 0,
+     "isInstant": 0,
+     "direction": 1,
+     "directionParameterID": -1,
+     "charToMove": {
+      "fileID": "0"
+     },
+     "isPlayer": 1,
+     "playerID": -1,
+     "relativeTo": 0,
+     "type": "ActionCharFaceDirection"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 26,
+     "skipActionActual": {
+      "fileID": "254362020"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "changeType": 5,
+     "removeJournalPageMethod": 0,
+     "menuToChange": "Pause",
+     "menuToChangeParameterID": -1,
+     "elementToChange": null,
+     "elementToChangeParameterID": -1,
+     "journalText": null,
+     "onlyAddNewJournal": 0,
+     "doFade": 0,
+     "lineID": -1,
+     "journalPageIndex": -1,
+     "journalPageIndexParameterID": -1,
+     "type": "ActionMenuState"
+    },
+    {
+     "numSockets": 0,
+     "willWait": 0,
+     "endAction": 1,
+     "skipAction": 25,
+     "skipActionActual": {
+      "fileID": "152836099"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "chooseSceneBy": 1,
+     "sceneNumber": 0,
+     "sceneNumberParameterID": -1,
+     "sceneName": "TeaistCloisterOffice",
+     "sceneNameParameterID": -1,
+     "assignScreenOverlay": 1,
+     "onlyPreload": 0,
+     "relativePosition": 0,
+     "relativeMarker": {
+      "fileID": "0"
+     },
+     "relativeMarkerID": 0,
+     "relativeMarkerParameterID": -1,
+     "forceReload": 0,
+     "type": "ActionScene"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 1,
+     "skipActionActual": {
+      "fileID": "1437089207"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "changeType": 4,
+     "removeJournalPageMethod": 0,
+     "menuToChange": "InGame",
+     "menuToChangeParameterID": -1,
+     "elementToChange": null,
+     "elementToChangeParameterID": -1,
+     "journalText": null,
+     "onlyAddNewJournal": 0,
+     "doFade": 0,
+     "lineID": -1,
+     "journalPageIndex": -1,
+     "journalPageIndexParameterID": -1,
+     "type": "ActionMenuState"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 0,
+     "skipAction": 27,
+     "skipActionActual": {
+      "fileID": "592855378"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "changeType": 5,
+     "removeJournalPageMethod": 0,
+     "menuToChange": "InGame",
+     "menuToChangeParameterID": -1,
+     "elementToChange": null,
+     "elementToChangeParameterID": -1,
+     "journalText": null,
+     "onlyAddNewJournal": 0,
+     "doFade": 0,
+     "lineID": -1,
+     "journalPageIndex": -1,
+     "journalPageIndexParameterID": -1,
+     "type": "ActionMenuState"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 29,
+     "skipActionActual": {
+      "fileID": "152385480"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "changeType": 5,
+     "removeJournalPageMethod": 0,
+     "menuToChange": "Pause",
+     "menuToChangeParameterID": -1,
+     "elementToChange": null,
+     "elementToChangeParameterID": -1,
+     "journalText": null,
+     "onlyAddNewJournal": 0,
+     "doFade": 0,
+     "lineID": -1,
+     "journalPageIndex": -1,
+     "journalPageIndexParameterID": -1,
+     "type": "ActionMenuState"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 25,
+     "skipActionActual": {
+      "fileID": "152836099"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "unityEvent": {
+      "m_PersistentCalls": {
+       "m_Calls": [
+        {
+         "m_Target": {
+          "fileID": "75338012"
+         },
+         "m_MethodName": "disableSkipline",
+         "m_Mode": 1,
+         "m_Arguments": {
+          "m_ObjectArgument": {
+           "fileID": "0"
+          },
+          "m_ObjectArgumentAssemblyTypeName": "UnityEngine.Object, UnityEngine",
+          "m_IntArgument": 0,
+          "m_FloatArgument": 0,
+          "m_StringArgument": null,
+          "m_BoolArgument": 0
+         },
+         "m_CallState": 1
+        }
+       ]
+      }
+     },
+     "skipEvent": {
+      "m_PersistentCalls": {
+       "m_Calls": []
+      }
+     },
+     "ignoreWhenSkipping": 0,
+     "type": "ActionEvent"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 24,
+     "skipActionActual": {
+      "fileID": "1866663949"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "unityEvent": {
+      "m_PersistentCalls": {
+       "m_Calls": [
+        {
+         "m_Target": {
+          "fileID": "75338012"
+         },
+         "m_MethodName": "enableSkipline",
+         "m_Mode": 1,
+         "m_Arguments": {
+          "m_ObjectArgument": {
+           "fileID": "0"
+          },
+          "m_ObjectArgumentAssemblyTypeName": "UnityEngine.Object, UnityEngine",
+          "m_IntArgument": 0,
+          "m_FloatArgument": 0,
+          "m_StringArgument": null,
+          "m_BoolArgument": 0
+         },
+         "m_CallState": 1
+        }
+       ]
+      }
+     },
+     "skipEvent": {
+      "m_PersistentCalls": {
+       "m_Calls": []
+      }
+     },
+     "ignoreWhenSkipping": 0,
+     "type": "ActionEvent"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 23,
+     "skipActionActual": {
+      "fileID": "270270212"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "gameObject": {
+      "fileID": "1412854871"
+     },
+     "parameterID": -1,
+     "constantID": 0,
+     "replaceGameObject": {
+      "fileID": "0"
+     },
+     "replaceParameterID": -1,
+     "replaceConstantID": 0,
+     "relativeGameObject": {
+      "fileID": "0"
+     },
+     "relativeGameObjectID": 0,
+     "relativeGameObjectParameterID": -1,
+     "relativeVectorParameterID": -1,
+     "relativeVector": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+     },
+     "vectorVarParameterID": -1,
+     "vectorVarID": 0,
+     "variableLocation": 0,
+     "invAction": 1,
+     "positionRelativeTo": 0,
+     "variables": {
+      "fileID": "0"
+     },
+     "variablesConstantID": 0,
+     "spawnedObjectParameterID": -1,
+     "type": "ActionInstantiate"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 3,
+     "skipActionActual": {
+      "fileID": "1402336925"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "trackID": 1,
+     "trackIDParameterID": -1,
+     "fadeTime": 0,
+     "fadeTimeParameterID": -1,
+     "loop": 0,
+     "isQueued": 0,
+     "resumeFromStart": 1,
+     "resumeIfPlayedBefore": 0,
+     "willWaitComplete": 0,
+     "musicAction": 0,
+     "loopingOverlapTime": 0,
+     "type": "ActionMusic"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 10,
+     "skipActionActual": {
+      "fileID": "1002668225"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "timeToPause": 0.5,
+     "type": "ActionPause"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 9,
+     "skipActionActual": {
+      "fileID": "1876999019"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "parameterID": -1,
+     "timeToPause": 4.2,
+     "type": "ActionPause"
+    },
+    {
+     "numSockets": 1,
+     "willWait": 0,
+     "endAction": 2,
+     "skipAction": 17,
+     "skipActionActual": {
+      "fileID": "487758735"
+     },
+     "linkedCutscene": {
+      "fileID": "0"
+     },
+     "linkedAsset": {
+      "fileID": "0"
+     },
+     "isEnabled": 1,
+     "trackID": 3,
+     "trackIDParameterID": -1,
+     "fadeTime": 0,
+     "fadeTimeParameterID": -1,
+     "loop": 0,
+     "isQueued": 0,
+     "resumeFromStart": 1,
+     "resumeIfPlayedBefore": 0,
+     "willWaitComplete": 0,
+     "musicAction": 0,
+     "loopingOverlapTime": 0,
+     "type": "ActionMusic"
+    }
+   ],
+   "hostName": "OnStart"
+  }
+ },
+ "refs": {
+  "75338011": {
+   "name": "CutSceneScript",
+   "pos": [
+    73.44,
+    15.38
+   ]
+  },
+  "75338013": {
+   "name": "CutSceneScript",
+   "pos": [
+    73.44,
+    15.38
+   ]
+  },
+  "75338012": {
+   "name": "CutSceneScript",
+   "pos": [
+    73.44,
+    15.38
+   ]
+  },
+  "77189176": {
+   "name": "_Sounds",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "77189177": {
+   "name": "_Sounds",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "156874121": {
+   "name": "_Cameras",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "156874122": {
+   "name": "_Cameras",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "219484915": {
+   "name": "_NavMesh",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "219484916": {
+   "name": "_NavMesh",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "235540661": {
+   "name": "_Lights",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "235540662": {
+   "name": "_Lights",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "269719889": {
+   "name": "_NPCs",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "269719890": {
+   "name": "_NPCs",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "279545884": {
+   "name": "_Conversations",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "279545885": {
+   "name": "_Conversations",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "296918730": {
+   "name": "_Moveables",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "296918731": {
+   "name": "_Moveables",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "341183857": {
+   "name": "_NavMeshSegments",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "341183858": {
+   "name": "_NavMeshSegments",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "462741648": {
+   "name": "_Interactions",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "462741649": {
+   "name": "_Interactions",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "529430040": {
+   "name": "Narrator",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "529430045": {
+   "name": "Narrator",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "529430044": {
+   "name": "Narrator",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "529430043": {
+   "name": "Narrator",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "529430042": {
+   "name": "Narrator",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "529430041": {
+   "name": "Narrator",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "803225245": {
+   "name": "_CollisionCylinders",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "803225246": {
+   "name": "_CollisionCylinders",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "851739872": {
+   "name": "_CollisionCubes",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "851739873": {
+   "name": "_CollisionCubes",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "960326509": {
+   "name": "_SetGeometry",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "960326510": {
+   "name": "_SetGeometry",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "967336889": {
+   "name": "Narrator",
+   "pos": [
+    0.0,
+    123.84
+   ]
+  },
+  "967336890": {
+   "name": "Narrator",
+   "pos": [
+    0.0,
+    123.84
+   ]
+  },
+  "967336895": {
+   "name": "Narrator",
+   "pos": [
+    0.0,
+    123.84
+   ]
+  },
+  "967336894": {
+   "name": "Narrator",
+   "pos": [
+    0.0,
+    123.84
+   ]
+  },
+  "967336893": {
+   "name": "Narrator",
+   "pos": [
+    0.0,
+    123.84
+   ]
+  },
+  "967336892": {
+   "name": "Narrator",
+   "pos": [
+    0.0,
+    123.84
+   ]
+  },
+  "967336891": {
+   "name": "Narrator",
+   "pos": [
+    0.0,
+    123.84
+   ]
+  },
+  "1043449391": {
+   "name": "_ArrowPrompts",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1043449392": {
+   "name": "_ArrowPrompts",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1092120202": {
+   "name": "_UI",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1092120203": {
+   "name": "_UI",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1093884362": {
+   "name": "_SortingMaps",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1093884363": {
+   "name": "_SortingMaps",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1144206338": {
+   "name": "Sound child",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1144206341": {
+   "name": "Sound child",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1144206340": {
+   "name": "Sound child",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1144206339": {
+   "name": "Sound child",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1148423379": {
+   "name": "_Hotspots",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1148423380": {
+   "name": "_Hotspots",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1271999362": {
+   "name": "_Tracks",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1271999363": {
+   "name": "_Tracks",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1292368852": {
+   "name": "_Triggers",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1292368853": {
+   "name": "_Triggers",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1380674276": {
+   "name": "_GameCameras",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1380674277": {
+   "name": "_GameCameras",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1412854871": {
+   "name": "Intro",
+   "pos": [
+    0.0,
+    89.6
+   ]
+  },
+  "1412854874": {
+   "name": "Intro",
+   "pos": [
+    0.0,
+    89.6
+   ]
+  },
+  "1412854873": {
+   "name": "Intro",
+   "pos": [
+    0.0,
+    89.6
+   ]
+  },
+  "1412854872": {
+   "name": "Intro",
+   "pos": [
+    0.0,
+    89.6
+   ]
+  },
+  "1412854875": {
+   "name": "Intro",
+   "pos": [
+    0.0,
+    89.6
+   ]
+  },
+  "1534601338": {
+   "name": "_PlayerStarts",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1534601339": {
+   "name": "_PlayerStarts",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1582462769": {
+   "name": "_Cutscenes",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1582462770": {
+   "name": "_Cutscenes",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1612640738": {
+   "name": "_Navigation",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1612640739": {
+   "name": "_Navigation",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1721092048": {
+   "name": "_Paths",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1721092049": {
+   "name": "_Paths",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1777929784": {
+   "name": "_Logic",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1777929785": {
+   "name": "_Logic",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1804110585": {
+   "name": "_DialogueOptions",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1804110586": {
+   "name": "_DialogueOptions",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "2028770305": {
+   "name": "_Markers",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "2028770306": {
+   "name": "_Markers",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "2075772680": {
+   "name": "_Containers",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "2075772681": {
+   "name": "_Containers",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "1415519403713991383": {
+   "name": "WalkEndPlayer",
+   "pos": [
+    70.4,
+    64.0
+   ]
+  },
+  "1415519403714023159": {
+   "name": "WalkEndPlayer",
+   "pos": [
+    70.4,
+    64.0
+   ]
+  },
+  "1415519403701266679": {
+   "name": "WalkEndPlayer",
+   "pos": [
+    70.4,
+    64.0
+   ]
+  },
+  "1415519403724236599": {
+   "name": "WalkEndPlayer",
+   "pos": [
+    70.4,
+    64.0
+   ]
+  },
+  "5547783415358048249": {
+   "name": "OnStart",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "5547783415358544857": {
+   "name": "OnStart",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "5547783415364071961": {
+   "name": "OnStart",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "6378408418885093621": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "6378408418885391573": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "6378408418896362773": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "6378408418896362769": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "6378408418896362771": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "6378408418896362781": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "6378408418896362783": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "6378408418896417559": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "6378408418896362779": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "6378408418896362757": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "6378408418896362759": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "6378408418896362753": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "6378408418896362755": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "6378408418896362765": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "6378408418896362775": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "6378408418896392781": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "6378408418896406447": {
+   "name": "GameEngine",
+   "pos": [
+    0.0,
+    -0.0
+   ]
+  },
+  "8915412996900103343": {
+   "name": "PlayerStart2D",
+   "pos": [
+    240.0,
+    58.88
+   ]
+  },
+  "8915412996900403343": {
+   "name": "PlayerStart2D",
+   "pos": [
+    240.0,
+    58.88
+   ]
+  },
+  "8915412996921187983": {
+   "name": "PlayerStart2D",
+   "pos": [
+    240.0,
+    58.88
+   ]
+  },
+  "8915412996907192655": {
+   "name": "PlayerStart2D",
+   "pos": [
+    240.0,
+    58.88
+   ]
+  }
+ }
+}
