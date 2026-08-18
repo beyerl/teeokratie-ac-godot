@@ -398,6 +398,30 @@ def extract_scene(name, filename):
                 if al:
                     actionlists[fid] = al
 
+    # conversations: Conversation components -> options (label, enabled, what to run)
+    conversations = {}
+    for fid, o in objs.items():
+        if o["type"] == "MonoBehaviour" and script_class(o) == "Conversation":
+            opts = []
+            for i, op in enumerate(o["data"].get("options", []) or []):
+                dopt = str((op.get("dialogueOption") or {}).get("fileID", "0"))
+                newconv = str((op.get("newConversation") or {}).get("fileID", "0"))
+                opts.append({
+                    "num": i + 1,                        # AC optionNumber is 1-based
+                    "label": op.get("label", ""),
+                    "lineID": op.get("lineID", -1),
+                    "isOn": int(op.get("isOn", 1)),
+                    "conversationAction": int(op.get("conversationAction", 0)),
+                    "dialogueOption": dopt,
+                    "newConversation": newconv,
+                })
+                # ensure the option's ActionList is extracted
+                if dopt != "0" and dopt not in actionlists:
+                    al = extract_actionlist(objs, dopt)
+                    if al:
+                        actionlists[dopt] = al
+            conversations[fid] = {"options": opts}
+
     # refs: map every GameObject fileID AND its component fileIDs -> {name, pos}
     # so actions that reference markers/objects/characters by fileID can resolve.
     refs = {}
@@ -431,6 +455,7 @@ def extract_scene(name, filename):
         "camera": camera,
         "onStart": on_start,
         "actionLists": actionlists,
+        "conversations": conversations,
         "refs": refs,
     }
 

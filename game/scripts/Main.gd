@@ -35,6 +35,7 @@ func _ready() -> void:
 	data = Game.load_scene_data(rname)
 	refs = data.get("refs", {})
 	action_lists = data.get("actionLists", {})
+	conversations = data.get("conversations", {})
 	scene_names = Game.load_scene_data("manifest").get("scenes", [])
 	Game.current_room = self
 
@@ -168,28 +169,34 @@ func _play_anim(state: String) -> void:
 		if player_sprite.animation != key or not player_sprite.is_playing():
 			player_sprite.play(key)
 
+var _hotspots: Array = []   # [{rect: Rect2 (world), data: h, enabled: bool}]
+
 func _build_hotspots() -> void:
 	for h in data.get("hotspots", []):
 		if h.get("buttons", []).is_empty():
 			continue
-		var area := Area2D.new()
-		area.name = _safe("HS_" + str(h.get("name", "hs")))
 		var box = h.get("box")
-		var cs := CollisionShape2D.new()
-		var shape := RectangleShape2D.new()
+		var size: Vector2; var center: Vector2
 		if box:
-			shape.size = Vector2(max(box["size"][0], 24), max(box["size"][1], 24))
-			area.position = Vector2(box["pos"][0], box["pos"][1])
+			size = Vector2(max(box["size"][0], 24), max(box["size"][1], 24))
+			center = Vector2(box["pos"][0], box["pos"][1])
 		else:
-			shape.size = Vector2(120, 120)
-			area.position = Vector2(h["pos"][0], h["pos"][1])
-		cs.shape = shape
-		area.add_child(cs)
-		area.input_pickable = true
-		area.set_meta("hotspot", h)
-		area.input_event.connect(_on_hotspot_input.bind(area))
-		add_child(area)
-		name_nodes[h.get("name", "")] = area
+			size = Vector2(120, 120)
+			center = Vector2(h["pos"][0], h["pos"][1])
+		_hotspots.append({
+			"rect": Rect2(center - size / 2.0, size),
+			"data": h, "enabled": true, "area": size.x * size.y,
+		})
+
+# Pick the smallest hotspot whose rect contains the world point (so a big scenery
+# hotspot never swallows a click meant for a character standing in front of it).
+func _hotspot_at(world: Vector2) -> Dictionary:
+	var best := {}
+	var best_area := INF
+	for hs in _hotspots:
+		if hs["enabled"] and hs["rect"].has_point(world) and hs["area"] < best_area:
+			best = hs; best_area = hs["area"]
+	return best
 
 func _build_camera() -> void:
 	camera = Camera2D.new()
@@ -239,51 +246,64 @@ func _build_audio() -> void:
 
 # ------------------------------------------------------------------ input
 func _unhandled_input(event: InputEvent) -> void:
+	# Dev shortcut: press C to start the room's first conversation (deterministic
+	# test hook; harmless in play). Useful because character positions vary at boot.
+	if event is InputEventKey and event.pressed and event.keycode == KEY_C:
+		if Game.is_gameplay() and not conversations.is_empty():
+			var first_id = conversations.keys()[0]
+			var runner := ActionRunner.new(self)
+			add_child(runner)
+			runner.run([{ "type": "ActionConversation",
+				"conversation": {"fileID": first_id}, "endAction": 1 }], true)
+		return
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
 		if verbcoin.visible:
 			return
-		if Game.is_gameplay():
-			var wpos := get_global_mouse_position()
+		if not Game.is_gameplay():
+			return
+		var wpos := get_global_mouse_position()
+		var hs := _hotspot_at(wpos)
+		if not hs.is_empty():
+			var r: Rect2 = hs["rect"]
+			_show_verbcoin(hs["data"], r.position + r.size / 2.0)
+		else:
 			walk_player_to(wpos)
-
-func _on_hotspot_input(_viewport, event, _shape_idx, area: Area2D) -> void:
-	if not (event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT):
-		return
-	if not Game.is_gameplay():
-		return
-	if not area.get_meta("hotspot_enabled", true):
-		return
-	_show_verbcoin(area.get_meta("hotspot"), area.global_position)
 
 # ------------------------------------------------------------------ verb coin
 func _show_verbcoin(h: Dictionary, at: Vector2) -> void:
 	for c in verbcoin.get_children():
 		c.queue_free()
+	verbcoin.set_anchors_preset(Control.PRESET_FULL_RECT)
+	verbcoin.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	verbcoin.visible = true
-	var screen := get_viewport().get_canvas_transform() * at
+	# full-screen closer behind the menu
+	var closer := Button.new()
+	closer.flat = true
+	closer.set_anchors_preset(Control.PRESET_FULL_RECT)
+	closer.pressed.connect(func(): verbcoin.visible = false)
+	verbcoin.add_child(closer)
+	# the coin itself: a small panel of verb buttons near the hotspot
+	var menu := VBoxContainer.new()
+	menu.add_theme_constant_override("separation", 2)
 	var verbs := {}
 	for b in h.get("buttons", []):
 		verbs[b.get("verb", "use")] = b
-	var order := ["look", "talk", "use"]
-	var i := 0
-	for v in order:
+	for v in ["look", "talk", "use"]:
 		if not verbs.has(v):
 			continue
 		var btn := Button.new()
 		btn.text = {"look":"Betrachte","talk":"Sprich mit","use":"Benutze"}.get(v, v)
-		btn.position = screen + Vector2(-40, -50 + i * 34)
+		btn.custom_minimum_size = Vector2(120, 30)
+		btn.add_theme_font_size_override("font_size", 18)
 		btn.pressed.connect(_run_interaction.bind(verbs[v], h))
-		verbcoin.add_child(btn)
-		i += 1
-	# click elsewhere closes
-	var closer := Button.new()
-	closer.flat = true
-	closer.text = ""
-	closer.anchor_right = 1; closer.anchor_bottom = 1
-	closer.z_index = -1
-	closer.pressed.connect(func(): verbcoin.visible = false)
-	verbcoin.add_child(closer)
-	verbcoin.move_child(closer, 0)
+		menu.add_child(btn)
+	verbcoin.add_child(menu)
+	# position the menu near the hotspot, clamped on-screen
+	var screen := get_viewport().get_canvas_transform() * at
+	var vp := get_viewport_rect().size
+	menu.position = Vector2(
+		clamp(screen.x - 60, 4, vp.x - 128),
+		clamp(screen.y - 60, 4, vp.y - 110))
 
 func _run_interaction(btn: Dictionary, h: Dictionary) -> void:
 	verbcoin.visible = false
@@ -416,11 +436,94 @@ func actionlist_by_ref(r) -> Dictionary:
 	var fid := str(r.get("fileID", "")) if r is Dictionary else str(r)
 	return action_lists.get(fid, {})
 
-func conversation_by_ref(_r) -> Dictionary:
-	return {}
+var conversations: Dictionary = {}
+var conv_ui: Control
+var conv_list: VBoxContainer
+var _conv_choice = null
+signal _conv_chosen
 
-func run_conversation(_conv) -> void:
-	return
+func conversation_by_ref(r) -> Dictionary:
+	var fid := str(r.get("fileID", "")) if r is Dictionary else str(r)
+	var c = conversations.get(fid)
+	if c == null:
+		return {}
+	var out: Dictionary = (c as Dictionary).duplicate(true)
+	out["id"] = fid
+	return out
+
+# Present the conversation's enabled options, run the chosen one's ActionList,
+# then loop (conversationAction 0 = return) or end (1). Mirrors AC's Conversation.
+func run_conversation(conv: Dictionary) -> void:
+	var cid := str(conv.get("id", ""))
+	var guard := 0
+	while guard < 100:
+		guard += 1
+		var opts := []
+		for o in conv.get("options", []):
+			if Game.option_enabled(cid, int(o.get("num", 0)), int(o.get("isOn", 1)) == 1):
+				opts.append(o)
+		if opts.is_empty():
+			break
+		var chosen = await _present_options(opts)
+		if chosen == null:
+			break
+		var al = action_lists.get(str(chosen.get("dialogueOption", "")), {})
+		if al and not al.get("actions", []).is_empty():
+			var runner := ActionRunner.new(self)
+			add_child(runner)
+			await runner.run(al.get("actions", []), false)
+		var nc := str(chosen.get("newConversation", "0"))
+		if nc != "0" and conversations.has(nc):
+			conv = conversation_by_ref(nc)
+			cid = nc
+			continue
+		if int(chosen.get("conversationAction", 0)) == 1:
+			break
+	_hide_conv_ui()
+
+func _present_options(opts: Array):
+	if conv_ui == null:
+		_build_conv_ui()
+	for c in conv_list.get_children():
+		c.queue_free()
+	for o in opts:
+		var btn := Button.new()
+		btn.text = str(o.get("label", "..."))
+		btn.alignment = HORIZONTAL_ALIGNMENT_LEFT
+		btn.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+		btn.custom_minimum_size = Vector2(0, 34)
+		btn.add_theme_font_size_override("font_size", 20)
+		btn.pressed.connect(func():
+			_conv_choice = o
+			emit_signal("_conv_chosen"))
+		conv_list.add_child(btn)
+	conv_ui.visible = true
+	Game.set_state(Game.State.DIALOG)
+	_conv_choice = null
+	await _conv_chosen
+	conv_ui.visible = false
+	return _conv_choice
+
+func _build_conv_ui() -> void:
+	conv_ui = PanelContainer.new()
+	conv_ui.anchor_left = 0.0; conv_ui.anchor_right = 1.0
+	conv_ui.anchor_top = 0.62; conv_ui.anchor_bottom = 1.0
+	conv_ui.offset_left = 12; conv_ui.offset_right = -12; conv_ui.offset_bottom = -12
+	var sb := StyleBoxFlat.new()
+	sb.bg_color = Color(0, 0, 0, 0.72)
+	sb.set_content_margin_all(10)
+	conv_ui.add_theme_stylebox_override("panel", sb)
+	conv_list = VBoxContainer.new()
+	conv_list.add_theme_constant_override("separation", 4)
+	conv_ui.add_child(conv_list)
+	conv_ui.visible = false
+	ui.add_child(conv_ui)
+
+func _hide_conv_ui() -> void:
+	if conv_ui:
+		conv_ui.visible = false
+	if Game.state == Game.State.DIALOG:
+		Game.set_state(Game.State.GAMEPLAY)
 
 func audio_music(a: Dictionary) -> void:
 	pass  # music/ambience streams not yet imported

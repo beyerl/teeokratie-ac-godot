@@ -81,6 +81,8 @@ func _exec(a: Dictionary, idx: int, actions: Array) -> int:
 			await _run_sublist(a)
 		"ActionConversation":
 			await _conversation(a)
+		"ActionDialogOption":
+			_dialog_option(a)
 		# --- checks (branch) ---
 		"ActionVarCheck":
 			return _branch(a, _eval_var_check(a), actions, idx)
@@ -235,6 +237,19 @@ func _conversation(a: Dictionary) -> void:
 	var conv = room.conversation_by_ref(a.get("conversation"))
 	if conv:
 		await room.run_conversation(conv)
+
+func _dialog_option(a: Dictionary) -> void:
+	# Enable/disable/toggle a conversation option (AC switchType 0=on,1=off,2=toggle).
+	var conv_ref = a.get("linkedConversation")
+	var cid := str(conv_ref.get("fileID", "")) if conv_ref is Dictionary else str(conv_ref)
+	var num := int(a.get("optionNumber", 0))
+	if cid == "" or num <= 0:
+		return
+	var sw := int(a.get("switchType", 0))
+	match sw:
+		0: Game.set_option_enabled(cid, num, true)
+		1: Game.set_option_enabled(cid, num, false)
+		2: Game.set_option_enabled(cid, num, not Game.option_enabled(cid, num, false))
 
 func _change_scene(a: Dictionary) -> void:
 	var name := str(a.get("sceneName", ""))

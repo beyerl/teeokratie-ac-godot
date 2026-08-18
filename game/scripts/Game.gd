@@ -12,6 +12,7 @@ var var_by_name: Dictionary = {}       # label -> id
 var inventory: Array = []              # array of item ids the player carries
 var items_by_id: Dictionary = {}       # id -> item dict
 var objectives: Dictionary = {}        # id -> state
+var conv_states: Dictionary = {}       # convFileID -> {optionNum(int): bool enabled}
 
 var current_room: Node = null
 var room_name: String = ""
@@ -73,6 +74,16 @@ func get_var(id: int):
 
 func set_var(id: int, value) -> void:
 	vars[id] = value
+
+# ------------------------------------------------------------------ conversations
+func option_enabled(conv_id: String, num: int, default_on: bool) -> bool:
+	var st: Dictionary = conv_states.get(conv_id, {})
+	return st.get(num, default_on)
+
+func set_option_enabled(conv_id: String, num: int, on: bool) -> void:
+	if not conv_states.has(conv_id):
+		conv_states[conv_id] = {}
+	conv_states[conv_id][num] = on
 
 func line_text(line_id) -> String:
 	var e = speech.get(str(line_id))
