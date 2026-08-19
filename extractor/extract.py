@@ -156,10 +156,21 @@ def extract_actionlist(objs, fid):
 # ---------------------------------------------------------------- sprites
 _meta_cache = {}
 
+# Unity SpriteAlignment enum -> pivot (px, py) with py measured from the BOTTOM.
+# When alignment != Custom(9), Unity derives the pivot from the alignment and
+# ignores the stored `pivot` value (which is often stale slice data).
+ALIGN_PIVOT = {0: (0.5, 0.5), 1: (0, 1), 2: (0.5, 1), 3: (1, 1), 4: (0, 0.5),
+               5: (1, 0.5), 6: (0, 0), 7: (0.5, 0), 8: (1, 0)}
+
+def _resolve_pivot(alignment, explicit):
+    if alignment is not None and int(alignment) in ALIGN_PIVOT:
+        return list(ALIGN_PIVOT[int(alignment)])
+    return explicit  # Custom (9) or unknown -> use the explicit pivot values
+
 def _sprite_rects(meta_path):
     """Parse a texture .meta -> rects + pivots. Unity rect origin is bottom-left;
-    we convert to top-left for Godot AtlasTexture regions. Pivot {px,py} has py from
-    the bottom (Unity); the runtime uses it to anchor the sprite like Unity does."""
+    we convert to top-left for Godot AtlasTexture regions. Pivots are derived from
+    each sprite's `alignment` (see ALIGN_PIVOT) so they match Unity's rendering."""
     if meta_path in _meta_cache:
         return _meta_cache[meta_path]
     out = {"by_id": {}, "first": None, "pivot_by_id": {}, "pivot_first": None,
@@ -169,8 +180,8 @@ def _sprite_rects(meta_path):
         raw = _y.safe_load(open(meta_path, errors="replace").read())
         ti = (raw or {}).get("TextureImporter", {})
         tp = ti.get("spritePivot")
-        if isinstance(tp, dict):
-            out["top_pivot"] = [float(tp.get("x", 0.5)), float(tp.get("y", 0.5))]
+        top_explicit = [float(tp.get("x", 0.5)), float(tp.get("y", 0.5))] if isinstance(tp, dict) else [0.5, 0.5]
+        out["top_pivot"] = _resolve_pivot(ti.get("spriteAlignment"), top_explicit)
         ss = ti.get("spriteSheet", {})
         sprites = ss.get("sprites", []) or []
         for s in sprites:
@@ -179,7 +190,8 @@ def _sprite_rects(meta_path):
             rect = [float(r.get("x",0)), float(r.get("y",0)),
                     float(r.get("width",0)), float(r.get("height",0))]
             piv = s.get("pivot") or {}
-            pivot = [float(piv.get("x", 0.5)), float(piv.get("y", 0.5))]
+            explicit = [float(piv.get("x", 0.5)), float(piv.get("y", 0.5))]
+            pivot = _resolve_pivot(s.get("alignment"), explicit)
             if out["first"] is None:
                 out["first"] = rect; out["pivot_first"] = pivot
             if iid:
