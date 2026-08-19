@@ -2,7 +2,9 @@ extends Node2D
 ## Room controller: builds a room from extracted JSON data and provides the
 ## services the ActionRunner calls (say, walk, ref resolution, audio, ...).
 
-const PLAYER_SPEED := 320.0
+# Teesa's walk speed. The original TeesaPlayer prefab has AC walkSpeedScale = 3
+# (units/sec); at 32 px/unit that is 96 px/sec.
+const PLAYER_SPEED := 96.0
 
 var data: Dictionary = {}
 var refs: Dictionary = {}
