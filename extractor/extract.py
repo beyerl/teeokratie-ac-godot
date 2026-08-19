@@ -528,7 +528,10 @@ def extract_globals():
                           "floatVal": v.get("floatVal"), "textVal": v.get("textVal"),
                           "popUps": v.get("popUps")})
     curd = first(cur, lambda d: "cursorIcons" in d)
-    icons = [{"id": i.get("id"), "label": i.get("label")} for i in (curd.get("cursorIcons") or [])]
+    icons = []
+    for i in (curd.get("cursorIcons") or []):
+        tex, _region, _pivot = resolve_texture(i.get("texture") or {})
+        icons.append({"id": i.get("id"), "label": i.get("label"), "texture": tex})
     sped = first(spe, lambda d: "lines" in d)
     speech = {}
     for ln in (sped.get("lines") or []):

@@ -77,15 +77,18 @@
  "cursorIcons": [
   {
    "id": 0,
-   "label": "Benutze"
+   "label": "Benutze",
+   "texture": "res://assets/Cursor-Use.png"
   },
   {
    "id": 1,
-   "label": "Sprich mit"
+   "label": "Sprich mit",
+   "texture": "res://assets/Cursor-Talk.png"
   },
   {
    "id": 2,
-   "label": "Betrachte"
+   "label": "Betrachte",
+   "texture": "res://assets/Cursor-Look.png"
   }
  ],
  "speech": {

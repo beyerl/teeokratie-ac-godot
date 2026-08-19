@@ -13,6 +13,7 @@ var inventory: Array = []              # array of item ids the player carries
 var items_by_id: Dictionary = {}       # id -> item dict
 var objectives: Dictionary = {}        # id -> state
 var conv_states: Dictionary = {}       # convFileID -> {optionNum(int): bool enabled}
+var icon_by_id: Dictionary = {}        # cursor iconID -> texture res path
 
 var current_room: Node = null
 var room_name: String = ""
@@ -37,6 +38,9 @@ func _load_globals() -> void:
 		items_by_id[int(it.get("id", 0))] = it
 		if int(it.get("carryOnStart", 0)) == 1:
 			inventory.append(int(it.get("id", 0)))
+	for ic in globals.get("cursorIcons", []):
+		if ic.get("texture"):
+			icon_by_id[int(ic.get("id", -1))] = ic["texture"]
 
 func _default_var_value(v: Dictionary):
 	var t := int(v.get("type", 0))

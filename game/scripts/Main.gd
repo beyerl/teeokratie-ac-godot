@@ -367,29 +367,46 @@ func _show_verbcoin(h: Dictionary, at: Vector2) -> void:
 	closer.set_anchors_preset(Control.PRESET_FULL_RECT)
 	closer.pressed.connect(func(): verbcoin.visible = false)
 	verbcoin.add_child(closer)
-	# the coin itself: a small panel of verb buttons near the hotspot
-	var menu := VBoxContainer.new()
-	menu.add_theme_constant_override("separation", 2)
+	# The interaction "coin": the original's cursor icons in a row near the hotspot
+	# (Betrachte / Sprich mit / Benutze), falling back to text if an icon is missing.
+	var menu := HBoxContainer.new()
+	menu.add_theme_constant_override("separation", 4)
+	var sb := StyleBoxFlat.new()
+	sb.bg_color = Color(0, 0, 0, 0.6); sb.set_content_margin_all(4)
+	sb.set_corner_radius_all(4)
+	var panel := PanelContainer.new()
+	panel.add_theme_stylebox_override("panel", sb)
+	panel.add_child(menu)
 	var verbs := {}
 	for b in h.get("buttons", []):
 		verbs[b.get("verb", "use")] = b
+	var labels := {"look": "Betrachte", "talk": "Sprich mit", "use": "Benutze"}
 	for v in ["look", "talk", "use"]:
 		if not verbs.has(v):
 			continue
+		var b: Dictionary = verbs[v]
+		var icon_path := str(Game.icon_by_id.get(int(b.get("iconID", -1)), ""))
 		var btn := Button.new()
-		btn.text = {"look":"Betrachte","talk":"Sprich mit","use":"Benutze"}.get(v, v)
-		btn.custom_minimum_size = Vector2(120, 30)
-		btn.add_theme_font_size_override("font_size", 18)
-		btn.pressed.connect(_run_interaction.bind(verbs[v], h))
+		btn.tooltip_text = labels.get(v, v)
+		if icon_path != "" and ResourceLoader.exists(icon_path):
+			btn.icon = load(icon_path)
+			btn.expand_icon = true
+			btn.custom_minimum_size = Vector2(40, 40)
+			btn.add_theme_constant_override("icon_max_width", 34)
+		else:
+			btn.text = labels.get(v, v)
+			btn.custom_minimum_size = Vector2(110, 34)
+		btn.pressed.connect(_run_interaction.bind(b, h))
 		menu.add_child(btn)
-	verbcoin.add_child(menu)
-	# position the menu near the hotspot, clamped on-screen
+	verbcoin.add_child(panel)
+	# position the coin near the hotspot, clamped on-screen
 	var screen := get_viewport().get_canvas_transform() * at
 	var vp := get_viewport_rect().size
-	menu.position = Vector2(
-		clamp(screen.x - 60, 4, vp.x - 128),
-		clamp(screen.y - 60, 4, vp.y - 110))
-	_verbcoin_menu = menu
+	panel.reset_size()
+	panel.position = Vector2(
+		clamp(screen.x - 60, 4, vp.x - 150),
+		clamp(screen.y - 55, 4, vp.y - 60))
+	_verbcoin_menu = panel
 
 func _run_interaction(btn: Dictionary, h: Dictionary) -> void:
 	verbcoin.visible = false
