@@ -217,11 +217,14 @@ func _url_room_hint() -> String:
 	var js = JavaScriptBridge.eval("(location.hash+location.search).match(/room=([A-Za-z]+)/)?.[1]||''", true)
 	return str(js) if js != null else ""
 
+var _bg_rect := Rect2()          # background bounds in world space (for camera clamp)
+
 func _build_camera() -> void:
 	camera = Camera2D.new()
 	camera.name = "Camera"
-	# Fit the widest background sprite into the viewport (pixel art -> zoom in).
+	# Find the background (widest sprite behind everything) and its world rect.
 	var bg_w := 0.0
+	var bg_h := 180.0
 	var bg_center := Vector2.ZERO
 	for s in data.get("sprites", []):
 		if int(s.get("order", 0)) <= -8:
@@ -230,17 +233,38 @@ func _build_camera() -> void:
 				var w: float = t.texture.get_width() * abs(t.scale.x)
 				if w > bg_w:
 					bg_w = w
+					bg_h = t.texture.get_height() * abs(t.scale.y)
 					# visual centre = transform pos + pivot offset (offset is unscaled)
 					bg_center = t.position + t.offset * t.scale
 	if bg_w <= 0.0:
 		bg_w = 320.0
-	var vw := float(ProjectSettings.get_setting("display/window/size/viewport_width", 960))
-	var z: float = clamp(vw / bg_w, 0.5, 6.0)
-	camera.zoom = Vector2(z, z)
+	_bg_rect = Rect2(bg_center - Vector2(bg_w, bg_h) / 2.0, Vector2(bg_w, bg_h))
 	camera.position = bg_center
 	camera.enabled = true
 	add_child(camera)
 	camera.make_current()
+	_update_camera()
+
+# "Cover" the viewport with the background: scale so it fills both axes (no bars),
+# then follow the player within the background bounds (side-scrolling). Recomputed
+# each frame so it adapts to the window/canvas size.
+func _update_camera() -> void:
+	if camera == null or _bg_rect.size.x <= 0.0:
+		return
+	var vp := get_viewport_rect().size
+	var z: float = max(vp.x / _bg_rect.size.x, vp.y / _bg_rect.size.y)
+	camera.zoom = Vector2(z, z)
+	var half := vp / (2.0 * z)                  # half the visible world extent
+	var c := _bg_rect.get_center()
+	var target := Vector2(player.global_position.x if player != null else c.x, c.y)
+	# Clamp so we never show past the background edges.
+	var min_x := _bg_rect.position.x + half.x
+	var max_x := _bg_rect.end.x - half.x
+	var min_y := _bg_rect.position.y + half.y
+	var max_y := _bg_rect.end.y - half.y
+	target.x = clamp(target.x, min_x, max_x) if min_x <= max_x else c.x
+	target.y = clamp(target.y, min_y, max_y) if min_y <= max_y else c.y
+	camera.position = target
 
 func _build_ui() -> void:
 	ui = CanvasLayer.new(); ui.name = "UI"; add_child(ui)
@@ -340,6 +364,7 @@ func _run_interaction(btn: Dictionary, h: Dictionary) -> void:
 
 # ------------------------------------------------------------------ services
 func _physics_process(_delta: float) -> void:
+	_update_camera()
 	if not _moving:
 		return
 	var dir := _move_target - player.global_position
