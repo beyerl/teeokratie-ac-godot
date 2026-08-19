@@ -284,6 +284,7 @@ func _build_rain() -> void:
 
 var _highlighter: Node2D
 var _highlight_on := false
+var _verbcoin_menu: Control     # the open interaction menu, for cancel-on-leave
 
 # SPACE = "show all usable objects" (the original's hotspot highlight). Draws an
 # outline + marker over every enabled hotspot while held.
@@ -388,6 +389,7 @@ func _show_verbcoin(h: Dictionary, at: Vector2) -> void:
 	menu.position = Vector2(
 		clamp(screen.x - 60, 4, vp.x - 128),
 		clamp(screen.y - 60, 4, vp.y - 110))
+	_verbcoin_menu = menu
 
 func _run_interaction(btn: Dictionary, h: Dictionary) -> void:
 	verbcoin.visible = false
@@ -410,6 +412,11 @@ func _physics_process(_delta: float) -> void:
 	if want_hl != _highlight_on and _highlighter != null:
 		_highlight_on = want_hl
 		_highlighter.queue_redraw()
+	# #4: the interaction menu cancels when the cursor moves away from it.
+	if verbcoin != null and verbcoin.visible and _verbcoin_menu != null:
+		var box := Rect2(_verbcoin_menu.global_position, _verbcoin_menu.size).grow(44.0)
+		if not box.has_point(_verbcoin_menu.get_global_mouse_position()):
+			verbcoin.visible = false
 	if not _moving:
 		return
 	var dir := _move_target - player.global_position
