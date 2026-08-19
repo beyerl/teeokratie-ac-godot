@@ -38,6 +38,13 @@ SCENES = {
 }
 ICON_VERB = {0: "use", 1: "talk", 2: "look"}
 
+# Manual art-alignment nudges (Godot px, +x right / +y down), keyed by (scene, name).
+# Applied to the whole GameObject so its sprite AND hotspot move together.
+POS_OVERRIDE = {
+    # #1: Don Kamille's right edge flush with the desk's left edge (nudge left).
+    ("Office", "DonKamilleSprite"): (-16.0, 0.0),
+}
+
 # ---------------------------------------------------------------- asset maps
 _guid_re = re.compile(r'guid:\s*([0-9a-f]{32})')
 
@@ -317,6 +324,10 @@ def extract_scene(name, filename):
     for gid, comps in go_comps.items():
         gname = go_name.get(gid) or ""
         wx, wy, sx, sy = wpos(gid)
+        _ov = POS_OVERRIDE.get((name, gname))
+        if _ov:
+            wx += _ov[0] / PPU
+            wy -= _ov[1] / PPU   # Godot +y is down; world_of_transform is Unity (+y up)
         for cfid in comps:
             co = objs.get(cfid)
             if not co:
