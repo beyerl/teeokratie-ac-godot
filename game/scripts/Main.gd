@@ -48,6 +48,7 @@ func _ready() -> void:
 
 	world = Node2D.new(); world.name = "World"; add_child(world)
 	_build_sprites()
+	_fit_backgrounds()
 	_build_nav()
 	_build_player()
 	_build_hotspots()
@@ -101,6 +102,48 @@ func _build_sprites() -> void:
 		name_nodes[s.get("name", "")] = spr
 
 var walkable := PackedVector2Array()   # first nav outline, for clamping walk targets
+
+# Background sprites carry unreliable pivot metadata (stale slice data), so a room
+# can end up anchored wrong (its floor/items falling outside the image). If the
+# playable content isn't contained by the background, re-anchor the background(s)
+# to contain it. Rooms that already fit (e.g. the Office) are left untouched.
+func _fit_backgrounds() -> void:
+	var bgs: Array = []
+	var main_bg: Sprite2D = null
+	var bg_w := 0.0
+	for s in data.get("sprites", []):
+		if int(s.get("order", 0)) <= -8:
+			var t = name_nodes.get(s.get("name", ""))
+			if t and t is Sprite2D and t.texture:
+				bgs.append(t)
+				var w: float = t.texture.get_width() * abs(t.scale.x)
+				if w > bg_w:
+					bg_w = w; main_bg = t
+	if main_bg == null:
+		return
+	var bg_h: float = main_bg.texture.get_height() * abs(main_bg.scale.y)
+	var bg_center: Vector2 = main_bg.position + main_bg.offset * main_bg.scale
+	var bg_rect := Rect2(bg_center - Vector2(bg_w, bg_h) / 2.0, Vector2(bg_w, bg_h))
+
+	# collect content anchors: non-background sprites + player-start positions
+	var pts: Array[Vector2] = []
+	for s in data.get("sprites", []):
+		if int(s.get("order", 0)) > -8:
+			pts.append(Vector2(s["pos"][0], s["pos"][1]))
+	for ps in data.get("playerStarts", []):
+		pts.append(Vector2(ps["pos"][0], ps["pos"][1]))
+	if pts.is_empty():
+		return
+	var cb := Rect2(pts[0], Vector2.ZERO)
+	for p in pts:
+		cb = cb.expand(p)
+	# already contained (with a small margin)? leave it.
+	if bg_rect.grow(2.0).encloses(cb):
+		return
+	# re-anchor: centre the background on the content's centre.
+	var delta := cb.get_center() - bg_rect.get_center()
+	for t in bgs:
+		t.position += delta
 
 func _build_nav() -> void:
 	# The original Unity nav mesh self-intersects under Godot's baker, so instead
