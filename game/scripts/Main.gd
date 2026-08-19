@@ -52,6 +52,7 @@ func _ready() -> void:
 	_build_player()
 	_build_hotspots()
 	_build_camera()
+	_build_rain()
 	_build_ui()
 	_build_audio()
 
@@ -265,6 +266,20 @@ func _update_camera() -> void:
 	target.x = clamp(target.x, min_x, max_x) if min_x <= max_x else c.x
 	target.y = clamp(target.y, min_y, max_y) if min_y <= max_y else c.y
 	camera.position = target
+
+# Pixel-art rain confined to the office window glass (the Window-Outside sprite).
+func _build_rain() -> void:
+	var win = name_nodes.get("Window-Outside")
+	if win == null or not (win is Sprite2D) or win.texture == null:
+		return
+	var w: float = win.texture.get_width() * abs(win.scale.x)
+	var h: float = win.texture.get_height() * abs(win.scale.y)
+	var center: Vector2 = win.position + win.offset * win.scale
+	var glass := Rect2(center - Vector2(w, h) / 2.0, Vector2(w, h)).grow(-3.0)
+	var rain := RainLayer.new()
+	rain.z_index = int(win.z_index) + 1     # in front of the mountain, behind gameplay
+	world.add_child(rain)
+	rain.setup(glass)
 
 func _build_ui() -> void:
 	ui = CanvasLayer.new(); ui.name = "UI"; add_child(ui)
