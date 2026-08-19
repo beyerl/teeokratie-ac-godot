@@ -53,6 +53,7 @@ func _ready() -> void:
 	_build_hotspots()
 	_build_camera()
 	_build_rain()
+	_build_highlighter()
 	_build_ui()
 	_build_audio()
 
@@ -281,6 +282,30 @@ func _build_rain() -> void:
 	world.add_child(rain)
 	rain.setup(glass)
 
+var _highlighter: Node2D
+var _highlight_on := false
+
+# SPACE = "show all usable objects" (the original's hotspot highlight). Draws an
+# outline + marker over every enabled hotspot while held.
+func _build_highlighter() -> void:
+	_highlighter = Node2D.new()
+	_highlighter.name = "Highlights"
+	_highlighter.z_index = 60
+	add_child(_highlighter)
+	_highlighter.draw.connect(_draw_highlights)
+
+func _draw_highlights() -> void:
+	if not _highlight_on:
+		return
+	var col := Color(1.0, 0.95, 0.4, 0.9)
+	for hs in _hotspots:
+		if not hs["enabled"]:
+			continue
+		var r: Rect2 = hs["rect"]
+		_highlighter.draw_rect(r, Color(1, 0.95, 0.4, 0.12), true)
+		_highlighter.draw_rect(r, col, false, 1.5)
+		_highlighter.draw_circle(r.get_center(), 2.0, col)
+
 func _build_ui() -> void:
 	ui = CanvasLayer.new(); ui.name = "UI"; add_child(ui)
 	subtitle = Label.new()
@@ -380,6 +405,11 @@ func _run_interaction(btn: Dictionary, h: Dictionary) -> void:
 # ------------------------------------------------------------------ services
 func _physics_process(_delta: float) -> void:
 	_update_camera()
+	# SPACE highlights all hotspots (only during gameplay).
+	var want_hl := Game.is_gameplay() and Input.is_physical_key_pressed(KEY_SPACE)
+	if want_hl != _highlight_on and _highlighter != null:
+		_highlight_on = want_hl
+		_highlighter.queue_redraw()
 	if not _moving:
 		return
 	var dir := _move_target - player.global_position
