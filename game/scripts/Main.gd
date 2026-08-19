@@ -31,6 +31,11 @@ func _ready() -> void:
 	var rname: String = Game.room_name if Game.room_name != "" else Game.load_scene_data("manifest").get("start", "Office")
 	if rname == "":
 		rname = "Office"
+	# Dev override: ?room=Kitchen or #room=Kitchen in the URL loads that room (web).
+	if OS.has_feature("web") and Game.room_name == "":
+		var hint := _url_room_hint()
+		if hint != "":
+			rname = hint
 	Game.room_name = rname
 	data = Game.load_scene_data(rname)
 	refs = data.get("refs", {})
@@ -74,6 +79,12 @@ func _build_sprites() -> void:
 		else:
 			spr.texture = base_tex
 		spr.centered = true
+		# Honor the Unity sprite pivot (py from bottom): anchor that point to the
+		# transform position. Center-pivot -> offset 0; bottom-center -> shift up.
+		var piv = s.get("pivot", [0.5, 0.5])
+		var tw := float(spr.texture.get_width())
+		var th := float(spr.texture.get_height())
+		spr.offset = Vector2(tw * (0.5 - piv[0]), th * (piv[1] - 0.5))
 		spr.position = Vector2(s["pos"][0], s["pos"][1])
 		spr.scale = Vector2(s["scale"][0], s["scale"][1])
 		spr.flip_h = int(s.get("flipX", 0)) == 1
@@ -198,6 +209,12 @@ func _hotspot_at(world: Vector2) -> Dictionary:
 			best = hs; best_area = hs["area"]
 	return best
 
+func _url_room_hint() -> String:
+	if not OS.has_feature("web"):
+		return ""
+	var js = JavaScriptBridge.eval("(location.hash+location.search).match(/room=([A-Za-z]+)/)?.[1]||''", true)
+	return str(js) if js != null else ""
+
 func _build_camera() -> void:
 	camera = Camera2D.new()
 	camera.name = "Camera"
@@ -211,7 +228,8 @@ func _build_camera() -> void:
 				var w: float = t.texture.get_width() * abs(t.scale.x)
 				if w > bg_w:
 					bg_w = w
-					bg_center = t.position
+					# visual centre = transform pos + pivot offset (offset is unscaled)
+					bg_center = t.position + t.offset * t.scale
 	if bg_w <= 0.0:
 		bg_w = 320.0
 	var vw := float(ProjectSettings.get_setting("display/window/size/viewport_width", 960))

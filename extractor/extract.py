@@ -157,34 +157,36 @@ def extract_actionlist(objs, fid):
 _meta_cache = {}
 
 def _sprite_rects(meta_path):
-    """Parse a texture .meta -> {internalID(str): [x,y,w,h]} plus 'first'. Unity rect
-    origin is bottom-left; we convert to top-left for Godot AtlasTexture regions."""
+    """Parse a texture .meta -> rects + pivots. Unity rect origin is bottom-left;
+    we convert to top-left for Godot AtlasTexture regions. Pivot {px,py} has py from
+    the bottom (Unity); the runtime uses it to anchor the sprite like Unity does."""
     if meta_path in _meta_cache:
         return _meta_cache[meta_path]
-    out = {"by_id": {}, "first": None, "img_h": None}
+    out = {"by_id": {}, "first": None, "pivot_by_id": {}, "pivot_first": None,
+           "top_pivot": [0.5, 0.5]}
     try:
-        objs = uyaml.load(meta_path)  # .meta is single-doc YAML but loader tolerates
+        import yaml as _y
+        raw = _y.safe_load(open(meta_path, errors="replace").read())
+        ti = (raw or {}).get("TextureImporter", {})
+        tp = ti.get("spritePivot")
+        if isinstance(tp, dict):
+            out["top_pivot"] = [float(tp.get("x", 0.5)), float(tp.get("y", 0.5))]
+        ss = ti.get("spriteSheet", {})
+        sprites = ss.get("sprites", []) or []
+        for s in sprites:
+            r = s.get("rect", {})
+            iid = str(s.get("internalID", ""))
+            rect = [float(r.get("x",0)), float(r.get("y",0)),
+                    float(r.get("width",0)), float(r.get("height",0))]
+            piv = s.get("pivot") or {}
+            pivot = [float(piv.get("x", 0.5)), float(piv.get("y", 0.5))]
+            if out["first"] is None:
+                out["first"] = rect; out["pivot_first"] = pivot
+            if iid:
+                out["by_id"][iid] = rect
+                out["pivot_by_id"][iid] = pivot
     except Exception:
-        objs = {}
-    # .meta isn't tagged like scenes; fall back to a raw yaml load.
-    if not objs:
-        try:
-            import yaml as _y
-            raw = _y.safe_load(open(meta_path, errors="replace").read())
-            ti = (raw or {}).get("TextureImporter", {})
-            ss = ti.get("spriteSheet", {})
-            sprites = ss.get("sprites", []) or []
-            for s in sprites:
-                r = s.get("rect", {})
-                iid = str(s.get("internalID", ""))
-                rect = [float(r.get("x",0)), float(r.get("y",0)),
-                        float(r.get("width",0)), float(r.get("height",0))]
-                if out["first"] is None:
-                    out["first"] = rect
-                if iid:
-                    out["by_id"][iid] = rect
-        except Exception:
-            pass
+        pass
     _meta_cache[meta_path] = out
     return out
 
@@ -208,11 +210,13 @@ def resolve_texture(sprite_ref):
         except Exception:
             return None, None
     region = None
+    pivot = None
     meta = src + ".meta"
     rects = _sprite_rects(meta)
+    fid = str(sprite_ref.get("fileID", ""))
     if rects["by_id"] or rects["first"]:
-        fid = str(sprite_ref.get("fileID", ""))
         rect = rects["by_id"].get(fid) or rects["first"]
+        pivot = rects["pivot_by_id"].get(fid) or rects["pivot_first"]
         if rect:
             try:
                 from PIL import Image
@@ -223,7 +227,9 @@ def resolve_texture(sprite_ref):
             if h is not None and w > 0 and hh > 0:
                 # convert bottom-left origin -> top-left
                 region = [round(x), round(h - y - hh), round(w), round(hh)]
-    return "res://assets/" + dst_name, region
+    if pivot is None:
+        pivot = rects["top_pivot"]
+    return "res://assets/" + dst_name, region, pivot
 
 # ---------------------------------------------------------------- collider aabb
 def collider_world_aabb(objs, go_transform, comp_obj, wx, wy, sx, sy):
@@ -315,7 +321,7 @@ def extract_scene(name, filename):
                 if sibling_classes & {"Marker","PlayerStart","_Camera","GameCamera2D"}:
                     continue
                 sr = co["data"]
-                tex, region = resolve_texture(sr.get("m_Sprite"))
+                tex, region, pivot = resolve_texture(sr.get("m_Sprite"))
                 if not tex:
                     continue
                 base = tex.split("/")[-1].lower()
@@ -323,14 +329,25 @@ def extract_scene(name, filename):
                     continue
                 col = sr.get("m_Color") or {}
                 flip = sr.get("m_FlipX", 0)
+                # AC RememberVisibility.startState (AC_OnOff: 0=On,1=Off) overrides the
+                # scene's serialized enabled state: startState Off => hidden at load
+                # (e.g. Blackscreen, the TeesaPour cutscene sprite). Actions reveal it.
+                start_enabled = int(sr.get("m_Enabled", 1))
+                for sib in comps:
+                    so3 = objs.get(sib)
+                    if so3 and so3["type"] == "MonoBehaviour" and script_class(so3) == "RememberVisibility":
+                        if int(so3["data"].get("startState", 0)) == 1:
+                            start_enabled = 0
+                        break
                 sprites.append({
                     "name": gname, "texture": tex, "region": region,
+                    "pivot": [round(pivot[0], 4), round(pivot[1], 4)],
                     "pos": to_godot(wx, wy), "scale": [round(sx,4), round(sy,4)],
                     "flipX": int(flip) if flip else 0,
                     "order": int(sr.get("m_SortingOrder", 0)),
                     "layer": sr.get("m_SortingLayerID", 0),
                     "color": [col.get("r",1), col.get("g",1), col.get("b",1), col.get("a",1)],
-                    "enabled": int(sr.get("m_Enabled", 1)),
+                    "enabled": start_enabled,
                 })
             elif t == "Camera":
                 camera = {"pos": to_godot(wx, wy), "size": float(co["data"].get("orthographic size", 5))}
