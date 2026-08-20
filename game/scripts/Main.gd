@@ -641,13 +641,18 @@ func run_conversation(conv: Dictionary) -> void:
 func _present_options(opts: Array):
 	if conv_ui == null:
 		_build_conv_ui()
+	# Remove old option buttons *immediately* (queue_free is deferred, which would
+	# briefly leave old + new buttons in the VBox and break the layout on re-entry).
 	for c in conv_list.get_children():
+		conv_list.remove_child(c)
 		c.queue_free()
 	for o in opts:
 		var btn := Button.new()
 		btn.text = str(o.get("label", "..."))
 		btn.alignment = HORIZONTAL_ALIGNMENT_LEFT
 		btn.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+		btn.clip_text = false
+		btn.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 		btn.custom_minimum_size = Vector2(0, 34)
 		btn.add_theme_font_size_override("font_size", 20)
 		btn.pressed.connect(func():
