@@ -41,8 +41,18 @@ ICON_VERB = {0: "use", 1: "talk", 2: "look"}
 # Manual art-alignment nudges (Godot px, +x right / +y down), keyed by (scene, name).
 # Applied to the whole GameObject so its sprite AND hotspot move together.
 POS_OVERRIDE = {
-    # #1: Don Kamille's right edge flush with the desk's left edge (nudge left).
-    ("Office", "DonKamilleSprite"): (-16.0, 0.0),
+    # #1: Don Kamille aligned to the reference (teeokratie-office.png). The earlier
+    # -16 nudge overshot to the left; measured against the reference (window anchor)
+    # he needs ~+7px right, so the net nudge is -9.
+    ("Office", "DonKamilleSprite"): (-9.0, 0.0),
+}
+
+# Room-background pivots are stored as stale/wrong slice data in the .meta, so the
+# room ends up anchored wrong relative to its (child) objects. These per-room
+# overrides give the pivot (px, py from BOTTOM) that makes objects sit correctly,
+# calibrated against Lenz's reference screenshots. Keyed by (scene, sprite name).
+BG_PIVOT_OVERRIDE = {
+    ("Kitchen", "Kitchen"): [0.0, 0.5],
 }
 
 # ---------------------------------------------------------------- asset maps
@@ -350,6 +360,9 @@ def extract_scene(name, filename):
                 base = tex.split("/")[-1].lower()
                 if base in ("marker.png","playerstart.png","gizmo.png"):
                     continue
+                _bgpiv = BG_PIVOT_OVERRIDE.get((name, gname))
+                if _bgpiv:
+                    pivot = _bgpiv
                 col = sr.get("m_Color") or {}
                 flip = sr.get("m_FlipX", 0)
                 # AC RememberVisibility.startState (AC_OnOff: 0=On,1=Off) overrides the

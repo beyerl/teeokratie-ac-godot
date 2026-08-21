@@ -48,7 +48,6 @@ func _ready() -> void:
 
 	world = Node2D.new(); world.name = "World"; add_child(world)
 	_build_sprites()
-	_fit_backgrounds()
 	_build_nav()
 	_build_player()
 	_build_hotspots()
