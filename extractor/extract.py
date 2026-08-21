@@ -50,6 +50,13 @@ POS_OVERRIDE = {
     # them. Nudge the background right so its painted features line up under the
     # overlay sprites (window frame/glass, shelf jars). Camera follows the bg.
     ("Kitchen", "Kitchen"): (9.0, 0.0),
+    # Anteroom: the shrine (Teeseus = folding screen + figure, one sprite) plus its
+    # head overlay sit at floor level, detached below the painted table they should
+    # stand on. The painted tabletop is at world (30, -90); the figure's feet are at
+    # world (27, 4), so lift both up onto the table (+y down, so -94 = up ~94px).
+    ("Anteroom", "Teeseus"): (3.0, -94.0),
+    ("Anteroom", "TeeseusHead"): (3.0, -94.0),
+    ("Anteroom", "TassiloSprite"): (0.0, -94.0),
 }
 
 # Room-background pivots are stored as stale/wrong slice data in the .meta, so the
