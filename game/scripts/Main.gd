@@ -56,6 +56,8 @@ func _ready() -> void:
 	_build_highlighter()
 	_build_ui()
 	_build_audio()
+	_sorting_map = data.get("sortingMap")
+	_apply_sorting_map()
 
 	# Run the room's OnStart cutscene, else just enter gameplay.
 	await get_tree().process_frame
@@ -310,20 +312,45 @@ func _update_camera() -> void:
 	target.y = clamp(target.y, min_y, max_y) if min_y <= max_y else c.y
 	camera.position = target
 
-# Pixel-art rain confined to the office window glass (the Window-Outside sprite).
+# Pixel-art rain confined to a window's glass. It must sit BEHIND the window frame
+# and IN FRONT OF the sky/outside sprite. The frame is painted into the room bg in
+# the office (both at z=-10), so we can't wedge rain between them with z_index alone;
+# instead we give the rain the sky's z_index and slot it into the tree right after
+# the sky sprite, so the bg (frame) -- drawn later -- occludes it over the mullions.
 func _build_rain() -> void:
-	var win = name_nodes.get("Window-Outside")
-	if win == null or not (win is Sprite2D) or win.texture == null:
-		return
-	var w: float = win.texture.get_width() * abs(win.scale.x)
-	var h: float = win.texture.get_height() * abs(win.scale.y)
-	var center: Vector2 = win.position + win.offset * win.scale
-	var glass := Rect2(center - Vector2(w, h) / 2.0, Vector2(w, h)).grow(-3.0)
-	var rain := RainLayer.new()
-	rain.z_index = int(win.z_index) + 1     # in front of the mountain, behind gameplay
-	world.add_child(rain)
-	rain.setup(glass)
+	# Per-room window specs: glass = sprite whose bounds define the pane; sky = the
+	# outside sprite the rain draws in front of; grow shrinks the rect off the frame.
+	var specs: Array = []
+	match str(data.get("name", "")):
+		"Office":
+			specs.append({"glass": "Window-Outside", "sky": "Window-Outside", "grow": -3.0})
+		"Kitchen":
+			specs.append({"glass": "WindowClosed", "sky": "WindowClosed", "grow": -2.0})
+	for spec in specs:
+		var glass_node = name_nodes.get(spec["glass"])
+		if glass_node == null or not (glass_node is Sprite2D) or glass_node.texture == null:
+			continue
+		var w: float = glass_node.texture.get_width() * abs(glass_node.scale.x)
+		var h: float = glass_node.texture.get_height() * abs(glass_node.scale.y)
+		var center: Vector2 = glass_node.position + glass_node.offset * glass_node.scale
+		var glass := Rect2(center - Vector2(w, h) / 2.0, Vector2(w, h)).grow(float(spec["grow"]))
+		var sky = name_nodes.get(spec["sky"])
+		var rain := RainLayer.new()
+		# Sit just in front of the sky/outside, behind the frame. When the frame is a
+		# real sprite (kitchen WindowClosed) we can use z just under it; when it's baked
+		# into the bg (office) we match the sky's z and rely on tree order.
+		if spec["sky"] == spec["glass"] and sky and int(sky.z_index) >= 0:
+			rain.z_index = int(sky.z_index) - 1
+		elif sky:
+			rain.z_index = int(sky.z_index)
+		else:
+			rain.z_index = int(glass_node.z_index)
+		world.add_child(rain)
+		if sky:
+			world.move_child(rain, sky.get_index() + 1)
+		rain.setup(glass)
 
+var hotspot_label: Label
 var _highlighter: Node2D
 var _highlight_on := false
 var _verbcoin_menu: Control     # the open interaction menu, for cancel-on-leave
@@ -366,6 +393,16 @@ func _build_ui() -> void:
 	verbcoin = Control.new()
 	verbcoin.visible = false
 	ui.add_child(verbcoin)
+	# Hotspot label: the original shows an object's name while the cursor is over it
+	# (AC's "Hotspot" menu). White text with a dark outline, following the cursor.
+	hotspot_label = Label.new()
+	hotspot_label.add_theme_color_override("font_color", Color(1, 1, 1))
+	hotspot_label.add_theme_color_override("font_outline_color", Color(0, 0, 0))
+	hotspot_label.add_theme_constant_override("outline_size", 6)
+	hotspot_label.add_theme_font_size_override("font_size", 20)
+	hotspot_label.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	hotspot_label.visible = false
+	ui.add_child(hotspot_label)
 
 func _build_audio() -> void:
 	music_player = AudioStreamPlayer.new(); add_child(music_player)
@@ -471,6 +508,7 @@ func _physics_process(_delta: float) -> void:
 	if want_hl != _highlight_on and _highlighter != null:
 		_highlight_on = want_hl
 		_highlighter.queue_redraw()
+	_update_hotspot_label()
 	# #4: the interaction menu cancels when the cursor moves away from it.
 	if verbcoin != null and verbcoin.visible and _verbcoin_menu != null:
 		var box := Rect2(_verbcoin_menu.global_position, _verbcoin_menu.size).grow(44.0)
@@ -486,9 +524,83 @@ func _physics_process(_delta: float) -> void:
 			_play_anim("idle")
 		emit_signal("_arrived")
 		return
-	player.global_position += dir.normalized() * PLAYER_SPEED * _delta
+	var spd := PLAYER_SPEED
+	if _sorting_map != null and int(_sorting_map.get("affectSpeed", 0)) == 1:
+		spd *= _sm_scale        # AC scales walk speed by the perspective factor
+	player.global_position += dir.normalized() * spd * _delta
 	_facing = _dir_to_facing(dir)
 	_play_anim("walk")
+	_apply_sorting_map()
+
+# --- AC SortingMap: perspective scale + depth sorting for the player -----------
+# Ported from AdventureCreator's SortingMap/FollowSortingMap. The map's forward
+# points toward the camera (godot +Y / down), so scale and sorting order are a
+# function of the player's Y: bigger + more-in-front as they walk toward the camera.
+var _sorting_map = null
+var _sm_scale := 1.0
+
+func _sm_scale_at(py: float) -> float:
+	var areas: Array = _sorting_map.get("areas", [])
+	if areas.is_empty():
+		return float(_sorting_map.get("originScale", 100))
+	var prev_y := float(_sorting_map.get("originY", 0.0))
+	var prev_s := float(_sorting_map.get("originScale", 100))
+	if py <= prev_y:
+		return prev_s
+	for a in areas:
+		var ay := float(a["y"]); var as_ := float(a["scale"])
+		if py <= ay:
+			var span := ay - prev_y
+			var t: float = 0.0 if span <= 0.0 else clampf((py - prev_y) / span, 0.0, 1.0)
+			return prev_s + t * (as_ - prev_s)
+		prev_y = ay; prev_s = as_
+	return prev_s
+
+func _sm_order_at(py: float) -> int:
+	var areas: Array = _sorting_map.get("areas", [])
+	if areas.is_empty():
+		return 0
+	for a in areas:
+		if py < float(a["y"]):
+			return int(a["order"])
+	return int(areas[areas.size() - 1]["order"])
+
+func _apply_sorting_map() -> void:
+	if _sorting_map == null or player == null:
+		return
+	var py: float = player.position.y
+	if int(_sorting_map.get("affectScale", 0)) == 1:
+		_sm_scale = _sm_scale_at(py) / 100.0
+		player.scale = Vector2(_sm_scale, _sm_scale)
+	if int(_sorting_map.get("mapType", 0)) == 1:   # OrderInLayer
+		player.z_index = _sm_order_at(py)
+
+# AC's Hotspot menu: show the object's name next to the cursor while hovering it.
+func _update_hotspot_label() -> void:
+	if hotspot_label == null:
+		return
+	if not Game.is_gameplay() or (verbcoin != null and verbcoin.visible):
+		hotspot_label.visible = false
+		return
+	var hs := _hotspot_at(get_global_mouse_position())
+	if hs.is_empty():
+		hotspot_label.visible = false
+		return
+	var name := str(hs["data"].get("displayName", ""))
+	if name == "":
+		hotspot_label.visible = false
+		return
+	hotspot_label.text = name
+	hotspot_label.visible = true
+	var mp := get_viewport().get_mouse_position()
+	var vp := get_viewport_rect().size
+	var lsz := hotspot_label.get_minimum_size()
+	var pos := mp + Vector2(16, -8)
+	if pos.x + lsz.x > vp.x - 4:           # would overflow right edge -> flip left
+		pos.x = mp.x - 16 - lsz.x
+	pos.x = clamp(pos.x, 4.0, max(4.0, vp.x - lsz.x - 4.0))
+	pos.y = clamp(pos.y, 4.0, max(4.0, vp.y - lsz.y - 4.0))
+	hotspot_label.position = pos
 
 func _dir_to_facing(v: Vector2) -> String:
 	if abs(v.x) >= abs(v.y):

@@ -6,7 +6,7 @@ config_version=5
 [application]
 
 config/name="Teeokratie"
-config/version="0.1.14"
+config/version="0.1.15"
 run/main_scene="res://scenes/Main.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
 config/icon="res://icon.svg"

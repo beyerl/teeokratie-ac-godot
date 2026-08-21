@@ -47,4 +47,7 @@ func _draw() -> void:
 	for s in _splashes:
 		var a: float = (1.0 - float(s.t) / 0.35) * 0.5
 		var r: float = 1.0 + float(s.t) * 6.0
+		# keep the whole ripple inside the pane so it never spills onto frame/wall
+		if s.p.x - r < rect.position.x or s.p.x + r > rect.end.x or s.p.y - r < rect.position.y:
+			continue
 		draw_arc(s.p, r, PI, TAU, 6, Color(0.85, 0.92, 1.0, a), 1.0)

@@ -314,6 +314,46 @@ def polygon_points(objs, comp_obj, wx, wy, sx, sy):
         emit(paths)
     return pts
 
+_ALPHA_CACHE = {}
+def sprite_alpha_box(spr):
+    """World-space AABB of a sprite's visible (non-transparent) pixels, so a hotspot
+    hugs the object's art rather than its full (padded) frame. Mirrors Main.gd's
+    pivot->offset math. Returns {pos, size} in Godot coords, or None."""
+    try:
+        from PIL import Image
+    except Exception:
+        return None
+    base = spr["texture"].split("/")[-1]
+    path = os.path.join(ASSET_OUT, base)
+    im = _ALPHA_CACHE.get(path)
+    if im is None:
+        try:
+            im = Image.open(path).convert("RGBA"); _ALPHA_CACHE[path] = im
+        except Exception:
+            return None
+    reg = spr.get("region")
+    if reg and len(reg) == 4:
+        rx, ry, rw, rh = int(reg[0]), int(reg[1]), int(reg[2]), int(reg[3])
+    else:
+        rx, ry, rw, rh = 0, 0, im.size[0], im.size[1]
+    frame = im.crop((rx, ry, rx + rw, ry + rh))
+    bbox = frame.getbbox()  # (l, t, r, b) of non-zero (incl. alpha) region, or None
+    if not bbox:
+        return None
+    l, t, r, b = bbox
+    sx, sy = spr["scale"][0], spr["scale"][1]
+    pvx, pvy = spr["pivot"][0], spr["pivot"][1]
+    # full-frame visual centre in world (matches runtime), then locate the alpha
+    # sub-rect within the frame (texture origin top-left, godot +y down).
+    frame_cx = spr["pos"][0] + rw * (0.5 - pvx) * sx
+    frame_cy = spr["pos"][1] + rh * (pvy - 0.5) * sy
+    frame_left = frame_cx - rw * sx / 2.0
+    frame_top = frame_cy - rh * sy / 2.0
+    cx = frame_left + ((l + r) / 2.0) * sx
+    cy = frame_top + ((t + b) / 2.0) * sy
+    return {"pos": [round(cx, 2), round(cy, 2)],
+            "size": [round((r - l) * sx, 2), round((b - t) * sy, 2)]}
+
 # ------------------------------------------------------------------ per scene
 def extract_scene(name, filename):
     path = os.path.join(ASSETS, filename)
@@ -333,6 +373,7 @@ def extract_scene(name, filename):
     actionlists = {}
     camera = None
     npcs = []
+    sorting_map = None
 
     # index component fileID -> (gameObject fileID)
     comp_owner = {}
@@ -420,17 +461,29 @@ def extract_scene(name, filename):
                         add_btn(d.get("useButton"), "use")
                     for b in (d.get("useButtons") or []):
                         add_btn(b)
-                    # collider aabb: search sibling collider on same GO
-                    aabb = None
+                    # collider aabb: search sibling collider on same GO. Box/Circle
+                    # give a direct AABB; PolygonCollider2D (used for irregular AC
+                    # hotspots) gives the bounding box of its points.
+                    box = None
                     for sib in comps:
                         so = objs.get(sib)
-                        if so and so["type"] in ("BoxCollider2D","CircleCollider2D"):
+                        if not so:
+                            continue
+                        if so["type"] in ("BoxCollider2D", "CircleCollider2D"):
                             aabb = collider_world_aabb(objs, go_transform, so, wx, wy, sx, sy)
+                            if aabb:
+                                box = {"pos": to_godot(aabb["cx"], aabb["cy"]),
+                                       "size": [round(aabb["hw"]*2*PPU,2), round(aabb["hh"]*2*PPU,2)]}
                             break
-                    box = None
-                    if aabb:
-                        box = {"pos": to_godot(aabb["cx"], aabb["cy"]),
-                               "size": [round(aabb["hw"]*2*PPU,2), round(aabb["hh"]*2*PPU,2)]}
+                        if so["type"] == "PolygonCollider2D":
+                            pts = polygon_points(objs, so, wx, wy, sx, sy)  # already godot
+                            if len(pts) >= 3:
+                                xs = [p[0] for p in pts]; ys = [p[1] for p in pts]
+                                box = {"pos": [round((min(xs)+max(xs))/2, 2),
+                                               round((min(ys)+max(ys))/2, 2)],
+                                       "size": [round(max(xs)-min(xs), 2),
+                                                round(max(ys)-min(ys), 2)]}
+                            break
                     hotspots.append({"name": gname, "pos": to_godot(wx,wy),
                                      "box": box, "buttons": buttons,
                                      "displayName": d.get("hotspotName") or gname})
@@ -443,6 +496,28 @@ def extract_scene(name, filename):
                 elif cls == "NPC":
                     npcs.append({"name": gname, "pos": to_godot(wx, wy),
                                  "speechColor": co["data"].get("speechColor")})
+                elif cls == "SortingMap":
+                    # AC perspective: character scale + sorting order by depth.
+                    # The map's forward points toward the camera (-Y Unity / +Y Godot
+                    # down), so boundaries are horizontal lines at godot-Y = originY +
+                    # z*PPU. Runtime interpolates scale and picks order by player Y.
+                    d = co["data"]
+                    origin_y = to_godot(wx, wy)[1]
+                    areas = []
+                    for a in (d.get("sortingAreas") or []):
+                        areas.append({
+                            "y": round(origin_y + float(a.get("z", 0)) * PPU, 2),
+                            "scale": int(a.get("scale", 100)),
+                            "order": int(a.get("order", 0)),
+                        })
+                    sorting_map = {
+                        "originY": round(origin_y, 2),
+                        "originScale": int(d.get("originScale", 100)),
+                        "affectScale": int(d.get("affectScale", 0)),
+                        "affectSpeed": int(d.get("affectSpeed", 0)),
+                        "mapType": int(d.get("mapType", 0)),  # 0=SortingLayer,1=OrderInLayer
+                        "areas": areas,
+                    }
                 elif cls == "NavigationMesh":
                     # nav geometry is on sibling PolygonCollider2D(s)
                     for sib in comps:
@@ -454,6 +529,22 @@ def extract_scene(name, filename):
                 elif cls in ("Interaction","Cutscene","AC_Trigger","Trigger"):
                     actionlists[cfid] = extract_actionlist(objs, cfid)
                     actionlists[cfid]["hostName"] = gname
+
+    # Hotspot boxes: the AC collider is often slightly off from the object's art.
+    # When a hotspot shares its name with a rendered sprite, snap the clickable box to
+    # that sprite's VISIBLE pixels (alpha bounding box within its atlas frame) -- the
+    # object's real on-screen dimensions, ignoring transparent frame padding. Non-sprite
+    # hotspots (painted into the background) keep their collider AABB from above.
+    _spr_by_name = {}
+    for s in sprites:
+        _spr_by_name.setdefault(s["name"], s)
+    for h in hotspots:
+        spr = _spr_by_name.get(h["name"])
+        if not spr or not spr.get("texture"):
+            continue
+        abox = sprite_alpha_box(spr)
+        if abox:
+            h["box"] = abox
 
     # also collect any ActionList referenced by hotspots that we didn't already grab
     for h in hotspots:
@@ -520,6 +611,7 @@ def extract_scene(name, filename):
         "npcs": npcs,
         "camera": camera,
         "onStart": on_start,
+        "sortingMap": sorting_map,
         "actionLists": actionlists,
         "conversations": conversations,
         "refs": refs,
