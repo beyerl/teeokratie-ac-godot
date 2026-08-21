@@ -45,6 +45,11 @@ POS_OVERRIDE = {
     # his face's skin pixels (window anchor, ignoring the white portal): reference
     # face sits at bg-x -82.5, so the whole GameObject nets to a +1 nudge.
     ("Office", "DonKamilleSprite"): (1.0, 0.0),
+    # Kitchen: the background art is 329px wide but the room's foreground sprites are
+    # anchored ~9px left of where the painted features (window hole, shelves) expect
+    # them. Nudge the background right so its painted features line up under the
+    # overlay sprites (window frame/glass, shelf jars). Camera follows the bg.
+    ("Kitchen", "Kitchen"): (9.0, 0.0),
 }
 
 # Room-background pivots are stored as stale/wrong slice data in the .meta, so the
