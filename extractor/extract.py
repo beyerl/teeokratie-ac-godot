@@ -41,10 +41,10 @@ ICON_VERB = {0: "use", 1: "talk", 2: "look"}
 # Manual art-alignment nudges (Godot px, +x right / +y down), keyed by (scene, name).
 # Applied to the whole GameObject so its sprite AND hotspot move together.
 POS_OVERRIDE = {
-    # #1: Don Kamille aligned to the reference (teeokratie-office.png). The earlier
-    # -16 nudge overshot to the left; measured against the reference (window anchor)
-    # he needs ~+7px right, so the net nudge is -9.
-    ("Office", "DonKamilleSprite"): (-9.0, 0.0),
+    # #1: Don Kamille aligned to the reference (teeokratie-office.png). Measured by
+    # his face's skin pixels (window anchor, ignoring the white portal): reference
+    # face sits at bg-x -82.5, so the whole GameObject nets to a +1 nudge.
+    ("Office", "DonKamilleSprite"): (1.0, 0.0),
 }
 
 # Room-background pivots are stored as stale/wrong slice data in the .meta, so the
