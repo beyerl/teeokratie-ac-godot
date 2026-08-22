@@ -683,8 +683,23 @@ def extract_globals():
     invd = first(inv, lambda d: "items" in d)
     items = []
     for it in (invd.get("items") or []):
+        tex, _r, _p = resolve_texture(it.get("tex") or {})
+        # per-item standalone interactions (e.g. examine): icon id + ActionList fileID
+        inter = []
+        for bt in (it.get("interactions") or []):
+            al = str((bt.get("actionList") or {}).get("fileID", "0"))
+            if al != "0":
+                inter.append({"iconID": bt.get("icon", -1), "interaction": al})
+        combines = []
+        for cb in (it.get("combineActionList") or []):
+            al = str((cb or {}).get("fileID", "0")) if isinstance(cb, dict) else "0"
+            if al != "0":
+                combines.append(al)
         items.append({"id": it.get("id"), "label": it.get("label"),
-                      "carryOnStart": it.get("carryOnStart", 0)})
+                      "altLabel": it.get("altLabel") or it.get("label"),
+                      "texture": tex, "carryOnStart": it.get("carryOnStart", 0),
+                      "combineID": it.get("combineID"), "combines": combines,
+                      "interactions": inter})
     vard = first(var, lambda d: "vars" in d)
     variables = []
     for v in (vard.get("vars") or []):

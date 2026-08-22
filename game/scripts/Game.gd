@@ -10,6 +10,8 @@ var speech: Dictionary = {}            # lineID(str) -> {text, speaker, type}
 var vars: Dictionary = {}              # var id(int) -> value
 var var_by_name: Dictionary = {}       # label -> id
 var inventory: Array = []              # array of item ids the player carries
+var selected_item: int = -1            # item id currently "held" for use, or -1
+signal inventory_changed
 var items_by_id: Dictionary = {}       # id -> item dict
 var objectives: Dictionary = {}        # id -> state
 var conv_states: Dictionary = {}       # convFileID -> {optionNum(int): bool enabled}
@@ -103,9 +105,21 @@ func has_item(id: int) -> bool:
 func add_item(id: int) -> void:
 	if not inventory.has(id):
 		inventory.append(id)
+		inventory_changed.emit()
 
 func remove_item(id: int) -> void:
-	inventory.erase(id)
+	if inventory.has(id):
+		inventory.erase(id)
+		if selected_item == id:
+			selected_item = -1
+		inventory_changed.emit()
+
+func select_item(id: int) -> void:
+	selected_item = -1 if selected_item == id else id
+	inventory_changed.emit()
+
+func item_data(id: int) -> Dictionary:
+	return items_by_id.get(id, {})
 
 # ------------------------------------------------------------------ scene switch
 func change_room(name: String, marker: String = "") -> void:

@@ -61,6 +61,7 @@ func _ready() -> void:
 	_build_rain()
 	_build_highlighter()
 	_build_ui()
+	_build_inventory()
 	_build_audio()
 	_sorting_map = data.get("sortingMap")
 	_apply_sorting_map()
@@ -432,6 +433,88 @@ func _build_ui() -> void:
 	hotspot_label.visible = false
 	ui.add_child(hotspot_label)
 
+# --- Inventory: AC's bag. A bottom bar of the carried items' icons; click to select
+# one for use (click a hotspot to use it there, or another item to combine), click
+# again to deselect. Hidden while the bag is empty. ------------------------------
+var inventory_bar: PanelContainer
+var _inv_box: HBoxContainer
+
+func _build_inventory() -> void:
+	inventory_bar = PanelContainer.new()
+	inventory_bar.name = "Inventory"
+	var sb := StyleBoxFlat.new()
+	sb.bg_color = Color(0, 0, 0, 0.55); sb.set_content_margin_all(4)
+	sb.set_corner_radius_all(4)
+	inventory_bar.add_theme_stylebox_override("panel", sb)
+	inventory_bar.anchor_left = 0.5; inventory_bar.anchor_right = 0.5
+	inventory_bar.anchor_top = 1.0; inventory_bar.anchor_bottom = 1.0
+	inventory_bar.grow_horizontal = Control.GROW_DIRECTION_BOTH
+	inventory_bar.grow_vertical = Control.GROW_DIRECTION_BEGIN
+	inventory_bar.offset_bottom = -6
+	_inv_box = HBoxContainer.new()
+	_inv_box.add_theme_constant_override("separation", 6)
+	inventory_bar.add_child(_inv_box)
+	ui.add_child(inventory_bar)
+	Game.inventory_changed.connect(_refresh_inventory)
+	_refresh_inventory()
+
+func _refresh_inventory() -> void:
+	if _inv_box == null:
+		return
+	for c in _inv_box.get_children():
+		c.queue_free()
+	inventory_bar.visible = not Game.inventory.is_empty()
+	for id in Game.inventory:
+		var it: Dictionary = Game.item_data(int(id))
+		var btn := TextureButton.new()
+		var tex_path := str(it.get("texture", ""))
+		if tex_path != "" and ResourceLoader.exists(tex_path):
+			btn.texture_normal = load(tex_path)
+			btn.ignore_texture_size = true
+			btn.stretch_mode = TextureButton.STRETCH_KEEP_ASPECT_CENTERED
+		btn.custom_minimum_size = Vector2(44, 44)
+		btn.tooltip_text = str(it.get("altLabel", it.get("label", "")))
+		# highlight the selected item
+		if int(id) == Game.selected_item:
+			btn.modulate = Color(1, 1, 1)
+			var hl := StyleBoxFlat.new()
+			hl.bg_color = Color(1, 0.9, 0.4, 0.30)
+			hl.set_corner_radius_all(4)
+			var p := PanelContainer.new()
+			p.add_theme_stylebox_override("panel", hl)
+			p.add_child(btn)
+			_inv_box.add_child(p)
+		else:
+			btn.modulate = Color(1, 1, 1, 0.9)
+			_inv_box.add_child(btn)
+		btn.pressed.connect(_on_inventory_click.bind(int(id)))
+
+# Click an item: if another item is already held, try to combine; else select/deselect.
+func _on_inventory_click(id: int) -> void:
+	if Game.selected_item >= 0 and Game.selected_item != id:
+		_combine_items(Game.selected_item, id)
+		return
+	Game.select_item(id)
+
+func _combine_items(a: int, b: int) -> void:
+	# Run the first item's matching combine ActionList (AC combineID pairs with the
+	# combineActionList at the same index). No match -> just deselect.
+	var it: Dictionary = Game.item_data(a)
+	var ids = str(it.get("combineID", ""))
+	var lists: Array = it.get("combines", [])
+	var target := -1
+	if ids != "":
+		var parts := ids.split(",")
+		for i in parts.size():
+			if int(parts[i]) == b and i < lists.size():
+				target = i; break
+	Game.selected_item = -1
+	Game.inventory_changed.emit()
+	if target >= 0 and action_lists.has(str(lists[target])):
+		var runner := ActionRunner.new(self)
+		add_child(runner)
+		await runner.run(action_lists[str(lists[target])].get("actions", []), true)
+
 func _build_audio() -> void:
 	music_player = AudioStreamPlayer.new(); add_child(music_player)
 	ambience_player = AudioStreamPlayer.new(); add_child(ambience_player)
@@ -448,6 +531,12 @@ func _unhandled_input(event: InputEvent) -> void:
 			runner.run([{ "type": "ActionConversation",
 				"conversation": {"fileID": first_id}, "endAction": 1 }], true)
 		return
+	# Right-click deselects the held inventory item (AC convention).
+	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_RIGHT:
+		if Game.selected_item >= 0:
+			Game.selected_item = -1
+			Game.inventory_changed.emit()
+		return
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
 		if verbcoin.visible:
 			return
@@ -455,6 +544,15 @@ func _unhandled_input(event: InputEvent) -> void:
 			return
 		var wpos := get_global_mouse_position()
 		var hs := _hotspot_at(wpos)
+		# Holding an inventory item: click a hotspot to use it there, click elsewhere
+		# to deselect (rather than opening the verb coin or walking).
+		if Game.selected_item >= 0:
+			var held := Game.selected_item
+			Game.selected_item = -1
+			Game.inventory_changed.emit()
+			if not hs.is_empty():
+				_use_item_on_hotspot(held, hs["data"])
+			return
 		if not hs.is_empty():
 			var r: Rect2 = hs["rect"]
 			_show_verbcoin(hs["data"], r.position + r.size / 2.0)
@@ -527,6 +625,25 @@ func _run_interaction(btn: Dictionary, h: Dictionary) -> void:
 	var runner := ActionRunner.new(self)
 	add_child(runner)
 	await runner.run(action_lists[fid].get("actions", []), true)
+
+# Use a held inventory item on a hotspot: walk over, then run the hotspot's Use
+# interaction (its ActionInventoryCheck can test the carried item). If the hotspot has
+# no Use handler, Teesa gives the AC-style "that doesn't work" shrug.
+func _use_item_on_hotspot(item_id: int, h: Dictionary) -> void:
+	if h.get("box"):
+		var near := Vector2(h["box"]["pos"][0], h["box"]["pos"][1] + h["box"]["size"][1] * 0.5)
+		await walk_player_to(near)
+	var use_fid := ""
+	for b in h.get("buttons", []):
+		if str(b.get("verb", "")) == "use":
+			use_fid = str(b.get("interaction", "")); break
+	if use_fid != "" and action_lists.has(use_fid):
+		var runner := ActionRunner.new(self)
+		add_child(runner)
+		await runner.run(action_lists[use_fid].get("actions", []), true)
+	else:
+		var it: Dictionary = Game.item_data(item_id)
+		await say("Teesa", "Das funktioniert nicht.", player_position(), false, true)
 
 # ------------------------------------------------------------------ services
 func _physics_process(_delta: float) -> void:

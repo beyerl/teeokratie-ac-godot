@@ -3,37 +3,72 @@
   {
    "id": 0,
    "label": "BoringBook",
-   "carryOnStart": 0
+   "altLabel": "Langweiliges Buch",
+   "texture": "res://assets/Inv-BoringBook.png",
+   "carryOnStart": 0,
+   "combineID": null,
+   "combines": [],
+   "interactions": []
   },
   {
    "id": 1,
    "label": "FidibusBurning",
-   "carryOnStart": 0
+   "altLabel": "Brennender Fidibus",
+   "texture": "res://assets/Inv-Fidibus-Buring.png",
+   "carryOnStart": 0,
+   "combineID": null,
+   "combines": [],
+   "interactions": []
   },
   {
    "id": 2,
    "label": "TeeseusHead",
-   "carryOnStart": 0
+   "altLabel": "Kopf des Teeseus",
+   "texture": "res://assets/Inv-TeeseusHead.png",
+   "carryOnStart": 0,
+   "combineID": null,
+   "combines": [],
+   "interactions": []
   },
   {
    "id": 3,
    "label": "Fidibus",
-   "carryOnStart": 0
+   "altLabel": "Fidibus",
+   "texture": "res://assets/Inv-Fidibus.png",
+   "carryOnStart": 0,
+   "combineID": null,
+   "combines": [],
+   "interactions": []
   },
   {
    "id": 4,
    "label": "Tea-Yak",
-   "carryOnStart": 0
+   "altLabel": "Teebetanischer Yak-Tee",
+   "texture": "res://assets/Inv-Tea-Yak.png",
+   "carryOnStart": 0,
+   "combineID": null,
+   "combines": [],
+   "interactions": []
   },
   {
    "id": 5,
    "label": "TeeseusHeadWater",
-   "carryOnStart": 0
+   "altLabel": "Wasserkopf",
+   "texture": "res://assets/Inv-TeeseusHead-Water.png",
+   "carryOnStart": 0,
+   "combineID": null,
+   "combines": [],
+   "interactions": []
   },
   {
    "id": 6,
    "label": "Teapot",
-   "carryOnStart": 0
+   "altLabel": "Kanne mit Yak-Tee(TM)",
+   "texture": "res://assets/Inv-Teapot.png",
+   "carryOnStart": 0,
+   "combineID": null,
+   "combines": [],
+   "interactions": []
   }
  ],
  "variables": [
