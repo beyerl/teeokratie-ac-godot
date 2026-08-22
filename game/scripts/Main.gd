@@ -43,6 +43,12 @@ func _ready() -> void:
 	refs = data.get("refs", {})
 	action_lists = data.get("actionLists", {})
 	conversations = data.get("conversations", {})
+	# Seed options that must start disabled (enabled later by an event) once, without
+	# clobbering any state already changed in play (conv_states persists on Game).
+	for cid in conversations:
+		for num in conversations[cid].get("startOff", []):
+			if not Game.conv_states.get(cid, {}).has(int(num)):
+				Game.set_option_enabled(cid, int(num), false)
 	scene_names = Game.load_scene_data("manifest").get("scenes", [])
 	Game.current_room = self
 

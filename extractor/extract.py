@@ -610,6 +610,22 @@ def extract_scene(name, filename):
                         actionlists[dopt] = al
             conversations[fid] = {"options": opts}
 
+    # Options that some interaction explicitly ENABLES (ActionDialogOption switchType
+    # 0) must start DISABLED -- they only become available once that event fires (e.g.
+    # Tassilo's water/wood questions). Collect those per conversation so the runtime
+    # can seed the initial off-state instead of showing every option from the start.
+    for cid, conv in conversations.items():
+        start_off = set()
+        for al in actionlists.values():
+            for a in (al.get("actions") or []):
+                if a.get("type") != "ActionDialogOption":
+                    continue
+                lc = a.get("linkedConversation") or {}
+                acid = str(lc.get("fileID", "")) if isinstance(lc, dict) else str(lc)
+                if acid == cid and int(a.get("switchType", 0)) == 0:
+                    start_off.add(int(a.get("optionNumber", 0)))
+        conv["startOff"] = sorted(n for n in start_off if n > 0)
+
     # refs: map every GameObject fileID AND its component fileIDs -> {name, pos}
     # so actions that reference markers/objects/characters by fileID can resolve.
     refs = {}
