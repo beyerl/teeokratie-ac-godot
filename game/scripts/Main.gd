@@ -183,6 +183,15 @@ func _build_player() -> void:
 		for m in data.get("markers", []):
 			if m.get("name") == Game.pending_marker:
 				start = Vector2(m["pos"][0], m["pos"][1])
+	# AC entrance spawn: rooms have per-entrance markers (e.g. "Kitchen In",
+	# "OfficeDoor"); pick the one matching the room we came from so Teesa appears at
+	# the correct doorway. Falls back to the default PlayerStart (office door here).
+	if Game.prev_room != "":
+		for m in data.get("markers", []):
+			var mn := str(m.get("name", ""))
+			if mn.contains(Game.prev_room + " In") or mn.contains(Game.prev_room + "Door"):
+				start = Vector2(m["pos"][0], m["pos"][1])
+				break
 	player.position = start
 	add_child(player)
 	characters["Teesa"] = player
@@ -242,10 +251,23 @@ func _build_hotspots() -> void:
 		else:
 			size = Vector2(120, 120)
 			center = Vector2(h["pos"][0], h["pos"][1])
+		# AC hotspots can start disabled (RememberHotspot startState Off) and get
+		# turned on by an interaction later; honour that initial state.
 		_hotspots.append({
 			"rect": Rect2(center - size / 2.0, size),
-			"data": h, "enabled": true, "area": size.x * size.y,
+			"data": h, "enabled": int(h.get("enabled", 1)) == 1, "area": size.x * size.y,
 		})
+
+# Enable/disable a hotspot at runtime (AC ActionHotspotEnable). The action refers to
+# the hotspot GameObject by fileID, which resolves (via refs) to its name.
+func set_hotspot_enabled_by_ref(r, on: bool) -> void:
+	var info = ref(r)
+	var target := str(info.get("name", "")) if info else ""
+	if target == "":
+		return
+	for hs in _hotspots:
+		if str(hs["data"].get("name", "")) == target:
+			hs["enabled"] = on
 
 # Pick the smallest hotspot whose rect contains the world point (so a big scenery
 # hotspot never swallows a click meant for a character standing in front of it).

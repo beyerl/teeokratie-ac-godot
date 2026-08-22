@@ -475,6 +475,7 @@
      "playerAction": 3
     }
    ],
+   "enabled": 1,
    "displayName": "Tee"
   },
   {
@@ -501,6 +502,7 @@
      "playerAction": 3
     }
    ],
+   "enabled": 1,
    "displayName": "Lebstoff"
   },
   {
@@ -527,6 +529,7 @@
      "playerAction": 3
     }
    ],
+   "enabled": 1,
    "displayName": "Weiterhin Tee"
   },
   {
@@ -553,6 +556,7 @@
      "playerAction": 3
     }
    ],
+   "enabled": 1,
    "displayName": "Mehr Tee"
   },
   {
@@ -579,6 +583,7 @@
      "playerAction": 3
     }
    ],
+   "enabled": 1,
    "displayName": "Tee halt"
   },
   {
@@ -611,6 +616,7 @@
      "playerAction": 3
     }
    ],
+   "enabled": 1,
    "displayName": "Ofen"
   },
   {
@@ -637,6 +643,7 @@
      "playerAction": 3
     }
    ],
+   "enabled": 1,
    "displayName": "Herdplatten"
   },
   {
@@ -663,6 +670,7 @@
      "playerAction": 3
     }
    ],
+   "enabled": 1,
    "displayName": "Auch Tee"
   },
   {
@@ -689,6 +697,7 @@
      "playerAction": 3
     }
    ],
+   "enabled": 1,
    "displayName": "Wasserhahn"
   },
   {
@@ -715,6 +724,7 @@
      "playerAction": 3
     }
    ],
+   "enabled": 0,
    "displayName": "Heiße Herdplatten"
   },
   {
@@ -741,6 +751,7 @@
      "playerAction": 3
     }
    ],
+   "enabled": 1,
    "displayName": "Nochmal Tee"
   },
   {
@@ -767,6 +778,7 @@
      "playerAction": 3
     }
    ],
+   "enabled": 1,
    "displayName": "Immernoch Tee"
   },
   {
@@ -793,6 +805,7 @@
      "playerAction": 1
     }
    ],
+   "enabled": 0,
    "displayName": "Offenes Fenster"
   },
   {
@@ -819,6 +832,7 @@
      "playerAction": 3
     }
    ],
+   "enabled": 0,
    "displayName": "Heißes Wasser"
   },
   {
@@ -851,6 +865,7 @@
      "playerAction": 1
     }
    ],
+   "enabled": 1,
    "displayName": "Fenster"
   },
   {
@@ -883,6 +898,7 @@
      "playerAction": 3
     }
    ],
+   "enabled": 1,
    "displayName": "Tassen"
   },
   {
@@ -909,6 +925,7 @@
      "playerAction": 1
     }
    ],
+   "enabled": 1,
    "displayName": "Holzstapler"
   },
   {
@@ -941,6 +958,7 @@
      "playerAction": 3
     }
    ],
+   "enabled": 1,
    "displayName": "Fidibus"
   },
   {
@@ -967,6 +985,7 @@
      "playerAction": 3
     }
    ],
+   "enabled": 1,
    "displayName": "Schon wieder Tee"
   },
   {
@@ -999,6 +1018,7 @@
      "playerAction": 3
     }
    ],
+   "enabled": 1,
    "displayName": "DK zum Vorzimmer"
   },
   {
@@ -1031,6 +1051,7 @@
      "playerAction": 3
     }
    ],
+   "enabled": 0,
    "displayName": "Kopf voll Regenwasser"
   }
  ],

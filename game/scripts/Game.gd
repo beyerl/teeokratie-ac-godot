@@ -17,6 +17,7 @@ var icon_by_id: Dictionary = {}        # cursor iconID -> texture res path
 
 var current_room: Node = null
 var room_name: String = ""
+var prev_room: String = ""             # the room we came from (for ActionSceneCheck)
 var pending_marker: String = ""        # spawn marker for next room
 
 signal state_changed(new_state)
@@ -109,5 +110,6 @@ func remove_item(id: int) -> void:
 # ------------------------------------------------------------------ scene switch
 func change_room(name: String, marker: String = "") -> void:
 	pending_marker = marker
+	prev_room = room_name            # remember where we came from
 	room_name = name
 	get_tree().call_deferred("change_scene_to_file", "res://scenes/Main.tscn")

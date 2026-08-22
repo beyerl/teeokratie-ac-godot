@@ -63,7 +63,7 @@ func _exec(a: Dictionary, idx: int, actions: Array) -> int:
 		"ActionVarSet":
 			_var_set(a)
 		"ActionVarPopup":
-			_var_set(a)
+			return _var_popup(a, idx)
 		"ActionInventorySet":
 			_inventory_set(a)
 		"ActionObjectiveSet":
@@ -117,6 +117,20 @@ func _branch(a: Dictionary, cond: bool, _actions: Array, idx: int) -> int:
 		1: return -1
 		2: return skip
 		_: return idx + 1
+
+# ActionVarPopup is a multi-socket switch on a popup variable. The game uses it to
+# pick a RANDOM branch (e.g. a random book title when looking at the bookshelf), so
+# route through a random socket. Each socket carries a resultAction + skip target.
+func _var_popup(a: Dictionary, idx: int) -> int:
+	var endings: Array = a.get("endings", [])
+	if endings.is_empty():
+		return _next(a, idx)
+	var e = endings[randi() % endings.size()]
+	match int(e.get("resultAction", 0)):
+		0: return idx + 1
+		1: return -1
+		2: return int(e.get("skipAction", -1))
+	return idx + 1
 
 func _parallel(a: Dictionary, actions: Array, idx: int) -> int:
 	# Approximation: launch every ending branch concurrently, then stop this thread.
@@ -183,9 +197,8 @@ func _sprite_fade(a: Dictionary) -> void:
 		node.visible = int(a.get("fadeType", 0)) == 0
 
 func _hotspot_enable(a: Dictionary) -> void:
-	var node = room.node_for(a.get("hotspot"))
-	if node and node.has_method("set_hotspot_enabled"):
-		node.set_hotspot_enabled(int(a.get("changeType", 0)) == 0)
+	# AC ChangeType: 0 = Enable (turn on), 1 = Disable (turn off).
+	room.set_hotspot_enabled_by_ref(a.get("hotspot"), int(a.get("changeType", 0)) == 0)
 
 # ---------- variables ----------
 func _var_set(a: Dictionary) -> void:
@@ -213,9 +226,11 @@ func _eval_var_check(a: Dictionary) -> bool:
 	return int(v) == want_i
 
 func _eval_scene_check(a: Dictionary) -> bool:
+	# AC's ActionSceneCheck tests the PREVIOUS scene (where the player came from),
+	# used by OnStart cutscenes to place the player at the matching entrance.
 	var by := int(a.get("chooseSceneBy", 0))
 	if by == 1:
-		return str(a.get("sceneName", "")) == Game.room_name
+		return room.map_scene_name(str(a.get("sceneName", ""))) == Game.prev_room
 	return false
 
 # ---------- inventory ----------

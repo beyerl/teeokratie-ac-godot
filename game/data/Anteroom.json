@@ -193,6 +193,7 @@
      "playerAction": 1
     }
    ],
+   "enabled": 1,
    "displayName": "DK zur Küche"
   },
   {
@@ -225,6 +226,7 @@
      "playerAction": 3
     }
    ],
+   "enabled": 1,
    "displayName": "Klosterpforte"
   },
   {
@@ -251,6 +253,7 @@
      "playerAction": 1
     }
    ],
+   "enabled": 1,
    "displayName": "Kerze"
   },
   {
@@ -283,6 +286,7 @@
      "playerAction": 3
     }
    ],
+   "enabled": 1,
    "displayName": "Verstörende Klosterräume"
   },
   {
@@ -309,6 +313,7 @@
      "playerAction": 3
     }
    ],
+   "enabled": 1,
    "displayName": "Tassilo"
   },
   {
@@ -341,6 +346,7 @@
      "playerAction": 0
     }
    ],
+   "enabled": 1,
    "displayName": "DK zum Büro"
   },
   {
@@ -373,6 +379,7 @@
      "playerAction": 3
     }
    ],
+   "enabled": 1,
    "displayName": "Bücherregal"
   },
   {
@@ -405,6 +412,7 @@
      "playerAction": 1
     }
    ],
+   "enabled": 1,
    "displayName": "Teeseus' Kopf"
   },
   {
@@ -431,6 +439,7 @@
      "playerAction": 1
     }
    ],
+   "enabled": 1,
    "displayName": "Teeseus Teeus"
   }
  ],

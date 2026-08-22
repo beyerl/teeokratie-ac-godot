@@ -286,6 +286,7 @@
      "playerAction": 1
     }
    ],
+   "enabled": 1,
    "displayName": "Don Kamille"
   },
   {
@@ -305,6 +306,7 @@
     ]
    },
    "buttons": [],
+   "enabled": 1,
    "displayName": "TeesaPour"
   },
   {
@@ -331,6 +333,7 @@
      "playerAction": 3
     }
    ],
+   "enabled": 1,
    "displayName": "Prüfungsordnung"
   },
   {
@@ -363,6 +366,7 @@
      "playerAction": 3
     }
    ],
+   "enabled": 1,
    "displayName": "Durchgangsklappvorrichtung (DK)"
   },
   {
@@ -389,6 +393,7 @@
      "playerAction": 2
     }
    ],
+   "enabled": 1,
    "displayName": "Bücherregal"
   },
   {
@@ -415,6 +420,7 @@
      "playerAction": 1
     }
    ],
+   "enabled": 1,
    "displayName": "Fenster"
   }
  ],

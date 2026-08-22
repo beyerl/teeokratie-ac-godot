@@ -172,10 +172,31 @@ def extract_actionlist(objs, fid):
         return None
     d = o["data"]
     acts = d.get("actions") or []
+    order = [str((a or {}).get("fileID")) for a in acts]
+    idx_of = {aid: i for i, aid in enumerate(order)}
     nodes = []
-    for a in acts:
-        aid = (a or {}).get("fileID")
-        nodes.append(clean_action(objs, aid))
+    for aid in order:
+        node = clean_action(objs, aid)
+        # AC stores both an int jump index (skipAction*) and an authoritative fileID
+        # reference (skipAction*Actual). The int goes STALE when the editor reorders
+        # actions, so resolve the fileID -> our list index and trust that instead.
+        for actual, target in (("skipActionActual", "skipAction"),
+                               ("skipActionTrueActual", "skipActionTrue"),
+                               ("skipActionFailActual", "skipActionFail")):
+            ref = node.get(actual)
+            if isinstance(ref, dict):
+                rfid = str(ref.get("fileID", "0"))
+                if rfid in idx_of:
+                    node[target] = idx_of[rfid]
+        # multi-socket actions (switches like ActionVarPopup, ActionParallel) route
+        # through an `endings` list; resolve each socket's fileID target too.
+        for e in (node.get("endings") or []):
+            ref = e.get("skipActionActual")
+            if isinstance(ref, dict):
+                rfid = str(ref.get("fileID", "0"))
+                if rfid in idx_of:
+                    e["skipAction"] = idx_of[rfid]
+        nodes.append(node)
     return {
         "name": d.get("m_Name"),
         "type": script_class(o),
@@ -484,8 +505,18 @@ def extract_scene(name, filename):
                                        "size": [round(max(xs)-min(xs), 2),
                                                 round(max(ys)-min(ys), 2)]}
                             break
+                    # Initial on/off state: an AC RememberHotspot with startState Off
+                    # (AC_OnOff 1) means the hotspot is disabled at load and gets
+                    # turned on later by an interaction (ActionHotspotEnable).
+                    hs_enabled = 1
+                    for sib in comps:
+                        so4 = objs.get(sib)
+                        if so4 and so4["type"] == "MonoBehaviour" and script_class(so4) == "RememberHotspot":
+                            if int(so4["data"].get("startState", 0)) == 1:
+                                hs_enabled = 0
+                            break
                     hotspots.append({"name": gname, "pos": to_godot(wx,wy),
-                                     "box": box, "buttons": buttons,
+                                     "box": box, "buttons": buttons, "enabled": hs_enabled,
                                      "displayName": d.get("hotspotName") or gname})
                 elif cls in ("Marker",):
                     markers.append({"name": gname, "pos": to_godot(wx, wy),
